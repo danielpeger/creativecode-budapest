@@ -5,5 +5,15 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-netlify-cms`],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/events`,
+        name: `events`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify-cms`
+  ]
 }
