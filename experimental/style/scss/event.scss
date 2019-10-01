@@ -1,0 +1,126 @@
+@import "common";
+
+:host {
+  @include responsive(
+    margin,
+    var(--size-xxl) 0,
+    var(--size-xxl) 0,
+    var(--size-xxl) 0,
+    var(--size-xxxl) 0,
+    var(--size-xxxl) 0
+  );
+  @include responsive(grid-column-start, 1, 1, 2, 2, 2);
+  @include responsive(grid-column-end, -1, -1, -2, -2, -2);
+  @include responsive-grid(4, 4, 4, 10, 10);
+}
+
+:host([upcoming]) {
+  //Should be replaced with :host-context(.header) once supported https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context()
+  border-top: 4px solid var(--white);
+  padding-top: var(--size-xl);
+
+  .speaker .img {
+    background: var(--white);
+  }
+
+  path {
+    fill: var(--white);
+  }
+
+  .photos {
+    display: none;
+  }
+
+  h2 {
+    border-color: var(--white);
+  }
+}
+
+aside {
+  @include responsive(
+    grid-column-start,
+    span 6,
+    span 6,
+    span 6,
+    span 5,
+    span 5
+  );
+
+  &:not(:last-child) {
+    @include responsive(
+      margin-bottom,
+      var(--size-m),
+      var(--size-m),
+      var(--size-m),
+      0,
+      0
+    );
+  }
+}
+
+p,
+h2 {
+  @include responsive(
+    grid-column-start,
+    span 4,
+    span 4,
+    span 5,
+    span 5,
+    span 5
+  );
+}
+
+h2 {
+  padding-bottom: var(--size-s);
+  display: block;
+}
+
+svg {
+  position: relative;
+  @include responsive(top, 5px, 4px, 4px, 3px, 3px);
+  path {
+    fill: var(--black);
+  }
+}
+
+.photos {
+  margin-top: var(--size-xl);
+  @include responsive-grid(4, 4, 5, 5, 5);
+  @include responsive(
+    grid-template-rows,
+    repeat(4, var(--size-xl)),
+    repeat(4, var(--size-xl)),
+    repeat(5, var(--size-xxl)),
+    repeat(5, var(--size-xxl)),
+    repeat(5, var(--size-xxl))
+  );
+  @include responsive(
+    grid-row-gap,
+    var(--size-m),
+    var(--size-m),
+    var(--size-l),
+    var(--size-l),
+    var(--size-l)
+  );
+
+  ::slotted(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  ::slotted(img:first-of-type) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+  }
+
+  ::slotted(img:nth-of-type(2)) {
+    grid-column: 3 / 5;
+    grid-row: 1 / 6;
+  }
+
+  ::slotted(img:nth-of-type(3)) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+  }
+}

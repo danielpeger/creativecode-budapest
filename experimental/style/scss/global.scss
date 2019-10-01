@@ -1,0 +1,98 @@
+@import "common";
+
+//Typeface
+@font-face {
+  font-family: Object Sans;
+  font-weight: normal;
+  src: url("../font/ObjectSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Object Sans;
+  font-weight: bold;
+  src: url("../font/ObjectSans-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Object Sans;
+  font-style: italic;
+  src: url("../font/ObjectSans-Slanted") format("opentype");
+}
+
+@font-face {
+  font-family: Object Sans;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../font/ObjectSans-HeavySlanted") format("opentype");
+}
+
+//Reset
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Object Sans;
+  background-color: var(--white);
+}
+
+//Layout grid
+section {
+  @include responsive-grid(4, 4, 6, 12, 12);
+  padding: 0 var(--size-l);
+}
+
+//Header
+.header {
+  background-color: var(--black);
+  color: var(--white);
+
+  .hero {
+    @include responsive(grid-column-start, 1, 1, 2, 2, 2);
+    @include responsive(grid-column-end, -1, -1, -2, -6, -6);
+    display: flex;
+    align-items: center;
+    height: calc((100 * var(--vh)) - var(--size-xxxl));
+    color: var(--white);
+  }
+
+  .intro {
+    @include responsive(grid-column-start, 1, 1, 2, 2, 2);
+    @include responsive(grid-column-end, -1, -1, -2, -6, -6);
+  }
+
+  a {
+    color: var(--white);
+    &:focus {
+      outline-color: var(--white);
+    }
+    &:hover {
+      color: var(--lightgray);
+      outline-color: var(--lightgray);
+    }
+    &:active,
+    &:visited {
+      color: var(--gray);
+      outline-color: var(--gray);
+    }
+  }
+}
+
+.codeband {
+  display: flex;
+  background: var(--black);
+  height: var(--size-xl);
+  span {
+    width: 100%;
+    @for $i from 1 through 26 {
+      &:nth-child(#{$i}) {
+        @include stripes((($i + 1) * 2) - 1);
+        // @include stripes((random(26) * 2) - 1);
+      }
+    }
+    &:nth-last-child(-n + 16) {
+      @include responsive(display, none, block, block, block, block);
+    }
+    &:nth-last-child(-n + 8) {
+      @include responsive(display, none, none, none, block, block);
+    }
+  }
+}
