@@ -19,29 +19,40 @@ collections:
       - name: date
         label: Date
         widget: datetime
+        required: false
       - name: location
         label: Location
+        required: false
       - name: googleMapsLink
         label: Google Maps Link
+        required: false
       - name: meetupEventLink
         label: Meetup Event Link
+        required: false
       - name: facebookEventLink
         label: Facebook Event Link
+        required: false
       - name: poster
         label: Poster
         widget: image
+        required: false
       - name: description
         label: Description
         widget: markdown
+        required: false
       - name: speakers
         label: Speakers
         widget: list
+        required: false
         fields:
           - label: Name
             name: name
+            required: false
           - label: Image
             name: image
             widget: image
+            required: false
           - label: Bio
             name: bio
             widget: markdown
+            required: false
