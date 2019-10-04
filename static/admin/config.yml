@@ -9,13 +9,14 @@ collections:
     label: Event
     folder: src/events
     create: true
+    slug: &slug /{{slug}}
     fields:
       - name: title 
         label: Title
-      - name: slug
-        label: Slug
+      - name: path
+        label: Path
         widget: hidden
-        default: /{{slug}}
+        default: *slug
       - name: date
         label: Date
         widget: datetime
