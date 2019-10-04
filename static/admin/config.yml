@@ -12,10 +12,10 @@ collections:
     fields:
       - name: title 
         label: Title
-      - name: path
-        label: Path
+      - name: slug
+        label: Slug
         widget: hidden
-        default: "/{{slug}}"
+        default: /{{slug}}
       - name: date
         label: Date
         widget: datetime
