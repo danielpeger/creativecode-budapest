@@ -7,10 +7,41 @@ public_folder: assets
 collections:
   - name: event
     label: Event
-    folder: src/pages/events
+    folder: src/events
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - name: title 
+        label: Title
+      - name: path
+        label: Path
+        widget: hidden
+        default: /{slug}
+      - name: date
+        label: Date
+        widget: datetime
+      - name: location
+        label: Location
+      - name: googleMapsLink
+        label: Google Maps Link
+      - name: meetupEventLink
+        label: Meetup Event Link
+      - name: facebookEventLink
+        label: Facebook Event Link
+      - name: poster
+        label: Poster
+        widget: image
+      - name: description
+        label: Description
+        widget: markdown
+      - name: speakers
+        label: Speakers
+        widget: list
+        fields:
+          - label: Name
+            name: name
+          - label: Image
+            name: image
+            widget: image
+          - label: Bio
+            name: bio
+            widget: markdown
