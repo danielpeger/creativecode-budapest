@@ -3,19 +3,31 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 
 const Container = styled.div`
-	background: green;
+	background: black;
+  color: white;
 `
 
 export const EventLayout = ({
 	title,
-	date,
-	content,
+  date,
+  location,
+  googleMapsLink,
+  facebookEventLink,
+  meetupEventLink,
+  description
 }) => {
   return (
     <Container>
 			<h1>{title}</h1>
 			<h2>{date}</h2>
-			<div>{content}</div>
+      <ul>
+        <li><a href={googleMapsLink}>{location}</a></li>
+        <li><a href={meetupEventLink}>Meetup event</a></li>
+        <li><a href={facebookEventLink}>Facebook event</a></li>
+      </ul>
+      <div
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
     </Container>
   )
 }
@@ -29,7 +41,11 @@ export default function Template({
 		<EventLayout
 			title={frontmatter.title}
 			date={frontmatter.date}
-			content={html}
+      location={frontmatter.location}
+      googleMapsLink={frontmatter.googleMapsLink}
+      facebookEventLink={frontmatter.facebookEventLink}
+      meetupEventLink={frontmatter.meetupEventLink}
+      description={html}
 		/>
   )
 }
@@ -39,8 +55,12 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
+        date(formatString: "MMMM DD, YYYY")
+        location
+        googleMapsLink
+        facebookEventLink
+        meetupEventLink
       }
     }
   }
