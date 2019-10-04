@@ -1,6 +1,5 @@
 ---
 title: 'Meetup #5'
-path: '/meetup-5'
 date: 2019-10-04T15:37:47.531Z
 location: Zipernowsky Ház
 googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'

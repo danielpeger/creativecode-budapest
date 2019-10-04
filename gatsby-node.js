@@ -13,6 +13,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            id
             parent {
               ... on File {
                 name
@@ -20,6 +21,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             }
           }
         }
+      }
     }
   `)
 
@@ -33,7 +35,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.parent.name,
       component: eventTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        id: node.id,
+      }, // additional data can be passed via context
     })
   })
 }

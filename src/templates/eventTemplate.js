@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Container = styled.div`
 	background: green;
@@ -35,12 +35,11 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
         title
       }
     }
