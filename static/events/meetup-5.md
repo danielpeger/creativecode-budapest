@@ -6,28 +6,6 @@ googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
 facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
 poster: /assets/59756154_1230255883817306_7814005503951896576_n.jpg
-description: >-
-  Hey!
-
-
-  This will be our fifth community meetup! (well, if we don't count the previous
-  two meetups, but they didn't have any numbers in their title :) ) 
-
-
-  What to expect?
-
-
-  - nice, open and curious people
-
-
-  - 3 short talks to feed our brains with some new inspiration
-
-
-  - hanging out, getting to know each other, maybe making up future plans for
-  collaborations or exhibitions together.
-
-
-  We are all looking forward to seeing you!
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are
@@ -77,4 +55,14 @@ speakers:
     image: /assets/p1080896.jpg
     name: Peter Szegedi
 ---
+Hey!
 
+This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) ) 
+
+What to expect?
+
+- nice, open and curious people
+- 3 short talks to feed our brains with some new inspiration
+- hanging out, getting to know each other, maybe making up future plans for  collaborations or exhibitions together.
+
+We are all looking forward to seeing you!
