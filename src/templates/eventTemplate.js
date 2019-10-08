@@ -7,6 +7,21 @@ const Container = styled.div`
   color: white;
 `
 
+export const PhotoGrid  = ({
+  photos
+}) => {
+  return(
+    photos.map(photo => {
+      const transformedPhoto = photo.replace("upload/", "upload/w_800/");
+      return(
+        <a href={photo}>
+          <img src={transformedPhoto} alt="event" />
+        </a>
+      )
+    })
+  )
+};
+
 export const EventLayout = ({
 	title,
   date,
@@ -38,15 +53,20 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-		<EventLayout
-			title={frontmatter.title}
-			date={frontmatter.date}
-      location={frontmatter.location}
-      googleMapsLink={frontmatter.googleMapsLink}
-      facebookEventLink={frontmatter.facebookEventLink}
-      meetupEventLink={frontmatter.meetupEventLink}
-      description={html}
-		/>
+    <React.Fragment>
+      <EventLayout
+        title={frontmatter.title}
+        date={frontmatter.date}
+        location={frontmatter.location}
+        googleMapsLink={frontmatter.googleMapsLink}
+        facebookEventLink={frontmatter.facebookEventLink}
+        meetupEventLink={frontmatter.meetupEventLink}
+        description={html}
+      />
+      <PhotoGrid 
+        photos={frontmatter.photos}
+      />
+    </React.Fragment>
   )
 }
 
@@ -61,6 +81,7 @@ export const pageQuery = graphql`
         googleMapsLink
         facebookEventLink
         meetupEventLink
+        photos
       }
     }
   }
