@@ -4,6 +4,12 @@ backend:
 media_folder: static/images
 public_folder: images
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: creativecodebudapest
+    api_key: 875789426415856
+
 collections:
   - name: event
     label: Event
@@ -52,3 +58,12 @@ collections:
             name: bio
             widget: markdown
             required: false
+      - name: photos
+        label: Photos
+        widget: image
+        required: false
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
+            max_files: 500
