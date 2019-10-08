@@ -63,9 +63,11 @@ export default function Template({
         meetupEventLink={frontmatter.meetupEventLink}
         description={html}
       />
-      <PhotoGrid 
-        photos={frontmatter.photos}
-      />
+      {frontmatter.photos &&
+        <PhotoGrid 
+          photos={frontmatter.photos}
+        />
+      }
     </React.Fragment>
   )
 }
