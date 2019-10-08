@@ -54,6 +54,121 @@ speakers:
       game in his free time, and started creating an art game scene in Budapest.
     image: /assets/p1080896.jpg
     name: Peter Szegedi
+photos:
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566497/cc6/P1080905_mdj46t.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566497/cc6/P1080910_zhrfgq.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566497/cc6/P1080864_dyv4mm.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566496/cc6/P1080871_atvzdh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566493/cc6/P1080872_ihygqm.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566492/cc6/P1080867_kkfjga.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566492/cc6/P1080862_cyui0s.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566492/cc6/P1080889_kdps1f.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566489/cc6/P1080903_hwop1x.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566489/cc6/P1080876_rrvwzo.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566487/cc6/P1080863_rwynvt.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566484/cc6/P1080861_w2jwhd.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566484/cc6/P1080917_ymw4lx.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566484/cc6/P1080928_lzjkg9.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566484/cc6/P1080875_irpkrg.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566481/cc6/P1080900_j4v9a8.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566479/cc6/P1080967_nme8tn.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566479/cc6/P1080860_j3ukwx.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566478/cc6/P1080966_dsteax.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566476/cc6/P1080970_ppype4.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080965_nryarc.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566472/cc6/P1080838_jmynw6.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566472/cc6/P1080976_l509un.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566470/cc6/P1080829_x4tdj5.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566469/cc6/P1080833_rdmwao.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566467/cc6/P1080977_gymfmd.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566465/cc6/P1080990_fr5gcy.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566464/cc6/P1080953_qvxage.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566464/cc6/P1080951_h7thmg.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566463/cc6/P1080950_cgm5oc.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566461/cc6/P1080986_zngzpa.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566460/cc6/P1080940_oc4gr3.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566458/cc6/P1080831_frgweu.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566458/cc6/P1080942_z7e65k.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566458/cc6/P1080957_jxmugm.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566454/cc6/P1080968_obsd9x.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566452/cc6/P1080983_pxziee.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566452/cc6/P1080884_myu8s0.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566452/cc6/P1080879_snaxjo.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566447/cc6/P1080934_fidjst.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566447/cc6/P1080845_ehdbww.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566447/cc6/P1080881_a5wwdt.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566446/cc6/P1080893_nrgsey.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566444/cc6/P1080897_kpvpo2.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566444/cc6/P1080854_m9ymtz.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566442/cc6/P1080887_uytbsb.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566441/cc6/P1080896_obaebz.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566439/cc6/P1080882_lg3bsy.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566436/cc6/P1080924_u7fycr.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566436/cc6/P1080850_qdlavl.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566436/cc6/P1080844_szh3qj.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566433/cc6/P1080921_bsuj73.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566430/cc6/P1080909_q5ohig.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566430/cc6/P1080841_dbnku1.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566430/cc6/P1080918_o6ynmz.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566426/cc6/pop_jhtf6w.gif
 ---
 Hey!
 
