@@ -5,7 +5,6 @@ location: Zipernowsky Ház
 googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
 facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
-poster: /assets/59756154_1230255883817306_7814005503951896576_n.jpg
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are

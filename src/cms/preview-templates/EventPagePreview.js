@@ -1,5 +1,5 @@
 import React from 'react'
-import { EventLayout } from '../../templates/eventTemplate'
+import { EventLayout } from '../../pages/eventTemplate'
 
 const EventPreview = ({ entry, widgetFor }) => (
   <EventLayout
