@@ -23,6 +23,7 @@ speakers:
       She will talk about how to implement technology in education in a good
       manner and how digital interfaces are effecting our cognitive-system.
     name: Andrea Görcz
+    image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
   - bio: >-
       [Vlad](www.vrsh.in) is a visual artist and a creative director focused on
       immersive media and real-time computer graphics. He collaborates with

@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import CloudinaryImage from "../components/cloudinaryImage"
 
 const Container = styled.div`
 	background: black;
@@ -12,7 +13,7 @@ const Speaker = ({
 }) => {
   return(
     <React.Fragment>
-      {speaker.image && <img src={speaker.image} alt={speaker.name}/>}
+      {speaker.image && <CloudinaryImage src={speaker.image} width={300} alt={speaker.name}/>}
       <h3>{speaker.name}</h3>
       <p>{speaker.bio}</p>
     </React.Fragment>
@@ -24,10 +25,9 @@ export const PhotoGrid  = ({
 }) => {
   return(
     photos.map(photo => {
-      const transformedPhoto = photo.replace("upload/", "upload/w_800/");
       return(
         <a href={photo}>
-          <img src={transformedPhoto} alt="event" />
+          <CloudinaryImage src={photo} width={800} alt="Photo from the event"/>
         </a>
       )
     })
@@ -76,13 +76,7 @@ export default function Template({
         description={html}
       />
       {frontmatter.speakers &&
-        frontmatter.speakers.map(speaker => {
-          return(
-            <Speaker
-              speaker={speaker}
-            />
-          )
-        })
+        frontmatter.speakers.map(speaker => <Speaker speaker={speaker}/>)
       }
       {frontmatter.photos &&
         <PhotoGrid 
@@ -94,7 +88,7 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query($id: String) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
