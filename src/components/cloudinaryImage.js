@@ -1,27 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default class CloudinaryImage extends React.Component {
-	constructor(props){
-		super(props);
-		this.state = {
-			dpr: 1
-		}
-	}
-	
-	getDpr(){
-		this.setState({
-			dpr: window.devicePixelRatio
-		})
-	}
+const CloudinaryImage  = ({
+	src,
+	width,
+	alt
+}) => {
+	const [dpr, setDpr] = useState(1);
+	useEffect(() => { setDpr(window.devicePixelRatio) }, [setDpr]);
 
-	componentDidMount(){
-    this.getDpr();
-	}
-
-	render() {
-		const transformedSrc = this.props.src.replace("upload/", `upload/w_${this.props.width},dpr_${this.state.dpr}.0/`);
-    return(
-			<img src={transformedSrc} width={this.props.width} alt={this.props.alt}/>
-    )
-  }
+	const transformedSrc = src.replace("upload/", `upload/w_${width},dpr_${dpr}.0/`);
+	return(
+		<img src={transformedSrc} width={width} alt={alt}/>
+	)
 }
+
+export default CloudinaryImage;
