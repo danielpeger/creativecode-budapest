@@ -22,7 +22,6 @@ speakers:
 
       She will talk about how to implement technology in education in a good
       manner and how digital interfaces are effecting our cognitive-system.
-    image: /assets/p1080896.jpg
     name: Andrea Görcz
   - bio: >-
       [Vlad](www.vrsh.in) is a visual artist and a creative director focused on
@@ -32,7 +31,6 @@ speakers:
       immersive installations and spatial visual effects. He is a frequent
       public speaker at various art and tech conferences and runs the Creative
       XR community in Berlin.
-    image: /assets/p1080896.jpg
     name: Vladimir Storm
   - bio: >-
       [Péter](https://www.facebook.com/peter.szegedi) started working as a 3D
@@ -51,7 +49,6 @@ speakers:
 
       Now he’s back at NeocoreGames, and he is developing a Game Boy like retro
       game in his free time, and started creating an art game scene in Budapest.
-    image: /assets/p1080896.jpg
     name: Peter Szegedi
 photos:
   - >-

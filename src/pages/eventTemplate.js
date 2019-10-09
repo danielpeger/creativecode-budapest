@@ -7,6 +7,18 @@ const Container = styled.div`
   color: white;
 `
 
+const Speaker = ({
+  speaker
+}) => {
+  return(
+    <React.Fragment>
+      {speaker.image && <img src={speaker.image} alt={speaker.name}/>}
+      <h3>{speaker.name}</h3>
+      <p>{speaker.bio}</p>
+    </React.Fragment>
+  )
+}
+
 export const PhotoGrid  = ({
   photos
 }) => {
@@ -63,6 +75,15 @@ export default function Template({
         meetupEventLink={frontmatter.meetupEventLink}
         description={html}
       />
+      {frontmatter.speakers &&
+        frontmatter.speakers.map(speaker => {
+          return(
+            <Speaker
+              speaker={speaker}
+            />
+          )
+        })
+      }
       {frontmatter.photos &&
         <PhotoGrid 
           photos={frontmatter.photos}
@@ -83,6 +104,11 @@ export const pageQuery = graphql`
         googleMapsLink
         facebookEventLink
         meetupEventLink
+        speakers {
+          name
+          bio
+          image
+        }
         photos
       }
     }
