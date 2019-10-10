@@ -27,7 +27,7 @@ export const PhotoGrid  = ({
     photos.map(photo => {
       return(
         <a href={photo}>
-          <CloudinaryImage src={photo} width={800} alt="Photo from the event"/>
+          <CloudinaryImage src={photo} width={800} mobileWidth={300} alt="Photo from the event"/>
         </a>
       )
     })
