@@ -762,6 +762,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@charlietango/use-native-lazy-loading@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@charlietango/use-native-lazy-loading/-/use-native-lazy-loading-1.6.2.tgz#66ecc9e09e7ee9c6654282f3b7cc86c252f38b39"
+  integrity sha512-0mNpEZb0Cia1ny9XFPla+xLFTTFRmGjlwYjtA+NU/3ZNE/Iko8xqnL7zbcjUOcJiCp2kTNNVyzaYoKKqFbpG4Q==
+
 "@emotion/babel-utils@^0.6.4":
   version "0.6.10"
   resolved "https://registry.yarnpkg.com/@emotion/babel-utils/-/babel-utils-0.6.10.tgz#83dbf3dfa933fae9fc566e54fbb45f14674c6ccc"
@@ -9567,6 +9572,14 @@ react-input-autosize@^2.2.1:
   integrity sha512-jQJgYCA3S0j+cuOwzuCd1OjmBmnZLdqQdiLKRYrsMMzbjUrVDS5RvJUDwJqA7sKuksDuzFtm6hZGKFu7Mjk5aw==
   dependencies:
     prop-types "^15.5.8"
+
+react-intersection-observer@^8.24.2:
+  version "8.24.2"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.24.2.tgz#e4c2474aed39b0962fcde68ba3c12c3c05d28988"
+  integrity sha512-1l3eS/vZ3ScS6xawgeysl2z5hCtzJ2o4eYyQu4VdrbaahcWJccphPmZmQvFRsHA1tyKpMYV+KCrKfhuN5w8Erw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    invariant "^2.0.0"
 
 react-is@16.8.5:
   version "16.8.5"

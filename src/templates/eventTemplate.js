@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import CloudinaryImage from "../components/cloudinaryImage"
+import Image from "../components/Image"
 
 const Container = styled.div`
 	background: black;
@@ -13,7 +13,7 @@ const Speaker = ({
 }) => {
   return(
     <React.Fragment>
-      {speaker.image && <CloudinaryImage src={speaker.image} width={300} alt={speaker.name}/>}
+      {speaker.image && <Image src={speaker.image} width={300} alt={speaker.name}/>}
       <h3>{speaker.name}</h3>
       <p>{speaker.bio}</p>
     </React.Fragment>
@@ -24,10 +24,10 @@ export const PhotoGrid  = ({
   photos
 }) => {
   return(
-    photos.map(photo => {
+    photos.map((photo, index) => {
       return(
         //<a href={photo}> //don't link to original to save cloudinary bandwith
-          <CloudinaryImage src={photo} width={800} mobileWidth={300} alt="Photo from the event"/>
+          <Image src={photo} width={800} mobileWidth={300} alt="Photo from the event" key={index}/>
         //</a>
       )
     })
@@ -76,7 +76,7 @@ export default function Template({
         description={html}
       />
       {frontmatter.speakers &&
-        frontmatter.speakers.map(speaker => <Speaker speaker={speaker}/>)
+        frontmatter.speakers.map((speaker, index) => <Speaker speaker={speaker} key={index}/>)
       }
       {frontmatter.photos &&
         <PhotoGrid 
