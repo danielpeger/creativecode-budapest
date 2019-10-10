@@ -26,9 +26,9 @@ export const PhotoGrid  = ({
   return(
     photos.map(photo => {
       return(
-        <a href={photo}>
+        //<a href={photo}> //don't link to original to save cloudinary bandwith
           <CloudinaryImage src={photo} width={800} mobileWidth={300} alt="Photo from the event"/>
-        </a>
+        //</a>
       )
     })
   )

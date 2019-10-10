@@ -10,8 +10,8 @@ const CloudinaryImage  = ({
 	const [dpr, setDpr] = useState(1);
 	useEffect(() => { setDpr(window.devicePixelRatio) }, [setDpr]);
 
-	const defaultSrc = src.replace(`upload/`, `upload/w_${width},dpr_${dpr}.0/`);
-	const mobileSrc = src.replace(`upload/`, `upload/w_${mobileWidth},dpr_${dpr}.0/`);
+	const defaultSrc = src.replace(`upload/`, `upload/f_auto,w_${width},dpr_${dpr}.0/`);
+	const mobileSrc = src.replace(`upload/`, `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0/`);
 	return(
 		<picture>
 			<source srcset={mobileSrc} media={`(max-width: ${breakpoints.smallMax}px)`} />
