@@ -14,7 +14,7 @@ const CloudinaryImage  = ({
 	const mobileSrc = src.replace(`upload/`, `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0/`);
 	return(
 		<picture>
-			<source srcset={mobileSrc} media={`(max-width: ${breakpoints.smallMax}px)`} />
+			{mobileWidth && <source srcset={mobileSrc} media={`(max-width: ${breakpoints.smallMax}px)`} />}
 			<img src={defaultSrc} alt={alt} />
 		</picture>
 	)
