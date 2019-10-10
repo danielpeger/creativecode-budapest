@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import useNativeLazyLoading from "@charlietango/use-native-lazy-loading";
 import { useInView } from "react-intersection-observer";
-import { breakpoints } from '../utils/media';
+import media, { breakpoints } from '../utils/media';
 import styled from "styled-components"
 
 const Picture = styled.picture`
 	display: block;
 	width: ${props => props.width}px;
 	height: ${props => props.width / 3 * 2}px;
+
+	${media.smallDown`
+		width: ${props => props.mobileWidth}px;
+		height: ${props => props.mobileWidth / 3 * 2}px;
+	`}
+
+	img {
+		width: 100%;
+	}
 `;
 
 const Image  = ({
@@ -28,7 +37,7 @@ const Image  = ({
 	const defaultSrc = src.replace(`upload/`, `upload/f_auto,w_${width},dpr_${dpr}.0/`);
 	const mobileSrc = src.replace(`upload/`, `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0/`);
 	return(
-		<Picture ref={ref} width={width}>
+		<Picture ref={ref} width={width} mobileWidth={mobileWidth}>
 			{mobileWidth && <source srcSet={mobileSrc} media={`(max-width: ${breakpoints.smallMax}px)`} />}
 			{inView ? (
 				<img alt={alt} src={defaultSrc}/>
