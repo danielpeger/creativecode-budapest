@@ -5,11 +5,11 @@ import media, { breakpoints } from '../utils/media';
 import styled from "styled-components"
 
 const Picture = styled.picture`
-	display: block;
+	display: flex;
 
-	img {
-		width: ${props => props.width}px;
-		height: ${props => props.width / 3 * 2}px;
+	&, img {
+		width: ${props => props.Width}px;
+		height: ${props => props.Width / 3 * 2}px;
 
 		${media.smallDown`
 			width: ${props => props.mobileWidth}px;
@@ -38,7 +38,7 @@ const Image  = ({
 	return(
 		<Picture 
 			ref={supportsLazyLoading === false ? ref : undefined}
-			width={width}
+			Width={width}
 			mobileWidth={mobileWidth}
 		>
 			{mobileWidth && 
