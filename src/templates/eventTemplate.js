@@ -1,88 +1,37 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
-import Image from "../components/Image"
+import Speaker from "../components/Speaker"
+import EventHeader from "../components/EventHeader"
+import PhotoGrid from "../components/PhotoGrid"
 
-const Container = styled.div`
-	background: black;
-  color: white;
-`
-
-const Speaker = ({
-  speaker
-}) => {
-  return(
-    <React.Fragment>
-      {speaker.image && <Image src={speaker.image} width={300} alt={speaker.name}/>}
-      <h3>{speaker.name}</h3>
-      <p>{speaker.bio}</p>
-    </React.Fragment>
-  )
-}
-
-export const PhotoGrid  = ({
-  photos
-}) => {
-  return(
-    photos.map((photo, index) => {
-      return(
-        //<a href={photo}> //don't link to original to save cloudinary bandwith
-          <Image src={photo} width={800} mobileWidth={300} alt="Photo from the event" key={index}/>
-        //</a>
-      )
-    })
-  )
-};
-
-export const EventLayout = ({
-	title,
-  date,
-  location,
-  googleMapsLink,
-  facebookEventLink,
-  meetupEventLink,
-  description
-}) => {
-  return (
-    <Container>
-			<h1>{title}</h1>
-			<h2>{date}</h2>
-      <ul>
-        <li><a href={googleMapsLink}>{location}</a></li>
-        <li><a href={meetupEventLink}>Meetup event</a></li>
-        <li><a href={facebookEventLink}>Facebook event</a></li>
-      </ul>
-      <div
-        dangerouslySetInnerHTML={{ __html: description }}
-      />
-    </Container>
-  )
-}
-
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+export default function Template({ data }) {
+  const { frontmatter, html } = data.markdownRemark
+  const {
+    title,
+    date,
+    location,
+    googleMapsLink,
+    meetupEventLink,
+    facebookEventLink,
+    speakers,
+    photos,
+  } = frontmatter
   return (
     <React.Fragment>
-      <EventLayout
-        title={frontmatter.title}
-        date={frontmatter.date}
-        location={frontmatter.location}
-        googleMapsLink={frontmatter.googleMapsLink}
-        facebookEventLink={frontmatter.facebookEventLink}
-        meetupEventLink={frontmatter.meetupEventLink}
+      <EventHeader
+        title={title}
+        date={date}
+        location={location}
+        googleMapsLink={googleMapsLink}
+        facebookEventLink={facebookEventLink}
+        meetupEventLink={meetupEventLink}
         description={html}
       />
-      {frontmatter.speakers &&
-        frontmatter.speakers.map((speaker, index) => <Speaker speaker={speaker} key={index}/>)
-      }
-      {frontmatter.photos &&
-        <PhotoGrid 
-          photos={frontmatter.photos}
-        />
-      }
+      {speakers &&
+        speakers.map((speaker, index) => (
+          <Speaker speaker={speaker} key={index} />
+        ))}
+      {photos && <PhotoGrid photos={photos} />}
     </React.Fragment>
   )
 }
@@ -93,7 +42,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         location
         googleMapsLink
         facebookEventLink

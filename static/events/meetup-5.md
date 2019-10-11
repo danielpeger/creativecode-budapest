@@ -1,10 +1,10 @@
 ---
-title: 'Meetup #5'
-date: 2019-10-04T15:37:47.531Z
+title: "Meetup #5"
+date: 2019-12-04T15:37:47.531Z
 location: Zipernowsky Ház
-googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
-meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
-facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
+googleMapsLink: "https://goo.gl/maps/cz9do4sZWrBGii8fA"
+meetupEventLink: "https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/"
+facebookEventLink: "https://www.facebook.com/events/331593607538547/"
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are
@@ -167,14 +167,15 @@ photos:
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566426/cc6/pop_jhtf6w.gif
 ---
+
 Hey!
 
-This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) ) 
+This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) )
 
 What to expect?
 
 - nice, open and curious people
 - 3 short talks to feed our brains with some new inspiration
-- hanging out, getting to know each other, maybe making up future plans for  collaborations or exhibitions together.
+- hanging out, getting to know each other, maybe making up future plans for collaborations or exhibitions together.
 
 We are all looking forward to seeing you!
