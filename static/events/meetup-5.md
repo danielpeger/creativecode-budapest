@@ -1,7 +1,7 @@
 ---
 title: 'Meetup #5'
 date: 2019-12-04T15:37:47.531Z
-location: Zipernowsky Ház
+location: Zipernowsky Udvar
 googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
 facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
