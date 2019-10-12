@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./Image"
-import MarkdownToHtml from "../components/MarkdownToHtml"
+import MarkdownToHtml from "../utils/MarkdownToHtml"
 
 const Speaker = ({ speaker }) => {
   return (

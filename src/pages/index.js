@@ -1,14 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import EventCard from "../components/EventCard"
+import EventHeader from "../components/EventHeader"
 
-class FrontPage extends React.Component {
-  render() {
-    const events = this.props.data.allMarkdownRemark.edges
-    return (
+export default function FrontPage({ data }) {
+  const events = data.allMarkdownRemark.edges
+  const upcomingEvents = events.filter(
+    ({ node }) => new Date(node.frontmatter.date) > new Date()
+  )
+  const pastEvents = events.filter(
+    ({ node }) => new Date(node.frontmatter.date) < new Date()
+  )
+  return (
+    <React.Fragment>
       <div>
-        <h2>Past events</h2>
-        {events.map(({ node }) => {
+        {upcomingEvents.map(({ node }) => {
           const { poster, title, date, location, speakers } = node.frontmatter
           return (
             <EventCard
@@ -23,11 +29,26 @@ class FrontPage extends React.Component {
           )
         })}
       </div>
-    )
-  }
+      <div>
+        <h2>Past events</h2>
+        {pastEvents.map(({ node }) => {
+          const { poster, title, date, location, speakers } = node.frontmatter
+          return (
+            <EventCard
+              key={node.parent.id}
+              path={`/${node.parent.name}`}
+              poster={poster}
+              title={title}
+              date={date}
+              location={location}
+              speakers={speakers}
+            />
+          )
+        })}
+      </div>
+    </React.Fragment>
+  )
 }
-
-export default FrontPage
 
 export const pageQuery = graphql`
   query {
