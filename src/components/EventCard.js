@@ -17,11 +17,11 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
       )}
       <ul>
         <li>
-          {FacebookIcon}
+          <FacebookIcon />
           {date}
         </li>
         <li>
-          {FacebookIcon}
+          <FacebookIcon />
           {location}
         </li>
       </ul>
