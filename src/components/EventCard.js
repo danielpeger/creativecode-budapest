@@ -17,14 +17,18 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
         </small>
       )}
       <ul>
-        <li>
-          <ClockIcon />
-          {date}
-        </li>
-        <li>
-          <PinIcon />
-          {location}
-        </li>
+        {date && (
+          <li>
+            <ClockIcon />
+            {date}
+          </li>
+        )}
+        {location && (
+          <li>
+            <PinIcon />
+            {location}
+          </li>
+        )}
       </ul>
     </Link>
   )
