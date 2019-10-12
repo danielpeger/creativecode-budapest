@@ -4,10 +4,10 @@ import EventCard from "../components/EventCard"
 
 class FrontPage extends React.Component {
   render() {
-    const { data } = this.props
-    const events = data.allMarkdownRemark.edges
+    const events = this.props.data.allMarkdownRemark.edges
     return (
-      <ul>
+      <div>
+        <h2>Past events</h2>
         {events.map(({ node }) => {
           const { poster, title, date, location, speakers } = node.frontmatter
           return (
@@ -22,7 +22,7 @@ class FrontPage extends React.Component {
             />
           )
         })}
-      </ul>
+      </div>
     )
   }
 }

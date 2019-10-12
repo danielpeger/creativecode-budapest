@@ -3,12 +3,13 @@ import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
+import DateString from "./DateString"
 
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <Link to={path}>
       {poster && <Image src={poster} width={300} />}
-      <p>{title}</p>
+      <h3>{title}</h3>
       {speakers && (
         <small>
           with&nbsp;
@@ -27,7 +28,7 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
         {date && (
           <li>
             <ClockIcon />
-            {date}
+            <DateString date={date} format={"short"} />
           </li>
         )}
         {location && (
