@@ -25,7 +25,7 @@ const EventHeader = ({
           <a href={facebookEventLink}>Facebook event</a>
         </li>
       </ul>
-      <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div dangerouslySetInnerHTML={{ __html: description }}></div>
     </React.Fragment>
   )
 }
