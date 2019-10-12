@@ -1,5 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import EventCard from "../components/EventCard"
+import { Link } from "gatsby"
 
 class FrontPage extends React.Component {
   render() {
@@ -8,10 +10,19 @@ class FrontPage extends React.Component {
     return (
       <ul>
         {events.map(({ node }) => {
+          const { poster, title, date, location, speakers } = node.frontmatter
           return (
-            <li>
-              <Link to={node.parent.name}> {node.frontmatter.title} </Link>
-            </li>
+            // <li>
+            //   <Link to={node.parent.name}> {node.frontmatter.title} </Link>
+            // </li>
+            <EventCard
+              path={`/${node.parent.name}`}
+              poster={poster}
+              title={title}
+              date={date}
+              location={location}
+              key={node.parent.id}
+            />
           )
         })}
       </ul>
@@ -32,10 +43,17 @@ export const pageQuery = graphql`
           parent {
             ... on File {
               name
+              id
             }
           }
           frontmatter {
+            poster
             title
+            date
+            location
+            speakers {
+              name
+            }
           }
         }
       }

@@ -19,6 +19,6 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    `gatsby-transformer-remark`
-  ]
+    `gatsby-transformer-remark`,
+  ],
 }
