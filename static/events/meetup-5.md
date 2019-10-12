@@ -1,10 +1,12 @@
 ---
-title: "Meetup #5"
+title: 'Meetup #5'
 date: 2019-12-04T15:37:47.531Z
 location: Zipernowsky Ház
-googleMapsLink: "https://goo.gl/maps/cz9do4sZWrBGii8fA"
-meetupEventLink: "https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/"
-facebookEventLink: "https://www.facebook.com/events/331593607538547/"
+googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
+meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
+facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
+poster: >-
+  https://res.cloudinary.com/creativecodebudapest/image/upload/v1570906591/IMG_1694_krpxlc.jpg
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are
@@ -22,8 +24,9 @@ speakers:
 
       She will talk about how to implement technology in education in a good
       manner and how digital interfaces are effecting our cognitive-system.
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
     name: Andrea Görcz
-    image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
   - bio: >-
       [Vlad](www.vrsh.in) is a visual artist and a creative director focused on
       immersive media and real-time computer graphics. He collaborates with
