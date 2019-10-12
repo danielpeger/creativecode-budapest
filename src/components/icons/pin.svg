@@ -1,0 +1,13 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	aria-label="pin icon"
+	viewBox="0 0 24 24"
+>
+	<path
+		fill="currentColor"
+		fill-rule="evenodd"
+		d="M22 2v16h-6l-4 4-4-4H2V2h20zm-8 6h-4v4h4V8z"
+	/>
+</svg>

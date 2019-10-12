@@ -1,0 +1,13 @@
+<svg 
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	aria-label="arrow icon"
+	viewBox="0 0 24 24"
+>
+	<path
+		fill="currentColor"
+		fill-rule="evenodd"
+		d="M22 2v20H2V2h20zm-9 4.34l-1.41 1.42L14.83 11H6v2h8.83l-3.24 3.24L13 17.66 18.66 12 13 6.34z"
+	/>
+</svg>

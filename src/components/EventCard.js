@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "./Image"
-import FacebookIcon from "./icons/facebook.svg"
+import ClockIcon from "./icons/clock.svg"
+import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
@@ -17,11 +18,11 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
       )}
       <ul>
         <li>
-          <FacebookIcon />
+          <ClockIcon />
           {date}
         </li>
         <li>
-          <FacebookIcon />
+          <PinIcon />
           {location}
         </li>
       </ul>
