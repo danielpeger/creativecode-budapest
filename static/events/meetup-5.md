@@ -28,8 +28,8 @@ speakers:
       https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
     name: Andrea Görcz
   - bio: >-
-      [Vlad](www.vrsh.in) is a visual artist and a creative director focused on
-      immersive media and real-time computer graphics. He collaborates with
+      [Vlad](http://vrsh.in/) is a visual artist and a creative director focused
+      on immersive media and real-time computer graphics. He collaborates with
       volumetric filmmakers and game studios, universities and science labs,
       museums and creative agencies to design unique interactive storytelling,
       immersive installations and spatial visual effects. He is a frequent
