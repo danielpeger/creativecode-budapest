@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Speaker from "../components/Speaker"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
 
@@ -26,11 +25,8 @@ export default function Template({ data }) {
         facebookEventLink={facebookEventLink}
         meetupEventLink={meetupEventLink}
         description={html}
+        speakers={speakers}
       />
-      {speakers &&
-        speakers.map((speaker, index) => (
-          <Speaker speaker={speaker} key={index} />
-        ))}
       {photos && <PhotoGrid photos={photos} />}
     </React.Fragment>
   )

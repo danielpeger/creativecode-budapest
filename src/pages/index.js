@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 
@@ -15,16 +15,27 @@ export default function FrontPage({ data }) {
     <React.Fragment>
       <div>
         {upcomingEvents.map(({ node }) => {
-          const { poster, title, date, location, speakers } = node.frontmatter
+          const {
+            title,
+            date,
+            location,
+            googleMapsLink,
+            facebookEventLink,
+            meetupEventLink,
+            speakers,
+          } = node.frontmatter
           return (
-            <EventCard
+            <EventHeader
               key={node.parent.id}
               path={`/${node.parent.name}`}
-              poster={poster}
               title={title}
               date={date}
               location={location}
+              googleMapsLink={googleMapsLink}
+              facebookEventLink={facebookEventLink}
+              meetupEventLink={meetupEventLink}
               speakers={speakers}
+              description={node.html}
             />
           )
         })}
@@ -69,10 +80,16 @@ export const pageQuery = graphql`
             title
             date
             location
+            googleMapsLink
+            facebookEventLink
+            meetupEventLink
             speakers {
               name
+              bio
+              image
             }
           }
+          html
         }
       }
     }
