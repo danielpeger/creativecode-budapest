@@ -11,8 +11,15 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
       <p>{title}</p>
       {speakers && (
         <small>
-          {speakers.map(({ speaker }) => {
-            return <span>{speaker.name}, </span>
+          with&nbsp;
+          {speakers.map((speaker, index) => {
+            if (index === 0) {
+              return speaker.name
+            } else if (index === speakers.length - 1) {
+              return ` and ${speaker.name}`
+            } else {
+              return `, ${speaker.name}`
+            }
           })}
         </small>
       )}

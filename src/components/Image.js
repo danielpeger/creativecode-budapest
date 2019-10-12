@@ -51,7 +51,6 @@ const Image = ({ src, width, mobileWidth, alt }) => {
           media={`(max-width: ${breakpoints.smallMax}px)`}
         />
       )}
-      {console.log(inView)}
       {inView || supportsLazyLoading ? (
         <img
           alt={alt}
