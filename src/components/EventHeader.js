@@ -17,9 +17,9 @@ const EventHeader = ({
   return (
     <React.Fragment>
       <h3>{new Date(date) > new Date() ? "Upcoming event" : "Past Event"}</h3>
-      <h1>
+      <h2>
         <Link to={path}>{title}</Link>
-      </h1>
+      </h2>
       <ul>
         <li>
           <DateString date={date} />
