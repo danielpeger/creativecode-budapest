@@ -1,7 +1,13 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
+import Button from "../components/Button"
+import Section from "../components/Section"
+import FacebookIcon from "../components/icons/facebook.svg"
+import MeetupIcon from "../components/icons/meetup.svg"
+import ArrowIcon from "../components/icons/arrow.svg"
+import TextInput from "../components/TextInput"
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -14,7 +20,7 @@ export default function FrontPage({ data }) {
   return (
     <React.Fragment>
       <h1>Creative Code Budapest</h1>
-      <div>
+      <section>
         <p>Hey!</p>
         <p>
           This is a community meetup for creative coders, new media artists,
@@ -33,8 +39,8 @@ export default function FrontPage({ data }) {
           safe environment. Beginners and first-timers should feel especially
           welcome!
         </p>
-      </div>
-      <div>
+      </section>
+      <Section>
         {upcomingEvents.map(({ node }) => {
           const {
             title,
@@ -60,9 +66,8 @@ export default function FrontPage({ data }) {
             />
           )
         })}
-      </div>
-      <div>
-        <h2>Past events</h2>
+      </Section>
+      <Section heading="Past events">
         {pastEvents.map(({ node }) => {
           const { poster, title, date, location, speakers } = node.frontmatter
           return (
@@ -77,7 +82,43 @@ export default function FrontPage({ data }) {
             />
           )
         })}
-      </div>
+      </Section>
+      <Section
+        heading="Open call"
+        subheading="We're always looking for new speakers."
+      >
+        <Button name="mail">Drop us a line</Button>
+      </Section>
+      <Section heading="Join us">
+        <Button
+          name="meetup"
+          href="https://www.meetup.com/Creative-Code-Budapest/"
+        >
+          <MeetupIcon />
+          Join the meetup group
+        </Button>
+        <Button
+          name="facebook"
+          href="https://www.facebook.com/Creative-Code-Budapest-1018103511699212"
+        >
+          <FacebookIcon />
+          Like the facebook page
+        </Button>
+        <Button
+          name="facebook group"
+          href="https://www.facebook.com/groups/713325655681231/"
+        >
+          <FacebookIcon />
+          Join the facebook group
+        </Button>
+      </Section>
+      <Section heading="Newsletter" subheading="Sign up to get event info">
+        <TextInput placeholder="Your email" />
+        <Button name="newsletter">
+          Sign up
+          <ArrowIcon />
+        </Button>
+      </Section>
     </React.Fragment>
   )
 }
