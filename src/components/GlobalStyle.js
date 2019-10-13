@@ -48,11 +48,11 @@ export const Root = styled.main`
 	--white: #fff;
 	--highlight: #1e00c2;
 
-	${media.xSmallOnly`--size-s: 8px;`}
-	${media.smallOnly`--size-s: 9px;`}
-	${media.mediumOnly`--size-s: 10px;`}
-	${media.largeOnly`--size-s: 11px;`}
-	${media.xLargeOnly`--size-s: 12px;`}
+	${media.xSmallOnly`--size-s: 12px;`}
+	${media.smallOnly`--size-s: 13px;`}
+	${media.mediumOnly`--size-s: 14px;`}
+	${media.largeOnly`--size-s: 15px;`}
+	${media.xLargeOnly`--size-s: 16px;`}
 	--size-xxs: calc(var(--size-s) / ${Math.pow(scale, 2)});
 	--size-xs: calc(var(--size-s) / ${scale});
 	--size-m: calc(var(--size-s) * ${scale});
@@ -60,6 +60,49 @@ export const Root = styled.main`
 	--size-xl: calc(var(--size-s) * ${Math.pow(scale, 3)});
 	--size-xxl: calc(var(--size-s) * ${Math.pow(scale, 4)});
 	--size-xxxl: calc(var(--size-s) * ${Math.pow(scale, 5)});
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+	}
+
+	h1 {
+		line-height: var(--size-xxl);
+		font-size: var(--size-xl);
+	}
+
+	h2 {
+		line-height: var(--size-xl);
+		font-size: var(--size-l);
+	}
+
+	p,
+	h3,
+	ul {
+		line-height: var(--size-l);
+		font-size: var(--size-m);
+		margin: 0 0 var(--size-m) 0;
+	}
+
+	a {
+		color: var(--black);
+		font-style: italic;
+		&:focus {
+			outline-color: var(--black);
+			outline-style: dashed;
+			outline-width: 2px;
+		}
+		&:hover,
+		&:visited {
+			color: var(--gray);
+			outline-color: var(--gray);
+		}
+		&:active {
+			outline-color: var(--lightgray);
+			color: var(--lightgray);
+		}
+	}
 `
 
 export default GlobalStyle

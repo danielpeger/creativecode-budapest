@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
+import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 export default function Template({ data }) {
   const { frontmatter, html } = data.markdownRemark
@@ -16,7 +17,8 @@ export default function Template({ data }) {
     photos,
   } = frontmatter
   return (
-    <React.Fragment>
+    <Root>
+      <GlobalStyle />
       <EventHeader
         title={title}
         date={date}
@@ -28,7 +30,7 @@ export default function Template({ data }) {
         speakers={speakers}
       />
       {photos && <PhotoGrid photos={photos} />}
-    </React.Fragment>
+    </Root>
   )
 }
 
