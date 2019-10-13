@@ -85,24 +85,21 @@ export const Root = styled.main`
 		margin: 0 0 var(--size-m) 0;
 	}
 
-	a {
-		color: var(--black);
-		font-style: italic;
-		&:focus {
-			outline-color: var(--black);
-			outline-style: dashed;
-			outline-width: 2px;
-		}
-		&:hover,
-		&:visited {
-			color: var(--gray);
-			outline-color: var(--gray);
-		}
-		&:active {
-			outline-color: var(--lightgray);
-			color: var(--lightgray);
-		}
-	}
+  a {
+    color: var(--white);
+    &:focus {
+      outline-color: var(--white);
+    }
+    &:hover {
+      color: var(--lightgray);
+      outline-color: var(--lightgray);
+    }
+    &:active,
+    &:visited {
+      color: var(--gray);
+      outline-color: var(--gray);
+    }
+  }
 `
 
 export default GlobalStyle
