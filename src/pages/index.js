@@ -8,6 +8,7 @@ import FacebookIcon from "../components/icons/facebook.svg"
 import MeetupIcon from "../components/icons/meetup.svg"
 import ArrowIcon from "../components/icons/arrow.svg"
 import TextInput from "../components/TextInput"
+import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -18,7 +19,8 @@ export default function FrontPage({ data }) {
     ({ node }) => new Date(node.frontmatter.date) < new Date()
   )
   return (
-    <React.Fragment>
+    <Root>
+      <GlobalStyle />
       <h1>Creative Code Budapest</h1>
       <section>
         <p>Hey!</p>
@@ -119,7 +121,7 @@ export default function FrontPage({ data }) {
           <ArrowIcon />
         </Button>
       </Section>
-    </React.Fragment>
+    </Root>
   )
 }
 

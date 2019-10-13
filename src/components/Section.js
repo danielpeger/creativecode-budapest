@@ -1,12 +1,17 @@
 import React from "react"
+import styled from "styled-components"
+
+const SectionElement = styled.section`
+  border-top: 4px solid black;
+`
 
 const Section = ({ heading, subheading, children }) => {
   return (
-    <section>
+    <SectionElement>
       {heading && <h2>{heading}</h2>}
       {subheading && <p>{subheading}</p>}
       {children}
-    </section>
+    </SectionElement>
   )
 }
 
