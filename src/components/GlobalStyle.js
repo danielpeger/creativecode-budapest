@@ -53,10 +53,10 @@ export const Root = styled.main`
 	--white: #fff;
 	--highlight: #1e00c2;
 
-	${media.xSmallOnly`--size-m: 15px;`}
-	${media.smallOnly`--size-m: 15px;`}
-	${media.mediumOnly`--size-m: 16px;`}
-	${media.largeOnly`--size-m: 18px;`}
+	${media.xSmallOnly`--size-m: 16px;`}
+	${media.smallOnly`--size-m: 17px;`}
+	${media.mediumOnly`--size-m: 18px;`}
+	${media.largeOnly`--size-m: 19px;`}
 	${media.xLargeOnly`--size-m: 20px;`}
 	--size-xxs: calc(var(--size-m) / ${Math.pow(scale, 3)});
 	--size-xs: calc(var(--size-m) / ${Math.pow(scale, 2)});

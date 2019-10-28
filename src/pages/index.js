@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import Button from "../components/Button"
@@ -9,6 +10,17 @@ import MeetupIcon from "../components/icons/meetup.svg"
 import ArrowIcon from "../components/icons/arrow.svg"
 import TextInput from "../components/TextInput"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
+
+const Hero = styled.div`
+  grid-column: 1 / -1;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+`
+
+const Intro = styled.div`
+  grid-column: span 7;
+`
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -21,27 +33,33 @@ export default function FrontPage({ data }) {
   return (
     <Root>
       <GlobalStyle />
-      <h1>Creative Code Budapest</h1>
-      <section>
-        <p>Hey!</p>
-        <p>
-          This is a community meetup for creative coders, new media artists,
-          pixel tinkerers, arduino masters, nerds, habitants of virtual and
-          augmented realities and curious people.
-        </p>
-        <p>
-          Our mission is to spread knowledge about computational art, build
-          bridges with other disciplines, support each other's projects and,
-          maybe, inspire you to start your own... :)
-        </p>
-        <p>
-          Our meetups are free and open to all, regardless of age, origin,
-          gender or experience. They are an opportunity to meet likeminded
-          people, share inspiration and get creative together in a relaxed and
-          safe environment. Beginners and first-timers should feel especially
-          welcome!
-        </p>
-      </section>
+      <Section noseparator>
+        <Hero>
+          <h1>Creative Code Budapest</h1>
+        </Hero>
+      </Section>
+      <Section noseparator>
+        <Intro>
+          <p>Hey!</p>
+          <p>
+            This is a community meetup for creative coders, new media artists,
+            pixel tinkerers, arduino masters, nerds, habitants of virtual and
+            augmented realities and curious people.
+          </p>
+          <p>
+            Our mission is to spread knowledge about computational art, build
+            bridges with other disciplines, support each other's projects and,
+            maybe, inspire you to start your own... :)
+          </p>
+          <p>
+            Our meetups are free and open to all, regardless of age, origin,
+            gender or experience. They are an opportunity to meet likeminded
+            people, share inspiration and get creative together in a relaxed and
+            safe environment. Beginners and first-timers should feel especially
+            welcome!
+          </p>
+        </Intro>
+      </Section>
       <Section>
         {upcomingEvents.map(({ node }) => {
           const {
