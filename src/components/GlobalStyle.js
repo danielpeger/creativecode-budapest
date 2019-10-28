@@ -1,31 +1,36 @@
 import styled, { createGlobalStyle } from "styled-components"
 import media from "../utils/media"
+import ObjectSansRegular from "../../static/font/ObjectSans-Regular.otf"
+import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
+import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
+import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.33
+const scale = 1.45
+
 const GlobalStyle = createGlobalStyle`
 	@font-face {
 		font-family: Object Sans;
 		font-weight: normal;
-		src: url("../../static/font/ObjectSans-Regular.otf") format("opentype");
+		src: url(${ObjectSansRegular}) format("opentype");
 	}
 
 	@font-face {
 		font-family: Object Sans;
 		font-weight: bold;
-		src: url("../../static/font/ObjectSans-Heavy.otf") format("opentype");
+		src: url(${ObjectSansHeavy}) format("opentype");
 	}
 
 	@font-face {
 		font-family: Object Sans;
 		font-style: italic;
-		src: url("../../static/font/ObjectSans-Slanted") format("opentype");
+		src: url(${ObjectSansSlanted}) format("opentype");
 	}
 
 	@font-face {
 		font-family: Object Sans;
 		font-weight: bold;
 		font-style: italic;
-		src: url("../../static/font/ObjectSans-HeavySlanted") format("opentype");
+		src: url(${ObjectSansHeavySlanted}) format("opentype");
 	}
 	
   body {
@@ -48,18 +53,18 @@ export const Root = styled.main`
 	--white: #fff;
 	--highlight: #1e00c2;
 
-	${media.xSmallOnly`--size-s: 12px;`}
-	${media.smallOnly`--size-s: 13px;`}
-	${media.mediumOnly`--size-s: 14px;`}
-	${media.largeOnly`--size-s: 15px;`}
-	${media.xLargeOnly`--size-s: 16px;`}
-	--size-xxs: calc(var(--size-s) / ${Math.pow(scale, 2)});
-	--size-xs: calc(var(--size-s) / ${scale});
-	--size-m: calc(var(--size-s) * ${scale});
-	--size-l: calc(var(--size-s) * ${Math.pow(scale, 2)});
-	--size-xl: calc(var(--size-s) * ${Math.pow(scale, 3)});
-	--size-xxl: calc(var(--size-s) * ${Math.pow(scale, 4)});
-	--size-xxxl: calc(var(--size-s) * ${Math.pow(scale, 5)});
+	${media.xSmallOnly`--size-m: 15px;`}
+	${media.smallOnly`--size-m: 15px;`}
+	${media.mediumOnly`--size-m: 16px;`}
+	${media.largeOnly`--size-m: 18px;`}
+	${media.xLargeOnly`--size-m: 20px;`}
+	--size-xxs: calc(var(--size-m) / ${Math.pow(scale, 3)});
+	--size-xs: calc(var(--size-m) / ${Math.pow(scale, 2)});
+	--size-s: calc(var(--size-m) / ${scale});
+	--size-l: calc(var(--size-m) * ${scale});
+	--size-xl: calc(var(--size-m) * ${Math.pow(scale, 2)});
+	--size-xxl: calc(var(--size-m) * ${Math.pow(scale, 3)});
+	--size-xxxl: calc(var(--size-m) * ${Math.pow(scale, 4)});
 
 	h1,
 	h2,
