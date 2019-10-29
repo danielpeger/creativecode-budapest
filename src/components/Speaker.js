@@ -11,9 +11,9 @@ const SpeakerElement = styled.div`
     background: var(--white);
     grid-column: 1 / 2;
     width: 100%;
-    height: auto;
+    height: initial;
 
-    &::before {
+    &:empty::before {
       content: "";
       display: inline-block;
       width: 1px;
@@ -22,8 +22,8 @@ const SpeakerElement = styled.div`
     }
 
     img {
+      display: block;
       width: 100%;
-      object-fit: cover;
       height: initial;
     }
   }
@@ -41,7 +41,13 @@ const Speaker = ({ speaker }) => {
   return (
     <SpeakerElement>
       {speaker.image ? (
-        <Image src={speaker.image} width={300} alt={speaker.name} />
+        <Image
+          src={speaker.image}
+          width={130}
+          aspectRatio={1}
+          alt={speaker.name}
+          customTransformations="ar_1,g_face,c_thumb,z_0.7"
+        />
       ) : (
         <picture></picture>
       )}

@@ -9,6 +9,7 @@ const PhotoGrid = ({ photos }) => {
         src={photo}
         width={800}
         mobileWidth={300}
+        aspectRatio={3 / 2}
         alt="Photo from the event"
         key={index}
       />

@@ -5,21 +5,29 @@ import media, { breakpoints } from "../utils/media"
 import styled from "styled-components"
 
 const Picture = styled.picture`
-  display: flex;
+  display: block;
 
   &,
   img {
     width: ${props => props.Width}px;
-    height: ${props => (props.Width / 3) * 2}px;
+    height: ${props => props.Width / props.AspectRatio}px;
 
     ${media.smallDown`
 			width: ${props => props.mobileWidth}px;
-			height: ${props => (props.mobileWidth / 3) * 2}px;
+			height: ${props => props.mobileWidth / props.AspectRatio}px;
 		`}
   }
 `
 
-const Image = ({ className, src, width, mobileWidth, alt }) => {
+const Image = ({
+  className,
+  src,
+  aspectRatio,
+  width,
+  mobileWidth,
+  customTransformations,
+  alt,
+}) => {
   const [dpr, setDpr] = useState(1)
   useEffect(() => {
     setDpr(window.devicePixelRatio)
@@ -33,16 +41,21 @@ const Image = ({ className, src, width, mobileWidth, alt }) => {
 
   const defaultSrc = src.replace(
     `upload/`,
-    `upload/f_auto,w_${width},dpr_${dpr}.0/`
+    `upload/f_auto,w_${width},ar_${aspectRatio},dpr_${dpr}.0,${
+      customTransformations ? customTransformations : ""
+    }/`
   )
   const mobileSrc = src.replace(
     `upload/`,
-    `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0/`
+    `upload/f_auto,w_${mobileWidth},ar_${aspectRatio},dpr_${dpr}.0,${
+      customTransformations ? customTransformations : ""
+    }/`
   )
   return (
     <Picture
       ref={supportsLazyLoading === false ? ref : undefined}
       Width={width}
+      AspectRatio={aspectRatio}
       mobileWidth={mobileWidth}
       className={className}
     >
@@ -58,7 +71,7 @@ const Image = ({ className, src, width, mobileWidth, alt }) => {
           src={defaultSrc}
           loading="lazy"
           width={width}
-          height={(width / 3) * 2}
+          height={width / aspectRatio}
         />
       ) : null}
     </Picture>

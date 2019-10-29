@@ -8,7 +8,7 @@ import DateString from "./DateString"
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <Link to={path}>
-      {poster && <Image src={poster} width={300} />}
+      {poster && <Image src={poster} width={300} aspectRatio={2 / 3} />}
       <h3>{title}</h3>
       {speakers && (
         <small>

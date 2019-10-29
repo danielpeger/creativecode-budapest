@@ -55,9 +55,7 @@ const EventHeader = ({
     <EventHeaderElement>
       <aside>
         <h3>{new Date(date) > new Date() ? "Upcoming event" : "Past Event"}</h3>
-        <h2>
-          <Link to={path}>{title}</Link>
-        </h2>
+        <h2>{title}</h2>
         <ul>
           <li>
             <DateString date={date} />
