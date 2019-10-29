@@ -1,14 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import media from "../utils/media"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import Button from "../components/Button"
 import Section from "../components/Section"
-import FacebookIcon from "../components/icons/facebook.svg"
-import MeetupIcon from "../components/icons/meetup.svg"
-import ArrowIcon from "../components/icons/arrow.svg"
-import TextInput from "../components/TextInput"
+import Footer from "../components/Footer"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 const Hero = styled.div`
@@ -20,6 +18,7 @@ const Hero = styled.div`
 
 const Intro = styled.div`
   grid-column: span 7;
+  ${media.smallOnly`grid-column: span 5;`}
 `
 
 export default function FrontPage({ data }) {
@@ -60,33 +59,33 @@ export default function FrontPage({ data }) {
           </p>
         </Intro>
       </Section>
-      <Section>
-        {upcomingEvents.map(({ node }) => {
-          const {
-            title,
-            date,
-            location,
-            googleMapsLink,
-            facebookEventLink,
-            meetupEventLink,
-            speakers,
-          } = node.frontmatter
-          return (
-            <EventHeader
-              key={node.parent.id}
-              path={`/${node.parent.name}`}
-              title={title}
-              date={date}
-              location={location}
-              googleMapsLink={googleMapsLink}
-              facebookEventLink={facebookEventLink}
-              meetupEventLink={meetupEventLink}
-              speakers={speakers}
-              description={node.html}
-            />
-          )
-        })}
-      </Section>
+
+      {upcomingEvents.map(({ node }) => {
+        const {
+          title,
+          date,
+          location,
+          googleMapsLink,
+          facebookEventLink,
+          meetupEventLink,
+          speakers,
+        } = node.frontmatter
+        return (
+          <EventHeader
+            key={node.parent.id}
+            path={`/${node.parent.name}`}
+            title={title}
+            date={date}
+            location={location}
+            googleMapsLink={googleMapsLink}
+            facebookEventLink={facebookEventLink}
+            meetupEventLink={meetupEventLink}
+            speakers={speakers}
+            description={node.html}
+          />
+        )
+      })}
+
       <Section heading="Past events">
         {pastEvents.map(({ node }) => {
           const { poster, title, date, location, speakers } = node.frontmatter
@@ -109,36 +108,7 @@ export default function FrontPage({ data }) {
       >
         <Button name="mail">Drop us a line</Button>
       </Section>
-      <Section heading="Join us">
-        <Button
-          name="meetup"
-          href="https://www.meetup.com/Creative-Code-Budapest/"
-        >
-          <MeetupIcon />
-          Join the meetup group
-        </Button>
-        <Button
-          name="facebook"
-          href="https://www.facebook.com/Creative-Code-Budapest-1018103511699212"
-        >
-          <FacebookIcon />
-          Like the facebook page
-        </Button>
-        <Button
-          name="facebook group"
-          href="https://www.facebook.com/groups/713325655681231/"
-        >
-          <FacebookIcon />
-          Join the facebook group
-        </Button>
-      </Section>
-      <Section heading="Newsletter" subheading="Sign up to get event info">
-        <TextInput placeholder="Your email" />
-        <Button name="newsletter">
-          Sign up
-          <ArrowIcon />
-        </Button>
-      </Section>
+      <Footer></Footer>
     </Root>
   )
 }

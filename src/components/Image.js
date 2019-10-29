@@ -19,7 +19,7 @@ const Picture = styled.picture`
   }
 `
 
-const Image = ({ src, width, mobileWidth, alt }) => {
+const Image = ({ className, src, width, mobileWidth, alt }) => {
   const [dpr, setDpr] = useState(1)
   useEffect(() => {
     setDpr(window.devicePixelRatio)
@@ -44,6 +44,7 @@ const Image = ({ src, width, mobileWidth, alt }) => {
       ref={supportsLazyLoading === false ? ref : undefined}
       Width={width}
       mobileWidth={mobileWidth}
+      className={className}
     >
       {mobileWidth && (
         <source

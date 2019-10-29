@@ -4,15 +4,26 @@ import media from "../utils/media"
 
 const SectionElement = styled.section`
   display: grid;
-  ${media.smallDown`
+  place-items: start;
+
+  ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
+  `}
+  ${media.smallDown`
     grid-column-gap: var(--size-m);
   `}
-  ${media.mediumDown`
-    margin: 0 var(--size-xl);
+  ${media.smallOnly`
+    grid-template-columns: repeat(6, 1fr);
   `}
-  ${media.mediumOnly`grid-template-columns: repeat(6, 1fr);`}
-  ${media.mediumUp`grid-column-gap: var(--size-l);`}
+  ${media.mediumDown`
+    margin: 0 var(--size-l) var(--size-xxxl) var(--size-l);
+  `}
+  ${media.mediumOnly`
+    grid-template-columns: repeat(8, 1fr);
+  `}
+  ${media.mediumUp`
+    grid-column-gap: var(--size-l);
+  `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
     max-width: calc(var(--size-xxxl) * 14);
@@ -22,13 +33,13 @@ const SectionElement = styled.section`
   ${props =>
     !props.noseparator &&
     css`
-      border-top: 4px solid var(--white);
+      border-top: var(--size-xxs) solid var(--white);
     `}
 `
 
-const Section = ({ heading, subheading, noseparator, children }) => {
+const Section = ({ className, heading, subheading, noseparator, children }) => {
   return (
-    <SectionElement noseparator={noseparator}>
+    <SectionElement noseparator={noseparator} className={className}>
       {heading && <h2>{heading}</h2>}
       {subheading && <p>{subheading}</p>}
       {children}

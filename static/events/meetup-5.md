@@ -1,28 +1,22 @@
 ---
-title: 'Meetup #5'
+title: "Meetup #5"
 date: 2019-12-04T15:37:47.531Z
 location: Zipernowsky Udvar
-googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
-meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
-facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
+googleMapsLink: "https://goo.gl/maps/cz9do4sZWrBGii8fA"
+meetupEventLink: "https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/"
+facebookEventLink: "https://www.facebook.com/events/331593607538547/"
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/v1570906591/IMG_1694_krpxlc.jpg
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are
-      changing as well as the toolkit of education.
-
-
-      [Andrea](http://andreagorcz.herokuapp.com/) has a rare condition, called
+      changing as well as the toolkit of education. [Andrea](http://andreagorcz.herokuapp.com/) has a rare condition, called
       synaesthesia. It means that the production of a sense impression is
       relating and stimulating another sense impression in her brain.
       Recognising it made her learning process much more effective. This
       phenomenon inspired her to transition from graphic designer to a media
       artist and to do research on the topic of multi-sensorial learning
-      techniques.
-
-
-      She will talk about how to implement technology in education in a good
+      techniques. She will talk about how to implement technology in education in a good
       manner and how digital interfaces are effecting our cognitive-system.
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
@@ -170,8 +164,6 @@ photos:
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566426/cc6/pop_jhtf6w.gif
 ---
-
-Hey!
 
 This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) )
 

@@ -90,6 +90,12 @@ export const Root = styled.main`
 		margin: 0 0 var(--size-m) 0;
 	}
 
+	p, li {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
   a {
     color: var(--white);
     &:focus {
