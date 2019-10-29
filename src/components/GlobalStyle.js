@@ -7,6 +7,27 @@ import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.ot
 
 const scale = 1.45
 
+export const Root = styled.main`
+	--black: #000;
+	--lightgray: #e5e5e5;
+	--gray: #868686;
+	--white: #fff;
+	--highlight: #1e00c2;
+
+	${media.xSmallOnly`--size-m: 16px;`}
+	${media.smallOnly`--size-m: 17px;`}
+	${media.mediumOnly`--size-m: 17px;`}
+	${media.largeOnly`--size-m: 19px;`}
+	${media.xLargeOnly`--size-m: 20px;`}
+	--size-xxs: calc(var(--size-m) / ${Math.pow(scale, 3)});
+	--size-xs: calc(var(--size-m) / ${Math.pow(scale, 2)});
+	--size-s: calc(var(--size-m) / ${scale});
+	--size-l: calc(var(--size-m) * ${scale});
+	--size-xl: calc(var(--size-m) * ${Math.pow(scale, 2)});
+	--size-xxl: calc(var(--size-m) * ${Math.pow(scale, 3)});
+	--size-xxxl: calc(var(--size-m) * ${Math.pow(scale, 4)});
+`
+
 const GlobalStyle = createGlobalStyle`
 	@font-face {
 		font-family: Object Sans;
@@ -44,32 +65,9 @@ const GlobalStyle = createGlobalStyle`
 	::selection {
 		background: #1e00c2;
 	}
-`
 
-export const Root = styled.main`
-	--black: #000;
-	--lightgray: #e5e5e5;
-	--gray: #868686;
-	--white: #fff;
-	--highlight: #1e00c2;
-
-	${media.xSmallOnly`--size-m: 16px;`}
-	${media.smallOnly`--size-m: 17px;`}
-	${media.mediumOnly`--size-m: 18px;`}
-	${media.largeOnly`--size-m: 19px;`}
-	${media.xLargeOnly`--size-m: 20px;`}
-	--size-xxs: calc(var(--size-m) / ${Math.pow(scale, 3)});
-	--size-xs: calc(var(--size-m) / ${Math.pow(scale, 2)});
-	--size-s: calc(var(--size-m) / ${scale});
-	--size-l: calc(var(--size-m) * ${scale});
-	--size-xl: calc(var(--size-m) * ${Math.pow(scale, 2)});
-	--size-xxl: calc(var(--size-m) * ${Math.pow(scale, 3)});
-	--size-xxxl: calc(var(--size-m) * ${Math.pow(scale, 4)});
-
-	h1,
-	h2,
-	h3 {
-		margin: 0;
+	h1, h2, h3, p, ul {
+		margin: 0 0 var(--size-m) 0;
 	}
 
 	h1 {
@@ -87,7 +85,14 @@ export const Root = styled.main`
 	ul {
 		line-height: var(--size-l);
 		font-size: var(--size-m);
-		margin: 0 0 var(--size-m) 0;
+	}
+
+	ul, ol {
+		padding-left: calc(24px + var(--size-xxs));
+	}
+
+	li:not(:last-child) {
+		margin-bottom: var(--size-xxs);
 	}
 
 	p, li {

@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import media from "../utils/media"
+import media, { breakpoints } from "../utils/media"
 
 const SectionElement = styled.section`
   display: grid;
@@ -26,7 +26,7 @@ const SectionElement = styled.section`
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    max-width: calc(var(--size-xxxl) * 14);
+    max-width: calc(${breakpoints.largeMin}px - (2 * var(--size-l)));
     margin: 0 auto var(--size-xxxl) auto;
   `}
 

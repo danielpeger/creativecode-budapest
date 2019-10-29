@@ -10,7 +10,8 @@ poster: >-
 speakers:
   - bio: >-
       In the age of internet paradigm-shift children’s toys and games are
-      changing as well as the toolkit of education. [Andrea](http://andreagorcz.herokuapp.com/) has a rare condition, called
+      changing as well as the toolkit of education. 
+      [Andrea](http://andreagorcz.herokuapp.com/) has a rare condition, called
       synaesthesia. It means that the production of a sense impression is
       relating and stimulating another sense impression in her brain.
       Recognising it made her learning process much more effective. This
@@ -38,13 +39,9 @@ speakers:
       point’n’click adventure game titled Bela Kovacs and the Trail of Blood –
       the game has been played over one million times on Kongregate and Armor
       Games. 
-
-
       He took some time off to work as an indie developer and freelancer, he
       worked on prototypes for games alone and with teams, and he held a Game
       Jame course at the Moholy-Nagy University of Art and Design. 
-
-
       Now he’s back at NeocoreGames, and he is developing a Game Boy like retro
       game in his free time, and started creating an art game scene in Budapest.
     name: Peter Szegedi

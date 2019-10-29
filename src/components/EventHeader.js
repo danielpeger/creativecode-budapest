@@ -3,22 +3,59 @@ import styled from "styled-components"
 import media from "../utils/media"
 import Section from "./Section"
 import DateString from "./DateString"
-import { Link } from "gatsby"
 import Speaker from "./Speaker"
+import FacebookIcon from "../components/icons/facebook.svg"
+import MeetupIcon from "../components/icons/meetup.svg"
+import PinIcon from "../components/icons/pin.svg"
+import ClockIcon from "../components/icons/clock.svg"
 
 const EventHeaderElement = styled(Section)`
-  padding-top: var(--size-l);
-  aside {
-    ${media.xSmallOnly`grid-column: span 4;`}
-    ${media.smallOnly`grid-column: span 5;`}
-    ${media.mediumOnly`grid-column: span 4;`}
-    ${media.largeUp`grid-column: span 6;`}
+  padding-top: var(--size-xl);
+`
+
+const Label = styled.h3`
+  font-weight: 400;
+  text-transform: uppercase;
+`
+
+const EventInfo = styled.aside`
+  ${media.xSmallOnly`grid-column: span 4;`}
+  ${media.smallDown`margin-bottom: var(--size-xl);`}
+  ${media.smallOnly`grid-column: span 5;`}
+  ${media.mediumOnly`grid-column: span 3;`}
+  ${media.largeUp`grid-column: span 5;`}
+`
+
+const InfoList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: var(--size-l);
+
+  li {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: var(--size-xxs);
+    }
+
+    &::selection {
+      background: var(--highlight);
+    }
+
+    svg {
+      margin-right: var(--size-xxs);
+    }
   }
 `
 
 const SpeakerList = styled.aside`
   display: grid;
   place-items: start;
+
+  ${media.xSmallOnly`grid-column: span 4;`}
+  ${media.smallOnly`grid-column: span 5;`}
+  ${media.mediumOnly`grid-column: 5 / -1;`}
+  ${media.largeUp`grid-column: 7 / -1;`}
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
@@ -53,25 +90,31 @@ const EventHeader = ({
 }) => {
   return (
     <EventHeaderElement>
-      <aside>
-        <h3>{new Date(date) > new Date() ? "Upcoming event" : "Past Event"}</h3>
+      <EventInfo>
+        <Label>
+          {new Date(date) > new Date() ? "Upcoming event" : "Past Event"}
+        </Label>
         <h2>{title}</h2>
-        <ul>
+        <InfoList>
           <li>
+            <ClockIcon />
             <DateString date={date} />
           </li>
           <li>
+            <PinIcon />
             <a href={googleMapsLink}>{location}</a>
           </li>
           <li>
-            <a href={meetupEventLink}>Meetup event</a>
+            <MeetupIcon />
+            <a href={meetupEventLink}>Meetup</a>
           </li>
           <li>
-            <a href={facebookEventLink}>Facebook event</a>
+            <FacebookIcon />
+            <a href={facebookEventLink}>Facebook</a>
           </li>
-        </ul>
+        </InfoList>
         <div dangerouslySetInnerHTML={{ __html: description }}></div>
-      </aside>
+      </EventInfo>
       <SpeakerList>
         {speakers &&
           speakers.map((speaker, index) => (

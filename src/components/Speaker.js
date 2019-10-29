@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import media from "../utils/media"
 import Image from "./Image"
 import MarkdownToHtml from "../utils/MarkdownToHtml"
 
@@ -37,6 +36,10 @@ const SpeakerElement = styled.div`
   }
 `
 
+const NameElement = styled.h3`
+  margin-bottom: 0;
+`
+
 const Speaker = ({ speaker }) => {
   return (
     <SpeakerElement>
@@ -52,7 +55,7 @@ const Speaker = ({ speaker }) => {
         <picture></picture>
       )}
       <div>
-        <h3>{speaker.name}</h3>
+        <NameElement>{speaker.name}</NameElement>
         <div
           dangerouslySetInnerHTML={{ __html: MarkdownToHtml(speaker.bio) }}
         ></div>
