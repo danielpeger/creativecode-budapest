@@ -29,13 +29,14 @@ const Ul = styled.ul`
 `;
 
 const H3 = styled.h3`
+  margin-top: var(--m);
   margin-bottom: var(--xs);
 `;
 
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      {poster && <Image src={poster} width={300} aspectRatio={2 / 3} />}
+      {poster && <Image src={poster} width={300} aspectRatio={2/3} customTransformations={`ar_${2/3},g_auto,c_thumb,z_0.7`} />}
       <H3>{title}</H3>
       {speakers && (
         <small>
