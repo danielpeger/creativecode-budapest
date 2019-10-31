@@ -1,6 +1,8 @@
 ---
 title: Event with photos
 date: 2019-10-08T19:57:54.573Z
+poster: >-
+  https://res.cloudinary.com/creativecodebudapest/image/upload/v1572541527/72668969_1354696291373264_382920678313033728_o_okc7fh.jpg
 photos:
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570564190/cc5/P1080681_rt7lkf.jpg
