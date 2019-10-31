@@ -10,31 +10,36 @@ const SectionElement = styled.section`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--size-m);
+    grid-column-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
   `}
   ${media.mediumDown`
-    margin: 0 var(--size-l) var(--size-xxxl) var(--size-l);
+    margin: 0 var(--l) var(--xxxl) var(--l);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--size-l);
+    grid-column-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    max-width: calc(${breakpoints.largeMin}px - (2 * var(--size-l)));
-    margin: 0 auto var(--size-xxxl) auto;
+    max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
+    margin: 0 auto var(--xxxl) auto;
   `}
 
   ${props =>
     !props.noseparator &&
     css`
-      border-top: var(--size-xxs) solid var(--white);
+      border-top: var(--xxs) solid var(--white);
+      padding-top: var(--l);
     `}
+
+    h2 {
+      grid-column: 1 / -1;
+    }
 `
 
 const Section = ({ className, heading, subheading, noseparator, children }) => {

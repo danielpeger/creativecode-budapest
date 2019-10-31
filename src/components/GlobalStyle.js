@@ -14,18 +14,18 @@ export const Root = styled.main`
 	--white: #fff;
 	--highlight: #1e00c2;
 
-	${media.xSmallOnly`--size-m: 16px;`}
-	${media.smallOnly`--size-m: 17px;`}
-	${media.mediumOnly`--size-m: 17px;`}
-	${media.largeOnly`--size-m: 19px;`}
-	${media.xLargeOnly`--size-m: 20px;`}
-	--size-xxs: calc(var(--size-m) / ${Math.pow(scale, 3)});
-	--size-xs: calc(var(--size-m) / ${Math.pow(scale, 2)});
-	--size-s: calc(var(--size-m) / ${scale});
-	--size-l: calc(var(--size-m) * ${scale});
-	--size-xl: calc(var(--size-m) * ${Math.pow(scale, 2)});
-	--size-xxl: calc(var(--size-m) * ${Math.pow(scale, 3)});
-	--size-xxxl: calc(var(--size-m) * ${Math.pow(scale, 4)});
+	${media.xSmallOnly`--m: 16px;`}
+	${media.smallOnly`--m: 17px;`}
+	${media.mediumOnly`--m: 17px;`}
+	${media.largeOnly`--m: 19px;`}
+	${media.xLargeOnly`--m: 20px;`}
+	--xxs: calc(var(--m) / ${Math.pow(scale, 3)});
+	--xs: calc(var(--m) / ${Math.pow(scale, 2)});
+	--s: calc(var(--m) / ${scale});
+	--l: calc(var(--m) * ${scale});
+	--xl: calc(var(--m) * ${Math.pow(scale, 2)});
+	--xxl: calc(var(--m) * ${Math.pow(scale, 3)});
+	--xxxl: calc(var(--m) * ${Math.pow(scale, 4)});
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -67,32 +67,32 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h1, h2, h3, p, ul {
-		margin: 0 0 var(--size-m) 0;
+		margin: 0 0 var(--m) 0;
 	}
 
 	h1 {
-		line-height: var(--size-xxl);
-		font-size: var(--size-xl);
+		line-height: var(--xxl);
+		font-size: var(--xl);
 	}
 
 	h2 {
-		line-height: var(--size-xl);
-		font-size: var(--size-l);
+		line-height: var(--xl);
+		font-size: var(--l);
 	}
 
 	p,
 	h3,
 	ul {
-		line-height: var(--size-l);
-		font-size: var(--size-m);
+		line-height: var(--l);
+		font-size: var(--m);
 	}
 
 	ul, ol {
-		padding-left: calc(24px + var(--size-xxs));
+		padding-left: calc(24px + var(--xxs));
 	}
 
 	li:not(:last-child) {
-		margin-bottom: var(--size-xxs);
+		margin-bottom: var(--xxs);
 	}
 
 	p, li {

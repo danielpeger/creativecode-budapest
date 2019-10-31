@@ -32,7 +32,7 @@ const SpeakerElement = styled.div`
   }
 
   &:not(:last-child) > div {
-    margin-bottom: var(--size-l);
+    margin-bottom: var(--l);
   }
 `
 

@@ -10,11 +10,11 @@ import TextInput from "../components/TextInput"
 
 const FooterElement = styled(Section)`
   aside {
-    border-top: var(--size-xxs) solid var(--white);
+    border-top: var(--xxs) solid var(--white);
     grid-column: span 6;
 
     ${media.mediumDown`
-			margin-bottom: var(--size-xxxl);
+			margin-bottom: var(--xxxl);
 		`}
   }
 `

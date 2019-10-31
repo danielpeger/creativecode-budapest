@@ -4,41 +4,41 @@
   --gray: #868686;
   --white: #fff;
   --highlight: #1e00c2;
-  --size-xs: calc(var(--size-s) / 1.33);
-  --size-m: calc(var(--size-s) * 1.33);
-  --size-l: calc(var(--size-s) * 1.77);
-  --size-xl: calc(var(--size-s) * 2.35);
-  --size-xxl: calc(var(--size-s) * 3.13);
-  --size-xxxl: calc(var(--size-s) * 4.16);
+  --xs: calc(var(--s) / 1.33);
+  --m: calc(var(--s) * 1.33);
+  --l: calc(var(--s) * 1.77);
+  --xl: calc(var(--s) * 2.35);
+  --xxl: calc(var(--s) * 3.13);
+  --xxxl: calc(var(--s) * 4.16);
 }
 
 @media (max-width: 599px) {
   :root {
-    --size-s: 14px;
+    --s: 14px;
   }
 }
 
 @media (min-width: 600px) {
   :root {
-    --size-s: 14px;
+    --s: 14px;
   }
 }
 
 @media (min-width: 900px) {
   :root {
-    --size-s: 14px;
+    --s: 14px;
   }
 }
 
 @media (min-width: 1200px) {
   :root {
-    --size-s: 16px;
+    --s: 16px;
   }
 }
 
 @media (min-width: 1800px) {
   :root {
-    --size-s: 18px;
+    --s: 18px;
   }
 }
 
@@ -57,20 +57,20 @@ h3 {
 }
 
 h1 {
-  line-height: var(--size-xxxl);
-  font-size: var(--size-xxl);
+  line-height: var(--xxxl);
+  font-size: var(--xxl);
 }
 
 h2 {
-  line-height: var(--size-xl);
-  font-size: var(--size-l);
+  line-height: var(--xl);
+  font-size: var(--l);
 }
 
 p,
 h3 {
-  line-height: var(--size-l);
-  font-size: var(--size-m);
-  margin: 0 0 var(--size-m) 0;
+  line-height: var(--l);
+  font-size: var(--m);
+  margin: 0 0 var(--m) 0;
 }
 
 .uppercase {
@@ -133,36 +133,36 @@ body {
 section {
   display: -ms-grid;
   display: grid;
-  padding: 0 var(--size-l);
+  padding: 0 var(--l);
 }
 
 @media (max-width: 599px) {
   section {
-    grid-column-gap: var(--size-m);
+    grid-column-gap: var(--m);
   }
 }
 
 @media (min-width: 600px) {
   section {
-    grid-column-gap: var(--size-m);
+    grid-column-gap: var(--m);
   }
 }
 
 @media (min-width: 900px) {
   section {
-    grid-column-gap: var(--size-l);
+    grid-column-gap: var(--l);
   }
 }
 
 @media (min-width: 1200px) {
   section {
-    grid-column-gap: var(--size-l);
+    grid-column-gap: var(--l);
   }
 }
 
 @media (min-width: 1800px) {
   section {
-    grid-column-gap: var(--size-l);
+    grid-column-gap: var(--l);
   }
 }
 
@@ -213,7 +213,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc((100 * var(--vh)) - var(--size-xxxl));
+  height: calc((100 * var(--vh)) - var(--xxxl));
   color: var(--white);
 }
 
@@ -370,7 +370,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   background: var(--black);
-  height: var(--size-xl);
+  height: var(--xl);
 }
 
 .codeband span {

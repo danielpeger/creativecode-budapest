@@ -6,7 +6,7 @@
 }
 
 :host(:not(:last-child)) {
-  margin-bottom: var(--size-l);
+  margin-bottom: var(--l);
 }
 
 :host([upcoming]) {

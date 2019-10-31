@@ -3,11 +3,11 @@
 :host {
   @include responsive(
     margin,
-    var(--size-xxl) 0,
-    var(--size-xxl) 0,
-    var(--size-xxl) 0,
-    var(--size-xxxl) 0,
-    var(--size-xxxl) 0
+    var(--xxl) 0,
+    var(--xxl) 0,
+    var(--xxl) 0,
+    var(--xxxl) 0,
+    var(--xxxl) 0
   );
   @include responsive(grid-column-start, 1, 1, 2, 2, 2);
   @include responsive(grid-column-end, -1, -1, -2, -2, -2);
@@ -17,7 +17,7 @@
 :host([upcoming]) {
   //Should be replaced with :host-context(.header) once supported https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context()
   border-top: 4px solid var(--white);
-  padding-top: var(--size-xl);
+  padding-top: var(--xl);
 
   .speaker .img {
     background: var(--white);
@@ -49,9 +49,9 @@ aside {
   &:not(:last-child) {
     @include responsive(
       margin-bottom,
-      var(--size-m),
-      var(--size-m),
-      var(--size-m),
+      var(--m),
+      var(--m),
+      var(--m),
       0,
       0
     );
@@ -71,7 +71,7 @@ h2 {
 }
 
 h2 {
-  padding-bottom: var(--size-s);
+  padding-bottom: var(--s);
   display: block;
 }
 
@@ -84,23 +84,23 @@ svg {
 }
 
 .photos {
-  margin-top: var(--size-xl);
+  margin-top: var(--xl);
   @include responsive-grid(4, 4, 5, 5, 5);
   @include responsive(
     grid-template-rows,
-    repeat(4, var(--size-xl)),
-    repeat(4, var(--size-xl)),
-    repeat(5, var(--size-xxl)),
-    repeat(5, var(--size-xxl)),
-    repeat(5, var(--size-xxl))
+    repeat(4, var(--xl)),
+    repeat(4, var(--xl)),
+    repeat(5, var(--xxl)),
+    repeat(5, var(--xxl)),
+    repeat(5, var(--xxl))
   );
   @include responsive(
     grid-row-gap,
-    var(--size-m),
-    var(--size-m),
-    var(--size-l),
-    var(--size-l),
-    var(--size-l)
+    var(--m),
+    var(--m),
+    var(--l),
+    var(--l),
+    var(--l)
   );
 
   ::slotted(img) {

@@ -34,11 +34,11 @@
   display: grid;
   @include responsive(
     grid-column-gap,
-    var(--size-m),
-    var(--size-m),
-    var(--size-l),
-    var(--size-l),
-    var(--size-l)
+    var(--m),
+    var(--m),
+    var(--l),
+    var(--l),
+    var(--l)
   );
   @include responsive(
     grid-template-columns,
@@ -75,14 +75,14 @@
   --highlight: #1e00c2;
 
   // Spacing
-  @include responsive(--size-s, 14px, 14px, 14px, 16px, 18px);
-  --size-xxs: calc(var(--size-s) / 1.77);
-  --size-xs: calc(var(--size-s) / 1.33);
-  --size-m: calc(var(--size-s) * 1.33);
-  --size-l: calc(var(--size-s) * 1.77);
-  --size-xl: calc(var(--size-s) * 2.35);
-  --size-xxl: calc(var(--size-s) * 3.13);
-  --size-xxxl: calc(var(--size-s) * 4.16);
+  @include responsive(--s, 14px, 14px, 14px, 16px, 18px);
+  --xxs: calc(var(--s) / 1.77);
+  --xs: calc(var(--s) / 1.33);
+  --m: calc(var(--s) * 1.33);
+  --l: calc(var(--s) * 1.77);
+  --xl: calc(var(--s) * 2.35);
+  --xxl: calc(var(--s) * 3.13);
+  --xxxl: calc(var(--s) * 4.16);
 }
 
 ::selection {
@@ -97,20 +97,20 @@ h3 {
 }
 
 h1 {
-  line-height: var(--size-xxxl);
-  font-size: var(--size-xxl);
+  line-height: var(--xxxl);
+  font-size: var(--xxl);
 }
 
 h2 {
-  line-height: var(--size-xl);
-  font-size: var(--size-l);
+  line-height: var(--xl);
+  font-size: var(--l);
 }
 
 p,
 h3 {
-  line-height: var(--size-l);
-  font-size: var(--size-m);
-  margin: 0 0 var(--size-m) 0;
+  line-height: var(--l);
+  font-size: var(--m);
+  margin: 0 0 var(--m) 0;
 }
 
 .uppercase {

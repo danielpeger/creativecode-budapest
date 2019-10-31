@@ -9,10 +9,6 @@ import MeetupIcon from "../components/icons/meetup.svg"
 import PinIcon from "../components/icons/pin.svg"
 import ClockIcon from "../components/icons/clock.svg"
 
-const EventHeaderElement = styled(Section)`
-  padding-top: var(--size-xl);
-`
-
 const Label = styled.h3`
   font-weight: 400;
   text-transform: uppercase;
@@ -20,7 +16,7 @@ const Label = styled.h3`
 
 const EventInfo = styled.aside`
   ${media.xSmallOnly`grid-column: span 4;`}
-  ${media.smallDown`margin-bottom: var(--size-xl);`}
+  ${media.smallDown`margin-bottom: var(--xl);`}
   ${media.smallOnly`grid-column: span 5;`}
   ${media.mediumOnly`grid-column: span 3;`}
   ${media.largeUp`grid-column: span 5;`}
@@ -29,24 +25,33 @@ const EventInfo = styled.aside`
 const InfoList = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin-bottom: var(--size-l);
+  margin-bottom: var(--l);
 
   li {
     display: flex;
+    line-height: 24px;
+    align-items: flex-start;
 
     &:not(:last-child) {
-      margin-bottom: var(--size-xxs);
-    }
-
-    &::selection {
-      background: var(--highlight);
-    }
-
-    svg {
-      margin-right: var(--size-xxs);
+      margin-bottom: var(--xxs);
     }
   }
+
+  svg {
+      margin-right: var(--xxs);
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-top: -1px;
+    }
 `
+
+const StyledClockIcon = styled(ClockIcon)`
+  && { margin-top: -2px; }
+`;
+
+const StyledMeetupIcon = styled(MeetupIcon)`
+  && { margin-top: 1px; }
+`;
 
 const SpeakerList = styled.aside`
   display: grid;
@@ -61,7 +66,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--size-m);
+    grid-column-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(5, 1fr);
@@ -70,7 +75,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--size-l);
+    grid-column-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(6, 1fr);
@@ -89,7 +94,7 @@ const EventHeader = ({
   speakers,
 }) => {
   return (
-    <EventHeaderElement>
+    <Section>
       <EventInfo>
         <Label>
           {new Date(date) > new Date() ? "Upcoming event" : "Past Event"}
@@ -97,15 +102,15 @@ const EventHeader = ({
         <h2>{title}</h2>
         <InfoList>
           <li>
-            <ClockIcon />
-            <DateString date={date} />
+            <StyledClockIcon />
+            <span><DateString date={date} /></span>
           </li>
           <li>
             <PinIcon />
             <a href={googleMapsLink}>{location}</a>
           </li>
           <li>
-            <MeetupIcon />
+            <StyledMeetupIcon />
             <a href={meetupEventLink}>Meetup</a>
           </li>
           <li>
@@ -121,7 +126,7 @@ const EventHeader = ({
             <Speaker speaker={speaker} key={index} />
           ))}
       </SpeakerList>
-    </EventHeaderElement>
+    </Section>
   )
 }
 

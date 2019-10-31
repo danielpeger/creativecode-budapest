@@ -1,15 +1,42 @@
 import React from "react"
+import styled from "styled-components"
 import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 import DateString from "./DateString"
 
+const LinkElement = styled(Link)`
+  grid-column: span 4;
+  text-decoration: none;
+`;
+
+const Ul = styled.ul`
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+
+  li {
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  svg {
+    margin-right: var(--xxs);
+    margin-top: -2px;
+  }
+`;
+
+const H3 = styled.h3`
+  margin-bottom: var(--xs);
+`;
+
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
-    <Link to={path}>
+    <LinkElement to={path}>
       {poster && <Image src={poster} width={300} aspectRatio={2 / 3} />}
-      <h3>{title}</h3>
+      <H3>{title}</H3>
       {speakers && (
         <small>
           with&nbsp;
@@ -24,7 +51,7 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
           })}
         </small>
       )}
-      <ul>
+      <Ul>
         {date && (
           <li>
             <ClockIcon />
@@ -37,8 +64,8 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
             {location}
           </li>
         )}
-      </ul>
-    </Link>
+      </Ul>
+    </LinkElement>
   )
 }
 
