@@ -6,7 +6,7 @@ import MarkdownToHtml from "../utils/MarkdownToHtml"
 const SpeakerElement = styled.div`
   display: contents;
 
-  picture {
+  > picture {
     grid-column: 1 / 2;
   }
 
@@ -14,9 +14,11 @@ const SpeakerElement = styled.div`
     grid-column: 2 / -1;
   }
 
-  &:not(:last-child) > div {
-    margin-bottom: var(--l);
-  }
+  &:not(:last-child) {
+    > picture, > div {
+      margin-bottom: var(--l);
+    }
+  } 
 `
 
 const NameElement = styled.h3`

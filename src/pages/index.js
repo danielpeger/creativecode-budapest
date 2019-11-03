@@ -43,7 +43,7 @@ export default function FrontPage({ data }) {
           <p>
             Creative Code Budapest is a community meetup for new media artists,
             pixel tinkerers, arduino masters, nerds, habitants of virtual and
-            augmented realities and curious people.
+            augmented realities <em>and curious people</em>.
           </p>
           <p>
             Our mission is to spread knowledge about computational art, build
@@ -54,8 +54,8 @@ export default function FrontPage({ data }) {
             Our meetups are free and open to all, regardless of age, origin,
             gender or experience. They are an opportunity to meet likeminded
             people, share inspiration and get creative together in a relaxed and
-            safe environment. Beginners and first-timers should feel especially
-            welcome!
+            safe environment. <em>Beginners and first-timers should feel especially
+            welcome!</em>
           </p>
         </Intro>
       </Section>

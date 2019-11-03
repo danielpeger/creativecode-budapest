@@ -5,16 +5,14 @@ import media, { breakpoints } from "../utils/media"
 import styled from "styled-components"
 
 const Picture = styled.picture`
-  &:empty{
-    background: var(--white);
+  background: var(--white);
 
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 1px;
-      height: 0;
-      padding-bottom: ${props => (1 / props.AspectRatio) * 100}%;
-    }
+  &:empty::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: ${props => (1 / props.AspectRatio) * 100}%;
   }
 
   &,

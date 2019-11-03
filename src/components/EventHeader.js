@@ -15,6 +15,7 @@ const Label = styled.h3`
 `
 
 const EventInfo = styled.aside`
+  width: 100%;
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallDown`margin-bottom: var(--xl);`}
   ${media.smallOnly`grid-column: span 5;`}
@@ -46,7 +47,7 @@ const InfoList = styled.ul`
 `
 
 const StyledClockIcon = styled(ClockIcon)`
-  &&Â { margin-top: -2px; }
+  && { margin-top: -2px; }
 `;
 
 const StyledMeetupIcon = styled(MeetupIcon)`
@@ -56,6 +57,7 @@ const StyledMeetupIcon = styled(MeetupIcon)`
 const SpeakerList = styled.aside`
   display: grid;
   place-items: start;
+  width: 100%;
 
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallOnly`grid-column: span 5;`}
@@ -92,9 +94,10 @@ const EventHeader = ({
   meetupEventLink,
   description,
   speakers,
+  className
 }) => {
   return (
-    <Section>
+    <Section className={className} >
       <EventInfo>
         <Label>
           {new Date(date) > new Date() ? "Upcoming event" : "Past Event"}

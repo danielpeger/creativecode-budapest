@@ -1,8 +1,13 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
+
+const EventPageHeader = styled(EventHeader)`
+  margin-top: var(--xxxl);
+`;
 
 export default function Template({ data }) {
   const { frontmatter, html } = data.markdownRemark
@@ -19,7 +24,7 @@ export default function Template({ data }) {
   return (
     <Root>
       <GlobalStyle />
-      <EventHeader
+      <EventPageHeader
         title={title}
         date={date}
         location={location}

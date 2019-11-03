@@ -23,10 +23,22 @@ const Ul = styled.ul`
   display: flex;
   padding: 0;
 
+
   li {
     line-height: 24px;
     display: flex;
     align-items: flex-start;
+    margin-right: var(--xs);
+
+    span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    svg{
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
   }
 
   svg {
@@ -37,27 +49,31 @@ const Ul = styled.ul`
 
 const H3 = styled.h3`
   margin-top: var(--m);
+  margin-bottom: var(--xxs);
+`;
+
+const SpeakerLine = styled.p`
   margin-bottom: var(--xs);
 `;
 
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      <Image src={poster} width={600} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
+      <Image src={poster} width={300} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
       <H3>{title}</H3>
       {speakers && (
-        <small>
+        <SpeakerLine>
           with&nbsp;
           {speakers.map((speaker, index) => {
             if (index === 0) {
-              return speaker.name
+              return <em>{speaker.name}</em>
             } else if (index === speakers.length - 1) {
-              return ` and ${speaker.name}`
+              return <React.Fragment> and <em>{speaker.name}</em></React.Fragment>
             } else {
-              return `, ${speaker.name}`
+              return <em>, {speaker.name}</em>
             }
           })}
-        </small>
+        </SpeakerLine>
       )}
       <Ul>
         {date && (
@@ -69,7 +85,7 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
         {location && (
           <li>
             <PinIcon />
-            {location}
+            <span>{location}</span>
           </li>
         )}
       </Ul>
