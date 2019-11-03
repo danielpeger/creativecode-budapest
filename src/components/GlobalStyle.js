@@ -18,7 +18,7 @@ export const Root = styled.main`
 	${media.smallOnly`--m: 17px;`}
 	${media.mediumOnly`--m: 17px;`}
 	${media.largeOnly`--m: 19px;`}
-	${media.xLargeOnly`--m: 20px;`}
+	${media.xLargeOnly`--m: 21px;`}
 	--xxs: calc(var(--m) / ${Math.pow(scale, 3)});
 	--xs: calc(var(--m) / ${Math.pow(scale, 2)});
 	--s: calc(var(--m) / ${scale});

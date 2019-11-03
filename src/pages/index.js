@@ -4,7 +4,7 @@ import styled from "styled-components"
 import media from "../utils/media"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
-import Button from "../components/Button"
+import OpenCall from "../components/OpenCall"
 import Section from "../components/Section"
 import Footer from "../components/Footer"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
@@ -41,7 +41,7 @@ export default function FrontPage({ data }) {
         <Intro>
           <p>Hey!</p>
           <p>
-            This is a community meetup for creative coders, new media artists,
+            Creative Code Budapest is a community meetup for new media artists,
             pixel tinkerers, arduino masters, nerds, habitants of virtual and
             augmented realities and curious people.
           </p>
@@ -102,12 +102,7 @@ export default function FrontPage({ data }) {
           )
         })}
       </Section>
-      <Section
-        heading="Open call"
-        subheading="We're always looking for new speakers."
-      >
-        <Button name="mail">Drop us a line</Button>
-      </Section>
+      <OpenCall></OpenCall>
       <Footer></Footer>
     </Root>
   )

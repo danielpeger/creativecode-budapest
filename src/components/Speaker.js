@@ -7,24 +7,7 @@ const SpeakerElement = styled.div`
   display: contents;
 
   picture {
-    background: var(--white);
     grid-column: 1 / 2;
-    width: 100%;
-    height: initial;
-
-    &:empty::before {
-      content: "";
-      display: inline-block;
-      width: 1px;
-      height: 0;
-      padding-bottom: 100%;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      height: initial;
-    }
   }
 
   > div {
@@ -43,17 +26,13 @@ const NameElement = styled.h3`
 const Speaker = ({ speaker }) => {
   return (
     <SpeakerElement>
-      {speaker.image ? (
-        <Image
-          src={speaker.image}
-          width={130}
-          aspectRatio={1}
-          alt={speaker.name}
-          customTransformations="ar_1,g_face,c_thumb,z_0.7"
-        />
-      ) : (
-        <picture></picture>
-      )}
+      <Image
+        src={speaker.image}
+        width={130}
+        aspectRatio={1}
+        alt={speaker.name}
+        customTransformations="ar_1,g_face,c_thumb,z_0.7"
+      />
       <div>
         <NameElement>{speaker.name}</NameElement>
         <div

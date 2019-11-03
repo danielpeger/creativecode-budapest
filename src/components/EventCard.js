@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import media from "../utils/media"
 import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
@@ -7,7 +8,13 @@ import { Link } from "gatsby"
 import DateString from "./DateString"
 
 const LinkElement = styled(Link)`
-  grid-column: span 4;
+  
+  ${media.largeUp`
+    grid-column: span 3;
+  `}
+  ${media.mediumDown`
+    grid-column: span 2;
+  `}
   text-decoration: none;
 `;
 
@@ -36,7 +43,7 @@ const H3 = styled.h3`
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      {poster && <Image src={poster} width={300} aspectRatio={2/3} customTransformations={`ar_${2/3},g_auto,c_thumb,z_0.7`} />}
+      <Image src={poster} width={600} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
       <H3>{title}</H3>
       {speakers && (
         <small>
