@@ -2,7 +2,7 @@ import { css } from "styled-components"
 
 const small = 600 //mobile
 const medium = 900 //tablet
-const large = 1200 //laptop
+const large = 1300 //laptop
 const xLarge = 1800 //desktop
 
 export const breakpoints = {
