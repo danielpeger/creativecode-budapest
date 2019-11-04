@@ -33,6 +33,15 @@ const JoinAside = styled.aside`
   }
 `;
 
+
+const NewsletterForm = styled.form`
+  display: flex;
+
+  input {
+    border-right: none;
+  }
+`;
+
 const Footer = () => {
   return (
     <FooterElement noseparator>
@@ -63,11 +72,13 @@ const Footer = () => {
       <aside>
         <h2>Newsletter</h2>
         <p>Sign up to get event info</p>
-        <TextInput placeholder="Your email" />
-        <Button name="newsletter">
-          <span>Sign up</span>
-          <ArrowIcon />
-        </Button>
+        <NewsletterForm>
+          <TextInput placeholder="Your email" />
+          <Button name="newsletter">
+            <span>Sign up</span>
+            <ArrowIcon />
+          </Button>
+        </NewsletterForm>
       </aside>
     </FooterElement>
   )
