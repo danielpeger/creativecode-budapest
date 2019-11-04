@@ -33,7 +33,7 @@ const Speaker = ({ speaker }) => {
         width={130}
         aspectRatio={1}
         alt={speaker.name}
-        customTransformations="ar_1,g_face,c_thumb,z_0.7"
+        customTransformations="g_face,c_thumb,z_0.7"
       />
       <div>
         <NameElement>{speaker.name}</NameElement>

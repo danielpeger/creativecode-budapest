@@ -3,6 +3,7 @@ import useNativeLazyLoading from "@charlietango/use-native-lazy-loading"
 import { useInView } from "react-intersection-observer"
 import media, { breakpoints } from "../utils/media"
 import styled from "styled-components"
+import composeRefs from '@seznam/compose-react-refs'
 
 const Picture = styled.picture`
   background: var(--white);
@@ -12,7 +13,7 @@ const Picture = styled.picture`
     display: inline-block;
     width: 1px;
     height: 0;
-    padding-bottom: ${props => (1 / props.AspectRatio) * 100}%;
+    padding-bottom: ${props => props.AspectRatio ? (1 / props.AspectRatio) * 100 : 100}%;
   }
 
   &,
@@ -23,7 +24,7 @@ const Picture = styled.picture`
   }
 `
 
-const Image = ({
+const Image = React.forwardRef(({
   className,
   src,
   aspectRatio,
@@ -31,14 +32,14 @@ const Image = ({
   mobileWidth,
   customTransformations,
   alt,
-}) => {
+}, externalRef) => {
   const [dpr, setDpr] = useState(1)
   useEffect(() => {
     setDpr(window.devicePixelRatio)
   }, [setDpr])
   //TODO: Get aspect ratio from cloudinary
   const supportsLazyLoading = useNativeLazyLoading()
-  const [ref, inView] = useInView({
+  const [inViewRef, inView] = useInView({
     triggerOnce: true,
     rootMargin: "3000px 0px",
   })
@@ -48,27 +49,26 @@ const Image = ({
   if (src) {
     defaultSrc = src.replace(
       `upload/`,
-      `upload/f_auto,w_${width},ar_${aspectRatio},dpr_${dpr}.0,${
+      `upload/f_auto,w_${width},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
         customTransformations ? customTransformations : ""
       }/`
     )
   
     mobileSrc = src.replace(
       `upload/`,
-      `upload/f_auto,w_${mobileWidth},ar_${aspectRatio},dpr_${dpr}.0,${
+      `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
         customTransformations ? customTransformations : ""
       }/`
     );
   }
 
+  const heightProp = aspectRatio ? width/aspectRatio : width;
+
   return (
     <Picture
-      ref={supportsLazyLoading === false ? ref : undefined}
-      Width={width}
+      ref={supportsLazyLoading === false ? composeRefs(inViewRef, externalRef) : externalRef}
       AspectRatio={aspectRatio}
-      mobileWidth={mobileWidth}
       className={className}
-      placeholder={src ? false : true}
     >
       {src && mobileWidth && (
         <source
@@ -82,11 +82,76 @@ const Image = ({
           src={defaultSrc}
           loading="lazy"
           width={width}
-          height={width / aspectRatio}
+          height={heightProp}
         />
       ) : null}
     </Picture>
   )
-}
+});
+
+// const Image = ({
+//   className,
+//   src,
+//   aspectRatio,
+//   width,
+//   mobileWidth,
+//   customTransformations,
+//   alt,
+// }) => {
+//   const [dpr, setDpr] = useState(1)
+//   useEffect(() => {
+//     setDpr(window.devicePixelRatio)
+//   }, [setDpr])
+//   //TODO: Get aspect ratio from cloudinary
+//   const supportsLazyLoading = useNativeLazyLoading()
+//   const [ref, inView] = useInView({
+//     triggerOnce: true,
+//     rootMargin: "3000px 0px",
+//   })
+
+//   let defaultSrc = '';
+//   let mobileSrc = '';
+//   if (src) {
+//     defaultSrc = src.replace(
+//       `upload/`,
+//       `upload/f_auto,w_${width},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
+//         customTransformations ? customTransformations : ""
+//       }/`
+//     )
+  
+//     mobileSrc = src.replace(
+//       `upload/`,
+//       `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
+//         customTransformations ? customTransformations : ""
+//       }/`
+//     );
+//   }
+
+//   const heightProp = aspectRatio ? width/aspectRatio : width;
+
+//   return (
+//     <Picture
+//       ref={supportsLazyLoading === false ? ref : undefined}
+//       AspectRatio={aspectRatio}
+//       className={className}
+//     >
+//       {src && mobileWidth && (
+//         <source
+//           srcSet={mobileSrc}
+//           media={`(max-width: ${breakpoints.smallMax}px)`}
+//         />
+//       )}
+//       {src && (inView || supportsLazyLoading) ? (
+//         <img
+//           alt={alt}
+//           src={defaultSrc}
+//           loading="lazy"
+//           width={width}
+//           height={heightProp}
+//         />
+//       ) : null}
+//     </Picture>
+//   )
+// }
 
 export default Image
