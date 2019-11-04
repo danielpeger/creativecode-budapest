@@ -10,20 +10,34 @@ import TextInput from "../components/TextInput"
 
 const FooterElement = styled(Section)`
   aside {
+    padding-top: var(--l);
     border-top: var(--xxs) solid var(--white);
-    grid-column: span 6;
+    width: 100%;
 
+    ${media.largeUp`
+      grid-column: span 6;
+		`}
     ${media.mediumDown`
-			margin-bottom: var(--xxxl);
+      grid-column: span 4;
+    `}
+    ${media.smallDown`
+      grid-column: span 6;
+      margin-bottom: var(--xxxl);
 		`}
   }
 `
 
+const JoinAside = styled.aside`
+  button:not(:last-child) {
+    margin-bottom: var(--xs);
+  }
+`;
+
 const Footer = () => {
   return (
     <FooterElement noseparator>
-      <aside>
-        <h2>Join us</h2>
+      <JoinAside>
+        <h2>Join us on social</h2>
         <Button
           name="meetup"
           href="https://www.meetup.com/Creative-Code-Budapest/"
@@ -45,7 +59,7 @@ const Footer = () => {
           <FacebookIcon />
           <span>Join the facebook group</span>
         </Button>
-      </aside>
+      </JoinAside>
       <aside>
         <h2>Newsletter</h2>
         <p>Sign up to get event info</p>

@@ -26,6 +26,11 @@ const ButtonElement = styled.button`
     border-color: var(--lightgray);
   }
 
+  &:active {
+    color: var(--gray);
+    border-color: var(--gray);
+  }
+
   a {
     text-decoration: none;
     display: flex;
