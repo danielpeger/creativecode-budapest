@@ -44,7 +44,12 @@ const NewsletterForm = styled.form`
   display: flex;
 
   input {
+    flex: 1;
     border-right: none;
+  }
+
+  button {
+    flex-shrink: 0;
   }
 `;
 

@@ -5,7 +5,6 @@ import media from "../utils/media"
 const TextInputElement = styled.input`
   all: unset;
   display: flex;
-  flex: 1;
   align-items: center;
   line-height: var(--l);
   font-size: var(--m);
