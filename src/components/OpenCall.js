@@ -14,14 +14,16 @@ const OpenCallElement = styled(Section)`
 `;
 
 const ButtonAside = styled.aside`
+	display: flex;
 	align-self: center;
 	width: 100%;
 	
 	${media.mediumUp`
-	text-align: right;
+		justify-content: flex-end;
 	`}
 	${media.smallDown`
-	text-align: left;
+		justify-content: flex-start;
+		margin-top: var(--m);
 	`}
 `;
 
@@ -33,7 +35,7 @@ const OpenCall = () => {
 			<p>We're always looking for new speakers.</p>
 		</aside>
 		<ButtonAside>
-			<Button name="mail">Drop us a line</Button>
+			<Button name="mail"><span>Drop us a line</span></Button>
 		</ButtonAside>
 	</OpenCallElement>
   )

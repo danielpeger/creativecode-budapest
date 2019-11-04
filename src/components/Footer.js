@@ -29,21 +29,21 @@ const Footer = () => {
           href="https://www.meetup.com/Creative-Code-Budapest/"
         >
           <MeetupIcon />
-          Join the meetup group
+          <span>Join the meetup group</span>
         </Button>
         <Button
           name="facebook"
           href="https://www.facebook.com/Creative-Code-Budapest-1018103511699212"
         >
           <FacebookIcon />
-          Like the facebook page
+          <span>Like the facebook page</span>
         </Button>
         <Button
           name="facebook group"
           href="https://www.facebook.com/groups/713325655681231/"
         >
           <FacebookIcon />
-          Join the facebook group
+          <span>Join the facebook group</span>
         </Button>
       </aside>
       <aside>
@@ -51,7 +51,7 @@ const Footer = () => {
         <p>Sign up to get event info</p>
         <TextInput placeholder="Your email" />
         <Button name="newsletter">
-          Sign up
+          <span>Sign up</span>
           <ArrowIcon />
         </Button>
       </aside>
