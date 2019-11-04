@@ -3,8 +3,13 @@ import styled from "styled-components"
 import Button from "./Button"
 import Section from "./Section"
 import media from "../utils/media"
+import MailIcon from "../components/icons/mail.svg"
 
 const OpenCallElement = styled(Section)`
+	h2 {
+		margin-bottom: var(--s);
+	}
+
 	aside {
 		grid-column: span 6;
 		${media.mediumOnly`
@@ -35,7 +40,10 @@ const OpenCall = () => {
 			<p>We're always looking for new speakers.</p>
 		</aside>
 		<ButtonAside>
-			<Button name="mail"><span>Drop us a line</span></Button>
+			<Button name="mail">
+				<MailIcon />
+				<span>Drop us a line</span>
+			</Button>
 		</ButtonAside>
 	</OpenCallElement>
   )

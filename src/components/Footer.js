@@ -33,6 +33,12 @@ const JoinAside = styled.aside`
   }
 `;
 
+const NewsletterAside = styled.aside`
+  h2 {
+    margin-bottom: var(--xs);
+  }
+`;
+
 
 const NewsletterForm = styled.form`
   display: flex;
@@ -69,7 +75,7 @@ const Footer = () => {
           <span>Join the facebook group</span>
         </Button>
       </JoinAside>
-      <aside>
+      <NewsletterAside>
         <h2>Newsletter</h2>
         <p>Sign up to get event info</p>
         <NewsletterForm>
@@ -79,7 +85,7 @@ const Footer = () => {
             <ArrowIcon />
           </Button>
         </NewsletterForm>
-      </aside>
+      </NewsletterAside>
     </FooterElement>
   )
 }

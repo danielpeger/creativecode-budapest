@@ -1,34 +1,14 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import media from "../utils/media"
+import Hero from "../components/Hero"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import OpenCall from "../components/OpenCall"
 import Section from "../components/Section"
 import Footer from "../components/Footer"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
-
-const HeroElement = styled.div`
-  grid-column: 1 / -1;
-  height: ${props => props.vh * 80}px;
-  display: flex;
-  align-items: center;
-`
-const Hero = ({ children }) => {
-  const [vh, setVh] = useState(0);
-
-	useEffect(() => {
-		let measuredVh = window.innerHeight * 0.01;
-		setVh(measuredVh)
-	}, [setVh])
-
-  return (
-		<HeroElement vh={vh} >
-			{children}
-		</HeroElement>
-  )
-}
 
 const Intro = styled.div`
   grid-column: span 7;
@@ -46,11 +26,9 @@ export default function FrontPage({ data }) {
   return (
     <Root>
       <GlobalStyle />
-      <Section noseparator>
-        <Hero>
-          <h1>Creative Code Budapest</h1>
-        </Hero>
-      </Section>
+      <Hero>
+        <h1>Creative Code Budapest</h1>
+      </Hero>
       <Section noseparator>
         <Intro>
           <p>Hey!</p>

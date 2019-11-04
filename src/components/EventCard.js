@@ -6,6 +6,7 @@ import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 import DateString from "./DateString"
+import truncateString from "../utils/truncateString"
 
 const LinkElement = styled(Link)`
   
@@ -22,13 +23,15 @@ const Ul = styled.ul`
   list-style-type: none;
   display: flex;
   padding: 0;
-
+  flex-wrap: wrap;
+  overflow: hidden;
 
   li {
     line-height: 24px;
     display: flex;
     align-items: flex-start;
     margin-right: var(--xs);
+    flex-shrink: 0;
 
     span {
       text-overflow: ellipsis;
