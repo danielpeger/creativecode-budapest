@@ -9,14 +9,14 @@ import DateString from "./DateString"
 import truncateString from "../utils/truncateString"
 
 const LinkElement = styled(Link)`
-  
+  text-decoration: none;
+
   ${media.largeUp`
     grid-column: span 3;
   `}
   ${media.mediumDown`
     grid-column: span 2;
   `}
-  text-decoration: none;
 `;
 
 const Ul = styled.ul`
@@ -80,13 +80,13 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
       )}
       <Ul>
         {date && (
-          <li>
+          <li key="date">
             <ClockIcon />
             <DateString date={date} format={"short"} />
           </li>
         )}
         {location && (
-          <li>
+          <li key="location">
             <PinIcon />
             <span>{location}</span>
           </li>

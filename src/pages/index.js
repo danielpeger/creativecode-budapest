@@ -79,7 +79,7 @@ export default function FrontPage({ data }) {
       })}
 
       <Section heading="Past events">
-        {pastEvents.map(({ node }) => {
+        {pastEvents.map(({ node }, index) => {
           const { poster, title, date, location, speakers } = node.frontmatter
           return (
             <EventCard
@@ -90,6 +90,7 @@ export default function FrontPage({ data }) {
               date={date}
               location={location}
               speakers={speakers}
+              key={index}
             />
           )
         })}

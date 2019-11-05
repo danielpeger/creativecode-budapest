@@ -9,6 +9,10 @@ import MeetupIcon from "../components/icons/meetup.svg"
 import PinIcon from "../components/icons/pin.svg"
 import ClockIcon from "../components/icons/clock.svg"
 
+const EventHeaderSection = styled(Section)`
+  padding-top: var(--l);
+`;
+
 const Label = styled.h3`
   font-weight: 400;
   text-transform: uppercase;
@@ -97,7 +101,7 @@ const EventHeader = ({
   className
 }) => {
   return (
-    <Section className={className} >
+    <EventHeaderSection className={className} >
       <EventInfo>
         <Label>
           {new Date(date) > new Date() ? "Upcoming event" : "Past Event"}
@@ -129,7 +133,7 @@ const EventHeader = ({
             <Speaker speaker={speaker} key={index} />
           ))}
       </SpeakerList>
-    </Section>
+    </EventHeaderSection>
   )
 }
 

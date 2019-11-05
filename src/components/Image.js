@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import useNativeLazyLoading from "@charlietango/use-native-lazy-loading"
 import { useInView } from "react-intersection-observer"
-import media, { breakpoints } from "../utils/media"
+import { breakpoints } from "../utils/media"
 import styled from "styled-components"
 import composeRefs from '@seznam/compose-react-refs'
 

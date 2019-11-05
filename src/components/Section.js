@@ -11,15 +11,14 @@ const SectionElement = styled.section`
   `}
   ${media.smallDown`
     grid-column-gap: var(--m);
+    margin: 0 var(--l) var(--xxl) var(--l);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
   `}
-  ${media.mediumDown`
-    margin: 0 var(--l) var(--xxxl) var(--l);
-  `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
+    margin: 0 var(--l) var(--xxxl) var(--l);
   `}
   ${media.mediumUp`
     grid-column-gap: var(--l);
@@ -34,7 +33,7 @@ const SectionElement = styled.section`
     !props.noseparator &&
     css`
       border-top: var(--xxs) solid var(--white);
-      padding-top: var(--l);
+      padding-top: var(--m);
     `}
 
     h2 {
