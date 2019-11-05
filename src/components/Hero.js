@@ -3,6 +3,7 @@ import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
 
 const HeroElement = styled.div`
+  height: 85vh;
   height: ${props => props.vh * 85}px;
 	display: grid;
   place-items: center left;
