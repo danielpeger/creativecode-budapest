@@ -25,7 +25,6 @@ const TextInputElement = styled.input`
   }
 `;
 
-
 const TextInput = ({ name, placeholder }) => {
   return <TextInputElement type="text" name={name} placeholder={placeholder} />
 }
