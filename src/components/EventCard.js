@@ -23,6 +23,7 @@ const Ul = styled.ul`
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin: 0;
   flex-wrap: wrap;
   overflow: hidden;
 
@@ -62,7 +63,7 @@ const SpeakerLine = styled.p`
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      <Image src={poster} width={300} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
+      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
       <H3>{title}</H3>
       {speakers && (
         <SpeakerLine>

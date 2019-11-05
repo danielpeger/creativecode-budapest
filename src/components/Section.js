@@ -25,8 +25,13 @@ const SectionElement = styled.section`
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
     margin: 0 auto var(--xxxl) auto;
+  `}
+  ${media.largeOnly`
+    max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
+  `}
+  ${media.xLargeOnly`
+    max-width: calc(1500px - (2 * var(--l)));
   `}
 
   ${props =>
