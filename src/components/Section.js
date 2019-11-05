@@ -31,7 +31,7 @@ const SectionElement = styled.section`
     max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
   `}
   ${media.xLargeOnly`
-    max-width: calc(1500px - (2 * var(--l)));
+    max-width: calc(1400px - (2 * var(--l)));
   `}
 
   ${props =>

@@ -23,8 +23,13 @@ const Grid = styled.section`
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
     margin: 0 auto var(--xl) auto;
+  `}
+  ${media.largeOnly`
+    max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
+  `}
+  ${media.xLargeOnly`
+    max-width: calc(1400px - (2 * var(--l)));
   `}
 `;
 

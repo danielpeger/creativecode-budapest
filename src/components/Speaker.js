@@ -30,7 +30,7 @@ const Speaker = ({ speaker }) => {
     <SpeakerElement>
       <Image
         src={speaker.image}
-        width={130}
+        width={260}
         aspectRatio={1}
         alt={speaker.name}
         customTransformations="g_face,c_thumb,z_0.7"
