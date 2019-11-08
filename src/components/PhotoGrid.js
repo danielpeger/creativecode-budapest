@@ -101,8 +101,6 @@ const PhotoGrid = ({ photos, widePhotos, fullWidthPhotos }) => {
   return (
     <Grid>
       {photos.map((photo, index) => {
-        console.log(widePhotos);
-        console.log(widePhotos.includes(String(index+1)));
         return (
           //<a href={photo}> //don't link to original to save cloudinary bandwith
           <GridImage
