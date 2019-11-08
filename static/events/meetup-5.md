@@ -1,10 +1,10 @@
 ---
-title: "Meetup #5"
+title: 'Meetup #5'
 date: 2019-12-04T15:37:47.531Z
 location: Zipernowsky Udvar
-googleMapsLink: "https://goo.gl/maps/cz9do4sZWrBGii8fA"
-meetupEventLink: "https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/"
-facebookEventLink: "https://www.facebook.com/events/331593607538547/"
+googleMapsLink: 'https://goo.gl/maps/cz9do4sZWrBGii8fA'
+meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
+facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/v1570906591/IMG_1694_krpxlc.jpg
 speakers:
@@ -17,8 +17,9 @@ speakers:
       Recognising it made her learning process much more effective. This
       phenomenon inspired her to transition from graphic designer to a media
       artist and to do research on the topic of multi-sensorial learning
-      techniques. She will talk about how to implement technology in education in a good
-      manner and how digital interfaces are effecting our cognitive-system.
+      techniques. She will talk about how to implement technology in education
+      in a good manner and how digital interfaces are effecting our
+      cognitive-system.
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
     name: Andrea Görcz
@@ -38,10 +39,9 @@ speakers:
       independent companies, one of these is Extropia Games. Here he developed a
       point’n’click adventure game titled Bela Kovacs and the Trail of Blood –
       the game has been played over one million times on Kongregate and Armor
-      Games. 
-      He took some time off to work as an indie developer and freelancer, he
-      worked on prototypes for games alone and with teams, and he held a Game
-      Jame course at the Moholy-Nagy University of Art and Design. 
+      Games.  He took some time off to work as an indie developer and
+      freelancer, he worked on prototypes for games alone and with teams, and he
+      held a Game Jame course at the Moholy-Nagy University of Art and Design. 
       Now he’s back at NeocoreGames, and he is developing a Game Boy like retro
       game in his free time, and started creating an art game scene in Budapest.
     name: Peter Szegedi
@@ -160,6 +160,13 @@ photos:
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566430/cc6/P1080918_o6ynmz.jpg
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566426/cc6/pop_jhtf6w.gif
+widePhotos:
+  - '1'
+  - '13'
+  - '25'
+fullWidthPhotos:
+  - '9'
+  - '18'
 ---
 
 This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) )
