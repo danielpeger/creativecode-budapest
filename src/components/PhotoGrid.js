@@ -55,7 +55,7 @@ const GridImageElement = styled(Image)`
     `}
   `}
 
-  ${props => props.widest && css`
+  ${props => props.fullWidth && css`
     ${media.smallOnly`
       grid-column: span 6;
     `}
@@ -80,37 +80,39 @@ const GridImageElement = styled(Image)`
   `}
 `;
 
-const GridImage = ({ src, wide, widest }) => {
+const GridImage = ({ src, wide, fullWidth }) => {
   const [ref, { width, height }] = useDimensions();
   const portrait = height > width;
   return (
     <GridImageElement
       ref={ref}
       src={src}
-      width={wide || widest ? 1240 : 620}
-      mobileWidth={wide || widest ? 840 : 540}
+      width={wide || fullWidth ? 1240 : 620}
+      mobileWidth={wide || fullWidth ? 840 : 540}
       alt="Photo from the event"
       portrait={portrait}
       aspectRatio={portrait ? 0.74 : false}
       customTransformations={portrait ? "c_fill,g_auto" : false}
       wide={wide}
-      widest={widest}
+      fullWidth={fullWidth}
     />
     
   )
 }
 
-const PhotoGrid = ({ photos }) => {
+const PhotoGrid = ({ photos, widePhotos, fullWidthPhotos }) => {
   return (
     <Grid>
       {photos.map((photo, index) => {
+        console.log(widePhotos);
+        console.log(widePhotos.includes(String(index+1)));
         return (
           //<a href={photo}> //don't link to original to save cloudinary bandwith
           <GridImage
             src={photo}
             key={index}
-            wide={(index+1) % 9 === 0}
-            widest={(index+1) % 18 === 0}
+            wide={widePhotos.includes(String(index+1))}
+            fullWidth={fullWidthPhotos.includes(String(index+1))}
           />
           //</a>
         )

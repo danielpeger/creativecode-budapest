@@ -6,7 +6,7 @@ import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 import DateString from "./DateString"
-import truncateString from "../utils/truncateString"
+// import truncateString from "../utils/truncateString"
 
 const LinkElement = styled(Link)`
   text-decoration: none;

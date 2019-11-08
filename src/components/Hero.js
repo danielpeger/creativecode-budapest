@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
 
+export const Intro = styled.div`
+  grid-column: span 7;
+  ${media.smallOnly`grid-column: span 5;`}
+`
+
 const HeroElement = styled.div`
   height: 85vh;
   height: ${props => props.vh * 85}px;

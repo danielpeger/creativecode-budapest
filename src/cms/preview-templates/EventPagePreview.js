@@ -135,7 +135,13 @@ export default function EventPagePreview({ entry, widgetFor }) {
               ))}
           </SpeakerList>
         </EventHeaderSection>
-        {entry.getIn(['data', 'photos']) && <PhotoGrid photos={entry.getIn(['data', 'photos'])} />}
+        {entry.getIn(['data', 'photos']) && 
+          <PhotoGrid
+            photos={entry.getIn(['data', 'photos'])}
+            widePhotos={entry.getIn(['data', 'widePhotos'])}
+            fullWidthPhotos={entry.getIn(['data', 'fullWidthPhotos'])}
+          />
+        }
       </Root>
     </StylesheetInjector>
   )

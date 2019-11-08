@@ -20,6 +20,8 @@ export default function Template({ data }) {
     facebookEventLink,
     speakers,
     photos,
+    widePhotos,
+    fullWidthPhotos
   } = frontmatter
   return (
     <Root>
@@ -34,7 +36,7 @@ export default function Template({ data }) {
         description={html}
         speakers={speakers}
       />
-      {photos && <PhotoGrid photos={photos} />}
+      {photos && <PhotoGrid photos={photos} widePhotos={widePhotos} fullWidthPhotos={fullWidthPhotos} />}
     </Root>
   )
 }
@@ -55,7 +57,9 @@ export const pageQuery = graphql`
           bio
           image
         }
-        photos
+        photos,
+        widePhotos,
+        fullWidthPhotos
       }
     }
   }

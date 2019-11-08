@@ -1,19 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
-import media from "../utils/media"
-import Hero from "../components/Hero"
+import Hero, { Intro } from "../components/Hero"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import OpenCall from "../components/OpenCall"
 import Section from "../components/Section"
 import Footer from "../components/Footer"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
-
-const Intro = styled.div`
-  grid-column: span 7;
-  ${media.smallOnly`grid-column: span 5;`}
-`
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -51,7 +44,6 @@ export default function FrontPage({ data }) {
           </p>
         </Intro>
       </Section>
-
       {upcomingEvents.map(({ node }) => {
         const {
           title,
@@ -77,7 +69,6 @@ export default function FrontPage({ data }) {
           />
         )
       })}
-
       <Section heading="Past events">
         {pastEvents.map(({ node }, index) => {
           const { poster, title, date, location, speakers } = node.frontmatter
@@ -90,7 +81,6 @@ export default function FrontPage({ data }) {
               date={date}
               location={location}
               speakers={speakers}
-              key={index}
             />
           )
         })}

@@ -67,3 +67,13 @@ collections:
           config:
             multiple: true
             max_files: 500
+      - name: widePhotos
+        label: Wide photos
+        hint: Indexes of photos to enlarge. Comma separeted list. (eg. 1,13,25)
+        widget: list
+        required: false
+      - name: fullWidthPhotos
+        label: Full width photos
+        hint: Indexes of photos to enlarge to full width. Comma separeted list. (eg. 1,13,25)
+        widget: list
+        required: false
