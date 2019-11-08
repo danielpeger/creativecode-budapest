@@ -6,9 +6,9 @@ import useDimensions from "react-use-dimensions";
 
 const Grid = styled.section`
   display: grid;
-  place-items: start;
+  place-items: center;
   grid-auto-flow: row dense;
-  grid-column-gap: var(--xxs);
+  grid-gap: var(--l);
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
@@ -35,7 +35,6 @@ const Grid = styled.section`
 `;
 
 const GridImageElement = styled(Image)`
-  margin-bottom: var(--xxs);
   ${media.xSmallOnly`
     grid-column: span 4;
   `}
@@ -46,12 +45,22 @@ const GridImageElement = styled(Image)`
     grid-column: span 4;
   `}
 
+  ${props => props.portrait && css`
+    grid-row: span 2;
+  `}
+
   ${props => props.wide && css`
     ${media.smallOnly`
       grid-column: span 6;
     `}
     ${media.mediumUp`
       grid-column: span 8;
+    `}
+    ${!props.portrait && css`
+      grid-row: span 2;
+    `}
+    ${props.portrait && css`
+      grid-row: span 4;
     `}
   `}
 
@@ -66,18 +75,6 @@ const GridImageElement = styled(Image)`
       grid-column: span 12;
     `}
   `}
-
-  ${props => props.portrait && css`
-    grid-row: span 2;
-  `}
-
-  ${props => props.wide && !props.portrait && css`
-    grid-row: span 2;
-  `}
-
-  ${props => props.wide && props.portrait && css`
-    grid-row: span 4;
-  `}
 `;
 
 const GridImage = ({ src, wide, fullWidth }) => {
@@ -91,7 +88,7 @@ const GridImage = ({ src, wide, fullWidth }) => {
       mobileWidth={wide || fullWidth ? 840 : 540}
       alt="Photo from the event"
       portrait={portrait}
-      aspectRatio={portrait ? 0.74 : false}
+      aspectRatio={portrait ? 0.72 : false}
       customTransformations={portrait ? "c_fill,g_auto" : false}
       wide={wide}
       fullWidth={fullWidth}
@@ -111,8 +108,8 @@ const PhotoGrid = ({ photos, widePhotos, fullWidthPhotos }) => {
           <GridImage
             src={photo}
             key={index}
-            wide={widePhotos.includes(String(index+1))}
-            fullWidth={fullWidthPhotos.includes(String(index+1))}
+            wide={widePhotos ? widePhotos.includes(String(index+1)) : false}
+            fullWidth={fullWidthPhotos ? fullWidthPhotos.includes(String(index+1)) : false}
           />
           //</a>
         )
