@@ -7,6 +7,7 @@ import useDimensions from "react-use-dimensions";
 const Grid = styled.section`
   display: grid;
   place-items: start;
+  grid-auto-flow: row dense;
   grid-column-gap: var(--xxs);
 
   ${media.xSmallOnly`
