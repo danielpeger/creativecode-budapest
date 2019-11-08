@@ -162,11 +162,13 @@ photos:
     https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566426/cc6/pop_jhtf6w.gif
 widePhotos:
   - '1'
-  - '13'
+  - '10'
   - '25'
+  - '45'
+  - '56'
 fullWidthPhotos:
-  - '9'
-  - '18'
+  - '14'
+  - '31'
 ---
 
 This will be our fifth community meetup! (well, if we don't count the previous two meetups, but they didn't have any numbers in their title :) )
