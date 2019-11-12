@@ -86,9 +86,10 @@ const Footer = () => {
       <NewsletterAside>
         <h2>Newsletter</h2>
         <p>Sign up to get event info</p>
-        <NewsletterForm>
-          <TextInput placeholder="Your email" />
-          <Button name="newsletter">
+        <NewsletterForm action="https://tinyletter.com/creativecodebudapest" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/creativecodebudapest', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <TextInput placeholder="Your email" name="email" id="tlemail" />
+          <input type="hidden" value="1" name="embed"/>
+          <Button name="newsletter" type="submit">
             <span>Sign up</span>
             <ArrowIcon />
           </Button>

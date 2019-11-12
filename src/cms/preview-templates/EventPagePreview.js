@@ -7,6 +7,7 @@ import media from "../../utils/media"
 import Section from "../../components/Section"
 import DateString from "../../components/DateString"
 import Speaker from "../../components/Speaker"
+import ClockIcon from "../../components/icons/clock.svg"
 
 const StylesheetInjector = ({ children }) => {
 	const [iframeRef, setIframeRef] = useState(undefined);
@@ -112,6 +113,7 @@ export default function EventPagePreview({ entry, widgetFor }) {
             <h2>{entry.getIn(['data', 'title'])}</h2>
             <InfoList>
               <li>
+                <img src={ClockIcon} width="24" height="24" alt="Clock icon" />
                 <span><DateString date={entry.getIn(['data', 'date'])} /></span>
               </li>
               <li>

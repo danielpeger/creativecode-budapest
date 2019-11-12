@@ -70,11 +70,11 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
           with&nbsp;
           {speakers.map((speaker, index) => {
             if (index === 0) {
-              return <em>{speaker.name}</em>
+              return <em key={index}>{speaker.name}</em>
             } else if (index === speakers.length - 1) {
-              return <React.Fragment> and <em>{speaker.name}</em></React.Fragment>
+              return <React.Fragment key={index}> and <em>{speaker.name}</em></React.Fragment>
             } else {
-              return <em>, {speaker.name}</em>
+              return <em key={index}>, {speaker.name}</em>
             }
           })}
         </SpeakerLine>

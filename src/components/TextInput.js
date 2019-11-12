@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const TextInputElement = styled.input`
+  all: unset;
   display: flex;
   align-items: center;
   line-height: var(--l);

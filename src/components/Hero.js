@@ -8,7 +8,7 @@ export const Intro = styled.div`
 `
 
 const HeroElement = styled.div`
-  min-height: 85vh;
+  min-height: 50vh;
   height: ${props => props.vh * 85}px;
 	display: grid;
   place-items: center left;
