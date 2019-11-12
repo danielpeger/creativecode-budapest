@@ -21,7 +21,7 @@ speakers:
       in a good manner and how digital interfaces are effecting our
       cognitive-system.
     image: >-
-      https://res.cloudinary.com/creativecodebudapest/image/upload/v1570566473/cc6/P1080960_v8od3v.jpg
+      https://res.cloudinary.com/creativecodebudapest/image/upload/v1570906591/IMG_1694_krpxlc.jpg
     name: Andrea Görcz
   - bio: >-
       [Vlad](http://vrsh.in/) is a visual artist and a creative director focused
@@ -31,6 +31,8 @@ speakers:
       immersive installations and spatial visual effects. He is a frequent
       public speaker at various art and tech conferences and runs the Creative
       XR community in Berlin.
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/v1570564929/sample.jpg
     name: Vladimir Storm
   - bio: >-
       [Péter](https://www.facebook.com/peter.szegedi) started working as a 3D
@@ -44,6 +46,8 @@ speakers:
       held a Game Jame course at the Moholy-Nagy University of Art and Design. 
       Now he’s back at NeocoreGames, and he is developing a Game Boy like retro
       game in his free time, and started creating an art game scene in Budapest.
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/v1570564155/cc5/P1080652_whpw91.jpg
     name: Peter Szegedi
 photos:
   - >-
