@@ -1,12 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import media from "../utils/media"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 const EventPageHeader = styled(EventHeader)`
+  border: none;
   margin-top: var(--xxxl);
+  ${media.mediumDown`margin-top: var(--l);`}
 `;
 
 export default function Template({ data }) {
