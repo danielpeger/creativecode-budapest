@@ -8,8 +8,12 @@ import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 const EventPageHeader = styled(EventHeader)`
   border: none;
+  padding-top: 0;
   margin-top: var(--xxxl);
-  ${media.mediumDown`margin-top: var(--l);`}
+  ${media.mediumDown`
+    margin-top: var(--xl);
+    margin-bottom: var(--xl);
+  `}
 `;
 
 export default function Template({ data }) {
