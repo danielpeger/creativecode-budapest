@@ -48,6 +48,7 @@ const NewsletterForm = styled.form`
   input {
     flex: 1;
     border-right: none;
+    min-width: 0;
   }
 
   button {
