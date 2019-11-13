@@ -40,7 +40,7 @@ const OpenCall = () => {
 			<p>We're always looking for new speakers.</p>
 		</aside>
 		<ButtonAside>
-			<Button name="mail">
+			<Button name="mail" href="mailto:creativecodebudapest@gmail.com">
 				<MailIcon />
 				<span>Drop us a line</span>
 			</Button>
