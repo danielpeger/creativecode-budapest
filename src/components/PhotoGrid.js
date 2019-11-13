@@ -54,6 +54,7 @@ const Grid = styled.section`
       left: 10%;
       text-align: center;
       margin: 0;
+      color: var(--lightgray);
     }
 
     > picture {
