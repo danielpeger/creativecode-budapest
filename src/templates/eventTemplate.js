@@ -43,7 +43,15 @@ export default function Template({ data }) {
         description={html}
         speakers={speakers}
       />
-      {photos && <PhotoGrid photos={photos} widePhotos={widePhotos} fullWidthPhotos={fullWidthPhotos} />}
+      {photos ? 
+        <PhotoGrid 
+          photos={photos}
+          widePhotos={widePhotos}
+          fullWidthPhotos={fullWidthPhotos} 
+        />
+        : 
+        <PhotoGrid placeholder />
+      }
     </Root>
   )
 }

@@ -32,6 +32,34 @@ const Grid = styled.section`
   ${media.xLargeOnly`
     max-width: calc(1400px - (2 * var(--l)));
   `}
+
+  ${props => props.placeholder && css`
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      display: block;
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+      bottom: 0;
+    }
+
+    p {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      text-align: center;
+      margin: 0;
+    }
+
+    > picture {
+      opacity: 0.1;
+    }
+  `}
 `;
 
 const GridImageElement = styled(Image)`
@@ -77,7 +105,7 @@ const GridImageElement = styled(Image)`
   `}
 `;
 
-const GridImage = ({ src, wide, fullWidth }) => {
+const GridImage = ({ src, wide, fullWidth, className }) => {
   const [ref, { width, height }] = useDimensions();
   const portrait = height > width;
   return (
@@ -92,28 +120,40 @@ const GridImage = ({ src, wide, fullWidth }) => {
       customTransformations={portrait ? "c_fill,g_auto" : false}
       wide={wide}
       fullWidth={fullWidth}
+      className={className}
     />
     
   )
 }
 
-const PhotoGrid = ({ photos, widePhotos, fullWidthPhotos }) => {
-  return (
-    <Grid>
-      {photos.map((photo, index) => {
-        return (
-          //<a href={photo}> //don't link to original to save cloudinary bandwith
-          <GridImage
-            src={photo}
-            key={index}
-            wide={widePhotos ? widePhotos.includes(String(index+1)) : false}
-            fullWidth={fullWidthPhotos ? fullWidthPhotos.includes(String(index+1)) : false}
-          />
-          //</a>
-        )
-      })}
-    </Grid>
-  )
+const PhotoGrid = ({ placeholder, photos, widePhotos, fullWidthPhotos }) => {
+  if (placeholder) {
+    return (
+      <Grid placeholder>
+        <p>📷 We didn't upload photos to this event yet, but you'll see them here once we do.</p>
+        <GridImage />
+        <GridImage />
+        <GridImage />
+      </Grid>
+    )
+  } else {
+    return (
+      <Grid>
+        {photos.map((photo, index) => {
+          return (
+            //<a href={photo}> //don't link to original to save cloudinary bandwith
+            <GridImage
+              src={photo}
+              key={index}
+              wide={widePhotos ? widePhotos.includes(String(index+1)) : false}
+              fullWidth={fullWidthPhotos ? fullWidthPhotos.includes(String(index+1)) : false}
+            />
+            //</a>
+          )
+        })}
+      </Grid>
+    )
+  }
 }
 
 export default PhotoGrid
