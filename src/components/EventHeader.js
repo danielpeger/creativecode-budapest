@@ -128,6 +128,9 @@ const EventHeader = ({
         <div dangerouslySetInnerHTML={{ __html: description }}></div>
       </EventInfo>
       <SpeakerList>
+        {/* <Label>
+          Speakers
+        </Label> */}
         {speakers &&
           speakers.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />

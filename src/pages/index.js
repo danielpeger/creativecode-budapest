@@ -1,12 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
+import GlobalStyle, { Root } from "../components/GlobalStyle"
+import Section from "../components/Section"
 import Hero, { Intro } from "../components/Hero"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import OpenCall from "../components/OpenCall"
-import Section from "../components/Section"
+import PodcastEpisode from "../components/PodcastEpisode"
 import Footer from "../components/Footer"
-import GlobalStyle, { Root } from "../components/GlobalStyle"
+
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -84,6 +86,9 @@ export default function FrontPage({ data }) {
             />
           )
         })}
+      </Section>
+      <Section heading="We have a podcast too" subheading="In which the amazing Declan Hannigan interviews some of our most inspiring speakers about their work and background.">
+        <PodcastEpisode src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3" />
       </Section>
       <OpenCall></OpenCall>
       <Footer></Footer>

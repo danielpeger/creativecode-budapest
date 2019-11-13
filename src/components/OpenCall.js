@@ -34,18 +34,18 @@ const ButtonAside = styled.aside`
 
 const OpenCall = () => {
   return (
-	<OpenCallElement>
-		<aside>
-			<h2>Open call</h2>
-			<p>We're always looking for new speakers.</p>
-		</aside>
-		<ButtonAside>
-			<Button name="mail" href="mailto:creativecodebudapest@gmail.com">
-				<MailIcon />
-				<span>Drop us a line</span>
-			</Button>
-		</ButtonAside>
-	</OpenCallElement>
+		<OpenCallElement>
+			<aside>
+				<h2>Open call</h2>
+				<p>We're always looking for new speakers.</p>
+			</aside>
+			<ButtonAside>
+				<Button name="mail" href="mailto:creativecodebudapest@gmail.com">
+					<MailIcon />
+					<span>Drop us a line</span>
+				</Button>
+			</ButtonAside>
+		</OpenCallElement>
   )
 }
 

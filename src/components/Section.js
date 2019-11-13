@@ -41,7 +41,7 @@ const SectionElement = styled.section`
       padding-top: var(--m);
     `}
 
-    h2 {
+    > h2, > p {
       grid-column: 1 / -1;
     }
 `
