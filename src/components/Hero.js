@@ -4,7 +4,6 @@ import media, { breakpoints } from "../utils/media"
 
 export const Intro = styled.div`
   grid-column: span 7;
-  ${media.smallOnly`grid-column: span 5;`}
 `
 
 const HeroElement = styled.div`

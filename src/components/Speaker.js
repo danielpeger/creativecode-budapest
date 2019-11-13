@@ -1,13 +1,25 @@
 import React from "react"
 import styled from "styled-components"
+import media from "../utils/media"
 import Image from "./Image"
 import MarkdownToHtml from "../utils/MarkdownToHtml"
 
 const SpeakerElement = styled.div`
   display: contents;
 
+  ${media.xSmallOnly`
+    display: block;
+    grid-column: 1 / -1;
+  `}
+
   > picture {
     grid-column: 1 / 2;
+    
+    ${media.xSmallOnly`
+      width: calc((5 * var(--l)) - var(--m));
+      float: left;
+      margin: 0 var(--m) var(--m) 0 !important;
+    `}
   }
 
   > div {

@@ -22,7 +22,7 @@ const EventInfo = styled.aside`
   width: 100%;
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallDown`margin-bottom: var(--xl);`}
-  ${media.smallOnly`grid-column: span 5;`}
+  ${media.smallOnly`grid-column: span 6;`}
   ${media.mediumOnly`grid-column: span 3;`}
   ${media.largeUp`grid-column: span 5;`}
 `
@@ -64,7 +64,7 @@ const SpeakerList = styled.aside`
   width: 100%;
 
   ${media.xSmallOnly`grid-column: span 4;`}
-  ${media.smallOnly`grid-column: span 5;`}
+  ${media.smallOnly`grid-column: span 6;`}
   ${media.mediumOnly`grid-column: 5 / -1;`}
   ${media.largeUp`grid-column: 7 / -1;`}
 
