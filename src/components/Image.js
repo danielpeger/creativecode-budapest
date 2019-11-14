@@ -35,7 +35,7 @@ const Image = React.forwardRef(({
 }, externalRef) => {
   const [dpr, setDpr] = useState(1)
   useEffect(() => {
-    setDpr(window.devicePixelRatio)
+    setDpr(Math.floor(window.devicePixelRatio))
   }, [setDpr])
   //TODO: Get aspect ratio from cloudinary
   const supportsLazyLoading = useNativeLazyLoading()
