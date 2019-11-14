@@ -6,6 +6,6 @@ googleMapsLink: ''
 meetupEventLink: ''
 facebookEventLink: ''
 poster: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/v1570564115/cc5/P1080538_calvqv.jpg
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1570564115/cc5/P1080538_calvqv.jpg
 ---
 

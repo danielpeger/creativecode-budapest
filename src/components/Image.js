@@ -48,14 +48,14 @@ const Image = React.forwardRef(({
   let mobileSrc = '';
   if (src) {
     defaultSrc = src.replace(
-      `upload/`,
+      `upload/t_breakthumbnails/`,
       `upload/f_auto,w_${width},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
         customTransformations ? customTransformations : ""
       }/`
     )
   
     mobileSrc = src.replace(
-      `upload/`,
+      `upload/t_breakthumbnails/`,
       `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
         customTransformations ? customTransformations : ""
       }/`
