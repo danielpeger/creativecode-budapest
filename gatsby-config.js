@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   plugins: [
     {
@@ -22,5 +16,17 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `http://feeds.soundcloud.com/users/soundcloud:users:24758916/sounds.rss`,
+        name: `Podcast`,
+        parserOption: {
+          customFields: {
+            item: ['itunes:duration']
+          }
+        }
+      }
+    }
   ],
 }
