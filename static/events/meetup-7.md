@@ -21,16 +21,15 @@ speakers:
 Hey!
 
 This will be our next community meetup!
+ What to expect?
 
-What to expect?
+- nice, opened and curious people
 
-\- nice, opened and curious people
+- 2 short talks to feed our brains with some new inspiration
 
-\- 2 short talks to feed our brains with some new inspiration
+- a little bit of organised networking
 
-\- a little bit of organised networking
-
-\- hanging out, getting to know each other, maybe making up future plans for collaborations or exhibitions together.
+- hanging out, getting to know each other, maybe making up future plans for collaborations or exhibitions together.
 
 The meetup will take place at A66 Event Space, you can arrive from around 19.30, the first talk will start at 20.00.
 
