@@ -23,7 +23,7 @@ module.exports = {
         name: `Podcast`,
         parserOption: {
           customFields: {
-            item: ['itunes:duration']
+            item: ['itunes:duration', 'itunes:image']
           }
         }
       }

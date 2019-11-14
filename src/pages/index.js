@@ -12,6 +12,7 @@ import Footer from "../components/Footer"
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
+  const podcast = data.feedPodcast
   const upcomingEvents = events.filter(
     ({ node }) => new Date(node.frontmatter.date) > new Date()
   )
@@ -88,7 +89,12 @@ export default function FrontPage({ data }) {
         })}
       </Section>
       <Section heading="We have a podcast too" subheading="In which the amazing Declan Hannigan interviews some of our most inspiring speakers about their work and background.">
-        <PodcastEpisode src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3" />
+        <PodcastEpisode 
+          title={podcast.title}
+          date={podcast.date}
+          imgSrc={podcast.itunes.image.attrs.href}
+          src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3" 
+        />
       </Section>
       <OpenCall></OpenCall>
       <Footer></Footer>
@@ -126,6 +132,23 @@ export const pageQuery = graphql`
           }
           html
         }
+      }
+    }
+    feedPodcast {
+      id
+      isoDate
+      title
+      content
+      itunes {
+        duration
+        image {
+          attrs {
+            href
+          }
+        }
+      }
+      enclosure {
+        url
       }
     }
   }

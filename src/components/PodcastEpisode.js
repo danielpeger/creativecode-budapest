@@ -1,10 +1,20 @@
 import React from "react"
+import Section from "./Section"
+import { Label } from "./GlobalStyle"
+import DateString from "./DateString"
 
-const PodcastEpisode = ({ src }) => {
+
+const PodcastEpisode = ({ date, title, shownotes, imgSrc, src }) => {
   return (
-		<audio controls>
-      <source src={src} type="audio/mpeg" />
-    </audio>
+    <Section noseparator>
+      <img src={imgSrc} />
+      <Label><DateString date={date} /></Label>
+      <h3>{title}</h3>
+      <p>{shownotes}</p>
+      <audio controls>
+        <source src={src} type="audio/mpeg" />
+      </audio>
+    </Section>
   )
 }
 

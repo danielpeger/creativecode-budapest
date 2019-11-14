@@ -118,4 +118,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+export const Label = styled.h3`
+  font-weight: 400;
+  text-transform: uppercase;
+`
+
 export default GlobalStyle

@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import media from "../utils/media"
+import { Label } from "./GlobalStyle"
 import Section from "./Section"
 import DateString from "./DateString"
 import Speaker from "./Speaker"
@@ -12,11 +13,6 @@ import ClockIcon from "../components/icons/clock.svg"
 const EventHeaderSection = styled(Section)`
   padding-top: var(--l);
 `;
-
-const Label = styled.h3`
-  font-weight: 400;
-  text-transform: uppercase;
-`
 
 const EventInfo = styled.aside`
   width: 100%;
