@@ -20,31 +20,40 @@ collections:
     fields:
       - name: title 
         label: Title
+        default: ''
       - name: date
+        default: ''
         label: Date
         widget: datetime
         required: false
       - name: location
+        default: ''
         label: Location
         required: false
       - name: googleMapsLink
+        default: ''
         label: Google Maps Link
         required: false
       - name: meetupEventLink
+        default: ''
         label: Meetup Event Link
         required: false
       - name: facebookEventLink
+        default: ''
         label: Facebook Event Link
         required: false
       - name: poster
+        default: ''
         label: Poster
         widget: image
         required: false
       - name: body
+        default: ''
         label: Description
         widget: markdown
         required: false
       - name: speakers
+        default: ''
         label: Speakers
         widget: list
         required: false
@@ -61,6 +70,7 @@ collections:
             widget: markdown
             required: false
       - name: photos
+        default: ''
         label: Photos
         widget: image
         required: false
@@ -70,11 +80,13 @@ collections:
             multiple: true
             max_files: 500
       - name: widePhotos
+        default: ''
         label: Wide photos
         hint: Indexes of photos to enlarge. Comma separeted list. (eg. 1,13,25)
         widget: list
         required: false
       - name: fullWidthPhotos
+        default: ''
         label: Full width photos
         hint: Indexes of photos to enlarge to full width. Comma separeted list. (eg. 1,13,25)
         widget: list

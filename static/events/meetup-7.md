@@ -17,6 +17,9 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573760345/cc7/szalkaidani_w8xpls.jpg
     name: Dániel Szalkai
+photos: ''
+widePhotos: ''
+fullWidthPhotos: ''
 ---
 Hey!
 

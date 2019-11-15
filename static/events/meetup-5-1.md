@@ -9,8 +9,9 @@ facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573807326/cc5/creativecode_6_utknbl.jpg
 speakers: []
-photos: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1570564929/sample.jpg
+photos: ''
+widePhotos: ''
+fullWidthPhotos: ''
 ---
 Hey!
 
