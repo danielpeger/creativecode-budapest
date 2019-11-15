@@ -30,9 +30,6 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573761053/cc6/kalman_soe2ku.jpg
     name: Kálmán Tarr
-photos: ''
-widePhotos: ''
-fullWidthPhotos: ''
 ---
 Hey!
 
