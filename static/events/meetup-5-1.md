@@ -6,7 +6,8 @@ googleMapsLink: >-
   https://www.google.com/maps/place/A66/@47.507455,19.064003,17z/data=!3m1!4b1!4m5!3m4!1s0x4741dc71e8f07141:0x338531a68ac2aa0!8m2!3d47.5074514!4d19.0661917
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzjbjb/'
 facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
-poster: ''
+poster: >-
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573807326/cc5/creativecode_6_utknbl.jpg
 speakers: []
 ---
 Hey!
