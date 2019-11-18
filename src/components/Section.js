@@ -10,7 +10,7 @@ const SectionElement = styled.section`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--m);
+    grid-gap: var(--m);
     margin: 0 var(--l) var(--xxl) var(--l);
   `}
   ${media.smallOnly`
@@ -21,7 +21,7 @@ const SectionElement = styled.section`
     margin: 0 var(--l) var(--xxxl) var(--l);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--l);
+    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);

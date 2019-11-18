@@ -16,7 +16,7 @@ const HeroElement = styled.div`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--m);
+    grid-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
@@ -28,7 +28,7 @@ const HeroElement = styled.div`
     grid-template-columns: repeat(8, 1fr);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--l);
+    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);

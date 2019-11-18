@@ -26,12 +26,6 @@ const SpeakerElement = styled.div`
     grid-column: 2 / -1;
   }
 
-  &:not(:last-child) {
-    > picture, > div {
-      margin-bottom: var(--l);
-    }
-  }
-
   h3, p {
     margin-bottom: var(--xxs);
   }

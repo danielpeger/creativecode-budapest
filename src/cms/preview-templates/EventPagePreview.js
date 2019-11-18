@@ -38,12 +38,6 @@ const SpeakerElement = styled.div`
   > div {
     grid-column: 2 / -1;
   }
-
-  &:not(:last-child) {
-    > picture, > div {
-      margin-bottom: var(--l);
-    }
-  } 
 `
 
 const NameElement = styled.h3`
@@ -111,7 +105,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--m);
+    grid-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(5, 1fr);
@@ -120,7 +114,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--l);
+    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(6, 1fr);

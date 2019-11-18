@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h1, h2, h3, p, ul {
-		margin: 0 0 var(--xs) 0;
+		margin: 0 0 var(--s) 0;
 	}
 
 	h1 {

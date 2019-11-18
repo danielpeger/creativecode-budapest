@@ -12,12 +12,12 @@ import ClockIcon from "../components/icons/clock.svg"
 
 const EventHeaderSection = styled(Section)`
   padding-top: var(--l);
+  ${media.smallDown`grid-row-gap: var(--xl);`}
 `;
 
 const EventInfo = styled.aside`
   width: 100%;
   ${media.xSmallOnly`grid-column: span 4;`}
-  ${media.smallDown`margin-bottom: var(--xl);`}
   ${media.smallOnly`grid-column: span 6;`}
   ${media.mediumOnly`grid-column: span 3;`}
   ${media.largeUp`grid-column: span 5;`}
@@ -68,7 +68,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-column-gap: var(--m);
+    grid-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(5, 1fr);
@@ -77,7 +77,7 @@ const SpeakerList = styled.aside`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.mediumUp`
-    grid-column-gap: var(--l);
+    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(6, 1fr);
@@ -124,9 +124,6 @@ const EventHeader = ({
         <div dangerouslySetInnerHTML={{ __html: description }}></div>
       </EventInfo>
       <SpeakerList>
-        {/* <Label>
-          Speakers
-        </Label> */}
         {speakers &&
           speakers.map((speaker, index) => (
             <Speaker speaker={speaker} key={index} />
