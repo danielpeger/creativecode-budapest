@@ -17,8 +17,8 @@ export const Root = styled.main`
 	${media.xSmallOnly`--m: 16px;`}
 	${media.smallOnly`--m: 17px;`}
 	${media.mediumOnly`--m: 17px;`}
-	${media.largeOnly`--m: 20px;`}
-	${media.xLargeOnly`--m: 22px;`}
+	${media.largeOnly`--m: 18px;`}
+	${media.xLargeOnly`--m: 19px;`}
 	--xxs: calc(var(--m) / ${Math.pow(scale, 3)});
 	--xs: calc(var(--m) / ${Math.pow(scale, 2)});
 	--s: calc(var(--m) / ${scale});
@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h1, h2, h3, p, ul {
-		margin: 0 0 var(--m) 0;
+		margin: 0 0 var(--xs) 0;
 	}
 
 	h1 {
@@ -85,6 +85,11 @@ const GlobalStyle = createGlobalStyle`
 	ul {
 		line-height: var(--l);
 		font-size: var(--m);
+	}
+
+	small {
+		line-height: var(--m);
+		font-size: var(--s);
 	}
 
 	ul, ol {
@@ -119,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const Label = styled.h3`
-  font-weight: 400;
+	font-weight: 400;
   text-transform: uppercase;
 `
 

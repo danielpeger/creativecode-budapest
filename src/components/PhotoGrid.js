@@ -131,7 +131,7 @@ const PhotoGrid = ({ placeholder, photos, widePhotos, fullWidthPhotos }) => {
   if (placeholder) {
     return (
       <Grid placeholder>
-        <p>📷 We didn't upload photos to this event yet, but you'll see them here once we do.</p>
+        <p><span role="img" aria-label="Camera icon">📷</span> No photos of the event yet</p>
         <GridImage />
         <GridImage />
         <GridImage />

@@ -30,11 +30,15 @@ const SpeakerElement = styled.div`
     > picture, > div {
       margin-bottom: var(--l);
     }
-  } 
+  }
+
+  h3, p {
+    margin-bottom: var(--xxs);
+  }
 `
 
 const NameElement = styled.h3`
-  margin-bottom: 0;
+  
 `
 
 const Speaker = ({ speaker }) => {

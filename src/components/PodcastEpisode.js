@@ -7,7 +7,7 @@ import DateString from "./DateString"
 const PodcastEpisode = ({ date, title, shownotes, imgSrc, src }) => {
   return (
     <Section noseparator>
-      <img src={imgSrc} />
+      <img src={imgSrc} alt="Podcast episode thumbnail" />
       <Label><DateString date={date} /></Label>
       <h3>{title}</h3>
       <p>{shownotes}</p>
