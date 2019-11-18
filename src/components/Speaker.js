@@ -16,7 +16,7 @@ const SpeakerElement = styled.div`
     grid-column: 1 / 2;
     
     ${media.xSmallOnly`
-      width: calc((5 * var(--l)) - var(--m));
+      width: calc((4 * var(--l)) - var(--m));
       float: left;
       margin: 0 var(--m) var(--m) 0 !important;
     `}
