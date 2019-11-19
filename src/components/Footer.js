@@ -3,10 +3,10 @@ import styled from "styled-components"
 import Button from "./Button"
 import Section from "./Section"
 import media from "../utils/media"
-import FacebookIcon from "../components/icons/facebook.svg"
-import MeetupIcon from "../components/icons/meetup.svg"
-import ArrowIcon from "../components/icons/arrow.svg"
-import TextInput from "../components/TextInput"
+import FacebookIcon from "./icons/facebook.svg"
+import MeetupIcon from "./icons/meetup.svg"
+import ArrowIcon from "./icons/arrow.svg"
+import TextInput from "./TextInput"
 
 const FooterElement = styled(Section)`
   aside {

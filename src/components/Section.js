@@ -41,9 +41,10 @@ const SectionElement = styled.section`
       padding-top: var(--m);
     `}
 
-    > h2, > p {
-      grid-column: 1 / -1;
-    }
+  > h2, > p {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
 `
 
 const Section = ({ className, heading, subheading, noseparator, children }) => {

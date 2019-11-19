@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
 		background: #1e00c2;
 	}
 
-	h1, h2, h3, p, ul {
+	h1, h2, h3, h4, p, ul {
 		margin: 0 0 var(--s) 0;
 	}
 
@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
 
 	p,
 	h3,
+	h4,
 	ul {
 		line-height: var(--l);
 		font-size: var(--m);
@@ -123,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const Label = styled.h3`
+export const Label = styled.h4`
 	font-weight: 400;
   text-transform: uppercase;
 `

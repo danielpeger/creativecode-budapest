@@ -1,14 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 import Section from "../components/Section"
+import Button from "../components/Button"
+import ArrowIcon from "../components/icons/arrow.svg"
 import Hero, { Intro } from "../components/Hero"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
 import OpenCall from "../components/OpenCall"
 import PodcastEpisode from "../components/PodcastEpisode"
 import Footer from "../components/Footer"
-
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -89,12 +90,17 @@ export default function FrontPage({ data }) {
         })}
       </Section>
       <Section heading="We have a podcast!" subheading="Every now and then we invite an inspiring meetup speaker to have a longer chat about their work and professional background. Our host is the amazing Declan Hannigan. The show is produced by Jérôme Li-Thiao-Té at Watcha Studios.">
-        <PodcastEpisode 
+        <PodcastEpisode
           title={podcast.title}
-          date={podcast.date}
+          shownotes={podcast.content}
+          date={podcast.isoDate}
+          latest
           imgSrc={podcast.itunes.image.attrs.href}
-          src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3" 
+          src={podcast.enclosure.url} 
         />
+        <Button>
+          <Link to="/podcast">All episodes <ArrowIcon /></Link>
+        </Button>
       </Section>
       <OpenCall></OpenCall>
       <Footer></Footer>
