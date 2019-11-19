@@ -1,8 +1,8 @@
 import React from "react"
 
-const Audio = ({ src }) => {
+const Audio = ({ src, className }) => {
   return (
-		<audio controls >
+		<audio controls className={className}>
 			<source src={src} type="audio/mpeg" />
 		</audio>
   )

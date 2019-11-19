@@ -1,14 +1,12 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 import Section from "../components/Section"
-import Button from "../components/Button"
-import ArrowIcon from "../components/icons/arrow.svg"
 import Hero, { Intro } from "../components/Hero"
 import EventCard from "../components/EventCard"
 import EventHeader from "../components/EventHeader"
-import OpenCall from "../components/OpenCall"
 import PodcastEpisode from "../components/PodcastEpisode"
+import OpenCall from "../components/OpenCall"
 import Footer from "../components/Footer"
 
 export default function FrontPage({ data }) {
@@ -94,13 +92,10 @@ export default function FrontPage({ data }) {
           title={podcast.title}
           shownotes={podcast.content}
           date={podcast.isoDate}
-          latest
+          frontpage
           imgSrc={podcast.itunes.image.attrs.href}
           src={podcast.enclosure.url} 
         />
-        <Button>
-          <Link to="/podcast">All episodes <ArrowIcon /></Link>
-        </Button>
       </Section>
       <OpenCall></OpenCall>
       <Footer></Footer>
