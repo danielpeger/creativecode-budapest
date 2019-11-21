@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
 
@@ -7,8 +7,7 @@ export const Intro = styled.div`
 `
 
 const HeroElement = styled.div`
-  min-height: 60vh;
-  height: ${props => props.vh * 85}px;
+  height: 85vh;
 	display: grid;
   place-items: center left;
 
@@ -46,15 +45,13 @@ const HeroElement = styled.div`
 	}
 `
 const Hero = ({ children }) => {
-  const [vh, setVh] = useState(0);
-
+  const HeroRef = useRef(null);
 	useEffect(() => {
-		let measuredVh = window.innerHeight * 0.01;
-		setVh(measuredVh)
-	}, [setVh])
+    HeroRef.current.setAttribute("style", `height: ${window.innerHeight * 0.85}px`);
+	})
 
   return (
-		<HeroElement vh={vh} >
+		<HeroElement ref={HeroRef}>
 			{children}
 		</HeroElement>
   )
