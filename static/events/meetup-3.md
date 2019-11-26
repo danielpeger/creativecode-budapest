@@ -21,6 +21,89 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574805476/cc3/merediththomas_jmswos.jpg
     name: Meredith Thomas
+photos:
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808602/cc3/P1030082_dzsflh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808601/cc3/P1030071_zmfsm6.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808597/cc3/P1030081_dqdqrz.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808607/cc3/P1030069_djmyrn.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808560/cc3/P1030234_qs5idd.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808558/cc3/P1030228_vc5zlf.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808555/cc3/P1030220_vcyylm.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808554/cc3/P1030226_bbqlaw.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808552/cc3/P1030227_cmmz13.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808551/cc3/P1030219_bcauy3.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808550/cc3/P1030207_qwtcn1.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808549/cc3/P1030208_myaioc.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808544/cc3/P1030203_inet7h.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808544/cc3/P1030215_u4ibag.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808539/cc3/P1030195_knuvph.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808534/cc3/P1030194_o56ccf.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808534/cc3/P1030175_shmwmh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808533/cc3/P1030179_y5sxux.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808533/cc3/P1030176_kqv5d0.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808533/cc3/P1030183_h3u5fh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808528/cc3/P1030168_lsqp0m.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808525/cc3/P1030173_khcjuo.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808523/cc3/P1030172_k76kts.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808520/cc3/P1030162_mhao61.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808520/cc3/P1030142_ce1ds2.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808518/cc3/P1030167_hvlxam.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808516/cc3/P1030148_uady4m.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808514/cc3/P1030136_rhoqvh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808510/cc3/P1030129_l0o2jr.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808510/cc3/P1030135_lydyeh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808509/cc3/P1030133_vwe1lf.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808509/cc3/P1030114_meznjb.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808508/cc3/P1030237_ybgppn.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808504/cc3/P1030122_jrlkra.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808502/cc3/P1030067_jrvrvc.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808502/cc3/P1030063_nteesv.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808501/cc3/P1030106_b7nufl.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808499/cc3/P1030096_mbfzdh.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808498/cc3/P1030087_kspdu4.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808496/cc3/P1030021_fkfi9r.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808494/cc3/P1030062_yh57xx.jpg
 ---
 Hey!
 
