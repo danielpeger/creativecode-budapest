@@ -26,6 +26,53 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574805980/cc2/szalayzoli_klvj2j.jpg
     name: Zoltán Szalay
+photos:
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808107/cc2/DSC03395_p5r5in.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808105/cc2/DSC03391_irq8gv.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808103/cc2/DSC03389_wkyigv.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808103/cc2/DSC03375_dod3ke.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808103/cc2/DSC03372_oflqyb.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808101/cc2/DSC03366_mfmdy4.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808100/cc2/DSC03377_dvlfdu.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808100/cc2/DSC03374_rbul27.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808096/cc2/DSC03362_uifbpa.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808088/cc2/DSC03352_kyhqra.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808086/cc2/DSC03357_vi5amr.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808085/cc2/DSC03338_wyggjk.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808079/cc2/DSC03354_roqhiy.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808076/cc2/DSC03402_qvzife.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808076/cc2/DSC03337_zhslof.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808071/cc2/DSC03334_ejcrwe.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808067/cc2/DSC03346_zxyhrk.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808064/cc2/DSC03336_m2pos7.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808060/cc2/DSC03341_tgp4de.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808053/cc2/DSC03325_f7upgo.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808052/cc2/DSC03331_dhpvcq.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808049/cc2/DSC03399_dbxkno.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808043/cc2/DSC03398_k13c4g.jpg
 ---
 Hey!
 
