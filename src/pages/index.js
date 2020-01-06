@@ -87,7 +87,7 @@ export default function FrontPage({ data }) {
           )
         })}
       </Section>
-      <Section heading="We have a podcast!" subheading="Every now and then we invite an inspiring meetup speaker to have a longer chat about their work and professional background. Our host is the amazing Declan Hannigan. The show is produced by Jérôme Li-Thiao-Té at Watcha Studios.">
+      <Section heading="Podcast" subheading="We invite some of our most inspiring meetup speakers to have a long-form conversation about their work and professional background. Our host is the amazing Declan Hannigan and the show is produced by Jérôme Li-Thiao-Té at Watcha Studios.">
         <PodcastEpisode
           title={podcast.title}
           shownotes={podcast.content}
