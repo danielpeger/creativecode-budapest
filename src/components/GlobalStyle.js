@@ -5,7 +5,7 @@ import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
 import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
 import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.45
+const scale = 1.2
 
 export const Root = styled.main`
 	--black: #000;
@@ -19,13 +19,20 @@ export const Root = styled.main`
 	${media.mediumOnly`--m: 17px;`}
 	${media.largeOnly`--m: 18px;`}
 	${media.xLargeOnly`--m: 19px;`}
+	--5xs: calc(var(--m) / ${Math.pow(scale, 6)});
+	--4xs: calc(var(--m) / ${Math.pow(scale, 5)});
+	--3xs: calc(var(--m) / ${Math.pow(scale, 4)});
 	--xxs: calc(var(--m) / ${Math.pow(scale, 3)});
 	--xs: calc(var(--m) / ${Math.pow(scale, 2)});
 	--s: calc(var(--m) / ${scale});
 	--l: calc(var(--m) * ${scale});
 	--xl: calc(var(--m) * ${Math.pow(scale, 2)});
 	--xxl: calc(var(--m) * ${Math.pow(scale, 3)});
-	--xxxl: calc(var(--m) * ${Math.pow(scale, 4)});
+	--3xl: calc(var(--m) * ${Math.pow(scale, 4)});
+	--4xl: calc(var(--m) * ${Math.pow(scale, 5)});
+	--5xl: calc(var(--m) * ${Math.pow(scale, 6)});
+	--6xl: calc(var(--m) * ${Math.pow(scale, 7)});
+	--7xl: calc(var(--m) * ${Math.pow(scale, 8)});
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -71,25 +78,25 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h1 {
-		line-height: var(--xxl);
-		font-size: var(--xl);
+		line-height: var(--5xl);
+		font-size: var(--3xl);
 	}
 
 	h2 {
-		line-height: var(--xl);
-		font-size: var(--l);
+		line-height: var(--3xl);
+		font-size: var(--xl);
 	}
 
 	p,
 	h3,
 	h4,
 	ul {
-		line-height: var(--l);
+		line-height: var(--xl);
 		font-size: var(--m);
 	}
 
 	small {
-		line-height: var(--m);
+		line-height: var(--l);
 		font-size: var(--s);
 	}
 

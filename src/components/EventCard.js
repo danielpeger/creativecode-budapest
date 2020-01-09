@@ -10,13 +10,7 @@ import DateString from "./DateString"
 
 const LinkElement = styled(Link)`
   text-decoration: none;
-
-  ${media.largeUp`
-    grid-column: span 3;
-  `}
-  ${media.mediumDown`
-    grid-column: span 2;
-  `}
+  grid-column: span 2;
 `;
 
 const Ul = styled.ul`
@@ -26,12 +20,14 @@ const Ul = styled.ul`
   margin: 0;
   flex-wrap: wrap;
   overflow: hidden;
+  font-size: var(--s);
+  line-height: var(--m);
 
   li {
-    line-height: 24px;
+    line-height: 16px;
     display: flex;
     align-items: flex-start;
-    margin-right: var(--xs);
+    margin-right: var(--s);
     flex-shrink: 0;
 
     span {
@@ -42,6 +38,8 @@ const Ul = styled.ul`
     svg{
       flex-shrink: 0;
       flex-grow: 0;
+      width: 16px;
+      height: 16px;
     }
   }
 
@@ -58,12 +56,14 @@ const H3 = styled.h3`
 
 const SpeakerLine = styled.p`
   margin-bottom: var(--xs);
+  font-size: var(--s);
+  line-height: var(--m);
 `;
 
 const EventCard = ({ path, poster, title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill,g_west`} />
+      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill`} />
       <H3>{title}</H3>
       {speakers && (
         <SpeakerLine>

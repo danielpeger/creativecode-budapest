@@ -9,7 +9,7 @@ import GlobalStyle, { Root } from "../components/GlobalStyle"
 const EventPageHeader = styled(EventHeader)`
   border: none;
   padding-top: 0;
-  margin-top: var(--xxxl);
+  margin-top: var(--3xl);
   ${media.mediumDown`
     margin-top: var(--xl);
     margin-bottom: var(--xl);

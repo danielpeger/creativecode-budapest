@@ -57,7 +57,7 @@ h3 {
 }
 
 h1 {
-  line-height: var(--xxxl);
+  line-height: var(--3xl);
   font-size: var(--xxl);
 }
 
@@ -123,13 +123,13 @@ a:active {
 
 @media (min-width: 1200px) {
   :host {
-    margin: var(--xxxl) 0;
+    margin: var(--3xl) 0;
   }
 }
 
 @media (min-width: 1800px) {
   :host {
-    margin: var(--xxxl) 0;
+    margin: var(--3xl) 0;
   }
 }
 

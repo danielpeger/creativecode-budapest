@@ -10,7 +10,7 @@ const SectionElement = styled.section`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-gap: var(--m);
+    grid-gap: var(--l);
     margin: 0 var(--l) var(--xxl) var(--l);
   `}
   ${media.smallOnly`
@@ -18,14 +18,14 @@ const SectionElement = styled.section`
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
-    margin: 0 var(--l) var(--xxxl) var(--l);
+    margin: 0 var(--l) var(--3xl) var(--l);
   `}
   ${media.mediumUp`
-    grid-gap: var(--l);
+    grid-gap: var(--xl);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 auto var(--xxxl) auto;
+    margin: 0 auto var(--7xl) auto;
   `}
   ${media.largeOnly`
     max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
@@ -37,7 +37,7 @@ const SectionElement = styled.section`
   ${props =>
     !props.noseparator &&
     css`
-      border-top: var(--xxs) solid var(--white);
+      border-top: var(--5xs) solid var(--white);
       padding-top: var(--m);
     `}
 

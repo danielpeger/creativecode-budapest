@@ -9,11 +9,11 @@ const ButtonElement = styled.button`
   line-height: 24px;
   font-size: var(--m);
   font-weight: 700;
-  border-width: calc(var(--xxs) / 3);
+  border-width: calc(var(--5xs) / 3);
   border-style: solid;
   border-color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
-  height: var(--xl);
-  padding: calc(var(--xxs) / 2) var(--m) 0 var(--m);
+  height: var(--3xl);
+  padding: 3px var(--m) 0 var(--m);
   color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
 
@@ -51,11 +51,11 @@ const ButtonElement = styled.button`
   }
 
   svg:first-child {
-    margin-right: var(--xxs);
+    margin-right: var(--3xs);
   }
 
   svg:last-child {
-    margin-left: var(--xxs);
+    margin-left: var(--3xs);
   }
 `;
 

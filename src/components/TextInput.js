@@ -7,11 +7,11 @@ const TextInputElement = styled.input`
   align-items: center;
   line-height: var(--l);
   font-size: var(--m);
-  border-width: calc(var(--xxs) / 3);
+  border-width: calc(var(--5xs) / 3);
   border-style: solid;
   border-color: var(--white);
-  height: var(--xl);
-  padding: calc(var(--xxs) / 2) var(--m) 0 var(--m);
+  height: var(--3xl);
+  padding: 3px var(--m) 0 var(--m);
   color: var(--white);
 
   &::placeholder {

@@ -47,7 +47,7 @@ const NameElement = styled.h3`
 const EventHeaderSection = styled(Section)`
   border: none !important;
   padding-top: 0 !important;
-  margin-top: var(--xxxl) !important;
+  margin-top: var(--3xl) !important;
   ${media.mediumDown`
     margin-top: var(--xl) !important;
     margin-bottom: var(--xl) !important;

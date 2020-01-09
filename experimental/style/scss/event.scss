@@ -6,8 +6,8 @@
     var(--xxl) 0,
     var(--xxl) 0,
     var(--xxl) 0,
-    var(--xxxl) 0,
-    var(--xxxl) 0
+    var(--3xl) 0,
+    var(--3xl) 0
   );
   @include responsive(grid-column-start, 1, 1, 2, 2, 2);
   @include responsive(grid-column-end, -1, -1, -2, -2, -2);
