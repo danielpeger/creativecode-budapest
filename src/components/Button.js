@@ -23,13 +23,15 @@ const ButtonElement = styled.button`
 
   ${props => !props.disabled && css`
     &:hover {
-      color: var(--lightgray);
+      color: var(--black);
       border-color: var(--lightgray);
+      background: var(--lightgray);
     }
 
     &:active {
-      color: var(--gray);
+      color: var(--black);
       border-color: var(--gray);
+      background: var(--gray);
     }
   `}
 
