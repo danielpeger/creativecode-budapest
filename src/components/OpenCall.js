@@ -28,7 +28,6 @@ const ButtonAside = styled.aside`
 	`}
 	${media.smallDown`
 		justify-content: flex-start;
-		margin-top: var(--m);
 	`}
 `;
 

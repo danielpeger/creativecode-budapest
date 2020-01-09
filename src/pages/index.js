@@ -87,9 +87,10 @@ export default function FrontPage({ data }) {
           )
         })}
       </Section>
-      <Section 
+      <Section
         heading="Podcast" 
-        subheading="In the Creative Code Budapest Podcast we invite some of our most inspiring meetup speakers to have a long-form conversation about their work and professional background. Our host is the amazing Declan Hannigan and the show is produced by Jérôme Li-Thiao-Té at Watcha Studios."
+        subheading="In the Creative Code Budapest Podcast we invite some of our most inspiring meetup speakers to have a long-form conversation about their work and background. Our host is the amazing Declan Hannigan and the show is produced by Jérôme Li-Thiao-Té at Watcha Studios."
+        css="grid-auto-rows: min-content;"
       >
         <PodcastEpisode
           title={podcast.title}

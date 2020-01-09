@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react"
 import styled from "styled-components"
+import media from "../utils/media"
 import formatTime from "../utils/formatTime"
 import Play from "./icons/play.svg"
 import Pause from "./icons/pause.svg"
@@ -67,8 +68,21 @@ const Range = styled.input`
 
 const TimeLabel = styled.p`
 	flex-shrink: 0;
-	margin-left: var(--m);
 	text-align: right;
+	margin-top: var(--xxs);
+
+	${media.xSmallOnly`
+    width: 125px;
+  `}
+	${media.smallOnly`
+    width: 135px;
+  `}
+	${media.mediumOnly`
+    width: 135px;
+  `}
+	${media.largeUp`
+		width: 145px;
+  `}
 `;
 
 const Audio = ({ src, className }) => {

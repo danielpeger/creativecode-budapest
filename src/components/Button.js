@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import media from "../utils/media"
 
 const ButtonElement = styled.button`
@@ -11,25 +11,27 @@ const ButtonElement = styled.button`
   font-weight: 700;
   border-width: calc(var(--xxs) / 3);
   border-style: solid;
-  border-color: var(--white);
+  border-color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
   height: var(--xl);
   padding: calc(var(--xxs) / 2) var(--m) 0 var(--m);
-  color: var(--white);
-  cursor: pointer;
+  color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
+  cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
 
   ${media.mediumDown`
     padding: calc(var(--xxs) / 2) var(--s) 0 var(--s);
   `}
 
-  &:hover {
-    color: var(--lightgray);
-    border-color: var(--lightgray);
-  }
+  ${props => !props.disabled && css`
+    &:hover {
+      color: var(--lightgray);
+      border-color: var(--lightgray);
+    }
 
-  &:active {
-    color: var(--gray);
-    border-color: var(--gray);
-  }
+    &:active {
+      color: var(--gray);
+      border-color: var(--gray);
+    }
+  `}
 
   a {
     text-decoration: none;
@@ -58,11 +60,11 @@ const ButtonElement = styled.button`
 const ConditionalWrapper = ({ condition, wrapper, children }) =>
   condition ? wrapper(children) : children
 
-const Button = ({ name, href, className, children }) => {
+const Button = ({ name, href, className, children, disabled }) => {
   return (
-    <ButtonElement name={name} className={className}>
+    <ButtonElement name={name} className={className} disabled={disabled}>
       <ConditionalWrapper
-        condition={href}
+        condition={href && !disabled}
         wrapper={children => <a href={href}>{children}</a>}
       >
         {children}

@@ -5,7 +5,7 @@ import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
 import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
 import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.5
+const scale = 1.45
 
 export const Root = styled.main`
 	--black: #000;
