@@ -11,7 +11,7 @@ import TextInput from "./TextInput"
 const FooterElement = styled(Section)`
   aside {
     padding-top: var(--m);
-    border-top: var(--5xs) solid var(--white);
+    border-top: var(--7xs) solid var(--white);
     width: 100%;
 
     ${media.largeUp`

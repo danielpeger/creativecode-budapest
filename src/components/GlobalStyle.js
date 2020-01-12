@@ -19,8 +19,9 @@ export const Root = styled.main`
 	${media.mediumOnly`--m: 17px;`}
 	${media.largeOnly`--m: 18px;`}
 	${media.xLargeOnly`--m: 19px;`}
+	--10xs: calc(var(--m) / ${Math.pow(scale, 11)});
+	--7xs: calc(var(--m) / ${Math.pow(scale, 8)});
 	--5xs: calc(var(--m) / ${Math.pow(scale, 6)});
-	--4xs: calc(var(--m) / ${Math.pow(scale, 5)});
 	--3xs: calc(var(--m) / ${Math.pow(scale, 4)});
 	--xxs: calc(var(--m) / ${Math.pow(scale, 3)});
 	--xs: calc(var(--m) / ${Math.pow(scale, 2)});
@@ -29,10 +30,8 @@ export const Root = styled.main`
 	--xl: calc(var(--m) * ${Math.pow(scale, 2)});
 	--xxl: calc(var(--m) * ${Math.pow(scale, 3)});
 	--3xl: calc(var(--m) * ${Math.pow(scale, 4)});
-	--4xl: calc(var(--m) * ${Math.pow(scale, 5)});
 	--5xl: calc(var(--m) * ${Math.pow(scale, 6)});
-	--6xl: calc(var(--m) * ${Math.pow(scale, 7)});
-	--7xl: calc(var(--m) * ${Math.pow(scale, 8)});
+	--8xl: calc(var(--m) * ${Math.pow(scale, 9)});
 `
 
 const GlobalStyle = createGlobalStyle`
@@ -74,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h1, h2, h3, h4, p, ul {
-		margin: 0 0 var(--s) 0;
+		margin: 0 0 var(--xs) 0;
 	}
 
 	h1 {
@@ -83,13 +82,16 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h2 {
-		line-height: var(--3xl);
-		font-size: var(--xl);
+		line-height: var(--4xl);
+		font-size: var(--xxl);
+	}
+
+	h3 {
+		line-height: var(--2xl);
+		font-size: var(--l);
 	}
 
 	p,
-	h3,
-	h4,
 	ul {
 		line-height: var(--xl);
 		font-size: var(--m);
@@ -134,6 +136,8 @@ const GlobalStyle = createGlobalStyle`
 export const Label = styled.h4`
 	font-weight: 400;
   text-transform: uppercase;
+	line-height: var(--l);
+	font-size: var(--s);
 `
 
 export default GlobalStyle

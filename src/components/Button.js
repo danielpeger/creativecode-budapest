@@ -9,7 +9,7 @@ const ButtonElement = styled.button`
   line-height: 24px;
   font-size: var(--m);
   font-weight: 700;
-  border-width: calc(var(--5xs) / 3);
+  border-width: var(--10xs);
   border-style: solid;
   border-color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
   height: var(--3xl);

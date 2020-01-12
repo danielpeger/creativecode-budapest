@@ -69,7 +69,6 @@ const Range = styled.input`
 const TimeLabel = styled.p`
 	flex-shrink: 0;
 	text-align: right;
-	margin-top: var(--xxs);
 
 	${media.xSmallOnly`
     width: 125px;

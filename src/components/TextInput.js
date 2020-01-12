@@ -7,7 +7,7 @@ const TextInputElement = styled.input`
   align-items: center;
   line-height: var(--l);
   font-size: var(--m);
-  border-width: calc(var(--5xs) / 3);
+  border-width: var(--10xs);
   border-style: solid;
   border-color: var(--white);
   height: var(--3xl);

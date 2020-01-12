@@ -5,12 +5,12 @@ import media, { breakpoints } from "../utils/media"
 const SectionElement = styled.section`
   display: grid;
   place-items: start;
+  grid-gap: var(--m);
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    grid-gap: var(--l);
     margin: 0 var(--l) var(--xxl) var(--l);
   `}
   ${media.smallOnly`
@@ -20,12 +20,9 @@ const SectionElement = styled.section`
     grid-template-columns: repeat(8, 1fr);
     margin: 0 var(--l) var(--3xl) var(--l);
   `}
-  ${media.mediumUp`
-    grid-gap: var(--xl);
-  `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 auto var(--7xl) auto;
+    margin: 0 auto var(--8xl) auto;
   `}
   ${media.largeOnly`
     max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
@@ -34,16 +31,14 @@ const SectionElement = styled.section`
     max-width: calc(1400px - (2 * var(--l)));
   `}
 
-  ${props =>
-    !props.noseparator &&
-    css`
-      border-top: var(--5xs) solid var(--white);
-      padding-top: var(--m);
-    `}
+  ${props => !props.noseparator && css`
+    border-top: var(--7xs) solid var(--white);
+    padding-top: var(--xl);
+  `}
 
   > h2, > p {
     grid-column: 1 / -1;
-    margin: 0;
+    margin-bottom: 0;
   }
 `
 
