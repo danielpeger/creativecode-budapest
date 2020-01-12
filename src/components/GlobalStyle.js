@@ -87,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h3 {
-		line-height: var(--2xl);
+		line-height: var(--xxl);
 		font-size: var(--l);
 	}
 

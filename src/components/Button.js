@@ -16,6 +16,9 @@ const ButtonElement = styled.button`
   padding: 3px var(--m) 0 var(--m);
   color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
+  ${props => props.disabled && css`
+    -webkit-text-fill-color: var(--gray);
+  `}
 
   ${media.mediumDown`
     padding: 2px var(--s) 0 var(--s);
@@ -24,12 +27,14 @@ const ButtonElement = styled.button`
   ${props => !props.disabled && css`
     &:hover {
       color: var(--black);
+      -webkit-text-fill-color: var(--black);
       border-color: var(--lightgray);
       background: var(--lightgray);
     }
 
     &:active {
       color: var(--black);
+      -webkit-text-fill-color: var(--black);
       border-color: var(--gray);
       background: var(--gray);
     }

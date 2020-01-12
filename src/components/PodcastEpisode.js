@@ -34,7 +34,7 @@ const EpisodeImage = styled.img`
   object-fit: cover;
   
   ${media.xSmallOnly`
-    width: calc(var(--s) + var(--s) + var(--l) + var(--xl) + var(--l) + var(--l));
+    width: calc(var(--l) + var(--xs) + var(--xxl) + var(--xs) + var(--l) + var(--l) - var(--m) - 2px);
     float: left;
     margin: 0 var(--m) var(--m) 0 !important;
   `}
@@ -83,15 +83,15 @@ const ButtonRow = styled.div`
   display: flex;
   justify-content: space-between;
 
+  ${media.smallDown`
+    display: none;
+  `}
+
   > div {
     display: flex;
     button:not(:last-child) {
       margin-right: var(--xxs);
     }
-
-    ${media.smallDown`
-      display: none;
-    `}
   }
 `;
 
@@ -107,7 +107,7 @@ const ShowMore = styled.a`
 `;
 
 const PodcastEpisode = ({ date, frontpage, title, shownotes, imgSrc, src }) => {
-  const truncatedShownotes = truncateString(shownotes, 300);
+  const truncatedShownotes = truncateString(shownotes, 200);
   const linkedShownotes = Autolinker.link(shownotes);
   const descriptionElement = useRef(null);
   const [descriptionExpanded, setDescriptionExpanded] = useState(false);
