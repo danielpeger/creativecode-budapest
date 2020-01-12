@@ -89,7 +89,7 @@ const ButtonRow = styled.div`
 
   > div {
     display: flex;
-    button:not(:last-child) {
+    a:not(:last-child) {
       margin-right: var(--xxs);
     }
   }
@@ -138,15 +138,27 @@ const PodcastEpisode = ({ date, frontpage, title, shownotes, imgSrc, src }) => {
       {frontpage &&
         <ButtonRow>
           <div>
-            <Button name="Apple Podcasts" href="https://podcasts.apple.com/hu/podcast/creative-code-budapest-podcast/id1488132632">
+            <Button
+              as="a"
+              name="Apple Podcasts"
+              href="https://podcasts.apple.com/hu/podcast/creative-code-budapest-podcast/id1488132632"
+            >
               <Apple/>
               <span>Apple Podcasts</span>
             </Button>
-            <Button name="Spotify" href="https://open.spotify.com/show/6HBMsjsO8Z9AeAx8LuVoUq?si=wYEGTMxGRn-YT8702Ur3pA">
+            <Button
+              as="a"
+              name="Spotify"
+              href="https://open.spotify.com/show/6HBMsjsO8Z9AeAx8LuVoUq?si=wYEGTMxGRn-YT8702Ur3pA"
+            >
               <Spotify/>
               <span>Spotify</span>
             </Button>
-            <Button name="Google Podcasts" href="https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Ikihhcvleyrvpo3nsz5qnck4k34?t%3DCreative_Code_Budapest_Podcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16">
+            <Button
+              as="a" 
+              name="Google Podcasts"
+              href="https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Ikihhcvleyrvpo3nsz5qnck4k34?t%3DCreative_Code_Budapest_Podcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16"
+            >
               <Google/>
               <span>Google Podcasts</span>
             </Button>

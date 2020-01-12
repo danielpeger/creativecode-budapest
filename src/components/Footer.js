@@ -28,10 +28,14 @@ const FooterElement = styled(Section)`
 `
 
 const JoinAside = styled.aside`
+  display: flex;
+  flex-direction: column;
+  place-items: start;
+
   h2 {
     margin-bottom: var(--m);
   }
-  button:not(:last-child) {
+  a:not(:last-child) {
     margin-bottom: var(--xxs);
   }
 `;
@@ -63,6 +67,7 @@ const Footer = () => {
       <JoinAside>
         <h2>Join us on social</h2>
         <Button
+          as="a"
           name="meetup"
           href="https://www.meetup.com/Creative-Code-Budapest/"
         >
@@ -70,6 +75,7 @@ const Footer = () => {
           <span>Join the meetup group</span>
         </Button>
         <Button
+          as="a"
           name="facebook"
           href="https://www.facebook.com/Creative-Code-Budapest-1018103511699212"
         >
@@ -77,6 +83,7 @@ const Footer = () => {
           <span>Like the facebook page</span>
         </Button>
         <Button
+          as="a"
           name="facebook group"
           href="https://www.facebook.com/groups/713325655681231/"
         >

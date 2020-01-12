@@ -25,6 +25,10 @@ const ButtonElement = styled.button`
   `}
 
   ${props => !props.disabled && css`
+    &:visited {
+      border-color: var(--gray);
+    }
+
     &:hover {
       color: var(--black);
       -webkit-text-fill-color: var(--black);
@@ -32,14 +36,14 @@ const ButtonElement = styled.button`
       background: var(--lightgray);
     }
 
-    &:active {
+    &:active{
       color: var(--black);
       -webkit-text-fill-color: var(--black);
       border-color: var(--gray);
       background: var(--gray);
     }
   `}
-
+/* 
   a {
     text-decoration: none;
     display: flex;
@@ -49,7 +53,7 @@ const ButtonElement = styled.button`
     &:hover, &:active, &:visited {
       color: inherit;
     }
-  }
+  } */
 
   svg {
     margin-top: -3px;
@@ -67,18 +71,10 @@ const ButtonElement = styled.button`
   }
 `;
 
-const ConditionalWrapper = ({ condition, wrapper, children }) =>
-  condition ? wrapper(children) : children
-
-const Button = ({ name, href, className, children, disabled }) => {
+const Button = ({ name, as = "button", href, className, children, disabled }) => {
   return (
-    <ButtonElement name={name} className={className} disabled={disabled}>
-      <ConditionalWrapper
-        condition={href && !disabled}
-        wrapper={children => <a href={href}>{children}</a>}
-      >
-        {children}
-      </ConditionalWrapper>
+    <ButtonElement name={name} as={as} className={className} disabled={disabled} href={href}>
+      {children}
     </ButtonElement>
   )
 }
