@@ -33,7 +33,8 @@ const Range = styled.input`
   -webkit-appearance: none;
   width: 100%;
   height: 6px;
-	background: var(--gray); 
+	background: var(--darkgray);
+	border-radius: 0;
   outline: none;
 	cursor: pointer;
 

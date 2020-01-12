@@ -9,8 +9,9 @@ const scale = 1.22
 
 export const Root = styled.main`
 	--black: #000;
-	--lightgray: #e5e5e5;
-	--gray: #868686;
+	--lightgray: #d8d8d8;
+	--gray: #acacac;
+	--darkgray: #4c4c4c;
 	--white: #fff;
 	--highlight: #1e00c2;
 

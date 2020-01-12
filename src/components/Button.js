@@ -11,13 +11,13 @@ const ButtonElement = styled.button`
   font-weight: 700;
   border-width: 2px;
   border-style: solid;
-  border-color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
+  border-color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
   height: var(--3xl);
   padding: 3px var(--m) 0 var(--m);
-  color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
+  color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
   ${props => props.disabled && css`
-    -webkit-text-fill-color: var(--gray);
+    -webkit-text-fill-color: var(--darkgray);
   `}
 
   ${media.mediumDown`
