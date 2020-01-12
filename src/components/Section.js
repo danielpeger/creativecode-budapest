@@ -11,14 +11,14 @@ const SectionElement = styled.section`
     grid-template-columns: repeat(4, 1fr);
   `}
   ${media.smallDown`
-    margin: 0 var(--l) var(--xxl) var(--l);
+    margin: 0 var(--l) var(--5xl) var(--l);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
-    margin: 0 var(--l) var(--3xl) var(--l);
+    margin: 0 var(--l) var(--8xl) var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
@@ -32,7 +32,7 @@ const SectionElement = styled.section`
   `}
 
   ${props => !props.noseparator && css`
-    border-top: var(--7xs) solid var(--white);
+    border-top: 4px solid var(--white);
     padding-top: var(--xl);
   `}
 

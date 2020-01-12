@@ -5,7 +5,7 @@ import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
 import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
 import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.2
+const scale = 1.22
 
 export const Root = styled.main`
 	--black: #000;
@@ -17,8 +17,8 @@ export const Root = styled.main`
 	${media.xSmallOnly`--m: 16px;`}
 	${media.smallOnly`--m: 17px;`}
 	${media.mediumOnly`--m: 17px;`}
-	${media.largeOnly`--m: 18px;`}
-	${media.xLargeOnly`--m: 19px;`}
+	${media.largeOnly`--m: 20px;`}
+	${media.xLargeOnly`--m: 21px;`}
 	--10xs: calc(var(--m) / ${Math.pow(scale, 11)});
 	--7xs: calc(var(--m) / ${Math.pow(scale, 8)});
 	--5xs: calc(var(--m) / ${Math.pow(scale, 6)});

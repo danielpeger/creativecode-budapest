@@ -10,8 +10,8 @@ import TextInput from "./TextInput"
 
 const FooterElement = styled(Section)`
   aside {
-    padding-top: var(--m);
-    border-top: var(--7xs) solid var(--white);
+    padding-top: var(--xl);
+    border-top: 4px solid var(--white);
     width: 100%;
 
     ${media.largeUp`
@@ -22,22 +22,23 @@ const FooterElement = styled(Section)`
     `}
     ${media.smallDown`
       grid-column: span 6;
-      &:not(:last-child) {
-        margin-bottom: var(--xxl);
-      }
+      margin-bottom: calc(var(--5xl) - var(--m));
 		`}
   }
 `
 
 const JoinAside = styled.aside`
+  h2 {
+    margin-bottom: var(--m);
+  }
   button:not(:last-child) {
-    margin-bottom: var(--xs);
+    margin-bottom: var(--xxs);
   }
 `;
 
 const NewsletterAside = styled.aside`
-  h2 {
-    margin-bottom: var(--xs);
+  p, h2 {
+    margin-bottom: var(--m);
   }
 `;
 

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import media from "../utils/media"
 
 const TextInputElement = styled.input`
   all: unset;
@@ -7,12 +8,16 @@ const TextInputElement = styled.input`
   align-items: center;
   line-height: var(--l);
   font-size: var(--m);
-  border-width: var(--10xs);
+  border-width: 2px;
   border-style: solid;
   border-color: var(--white);
   height: var(--3xl);
   padding: 3px var(--m) 0 var(--m);
   color: var(--white);
+
+  ${media.mediumDown`
+    padding-top: 2px;
+  `}
 
   &::placeholder {
     color: var(--gray);

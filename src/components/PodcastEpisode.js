@@ -86,7 +86,7 @@ const ButtonRow = styled.div`
   > div {
     display: flex;
     button:not(:last-child) {
-      margin-right: var(--s);
+      margin-right: var(--xxs);
     }
 
     ${media.smallDown`

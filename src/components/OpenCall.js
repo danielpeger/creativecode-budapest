@@ -7,7 +7,7 @@ import MailIcon from "../components/icons/mail.svg"
 
 const OpenCallElement = styled(Section)`
 	h2 {
-		margin-bottom: var(--s);
+		margin-bottom: var(--m);
 	}
 
 	aside {

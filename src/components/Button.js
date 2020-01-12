@@ -9,7 +9,7 @@ const ButtonElement = styled.button`
   line-height: 24px;
   font-size: var(--m);
   font-weight: 700;
-  border-width: var(--10xs);
+  border-width: 2px;
   border-style: solid;
   border-color: ${props => props.disabled ? `var(--gray)` : `var(--white)`};
   height: var(--3xl);
@@ -18,7 +18,7 @@ const ButtonElement = styled.button`
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
 
   ${media.mediumDown`
-    padding: calc(var(--xxs) / 2) var(--s) 0 var(--s);
+    padding: 2px var(--s) 0 var(--s);
   `}
 
   ${props => !props.disabled && css`
@@ -48,6 +48,9 @@ const ButtonElement = styled.button`
 
   svg {
     margin-top: -3px;
+    ${media.mediumDown`
+      margin-top: -2px;
+    `}
   }
 
   svg:first-child {
