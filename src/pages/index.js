@@ -71,7 +71,8 @@ export default function FrontPage({ data }) {
           />
         )
       })}
-      <Section heading="Past events">
+      <Section>
+        <h2 css="margin-bottom: var(--3xs) !important">Past events</h2>
         {pastEvents.map(({ node }, index) => {
           const { poster, title, date, location, speakers } = node.frontmatter
           return (

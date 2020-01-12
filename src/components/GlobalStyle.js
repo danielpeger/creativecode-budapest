@@ -5,7 +5,7 @@ import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
 import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
 import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.22
+const scale = 1.2
 
 export const Root = styled.main`
 	--black: #000;
@@ -93,6 +93,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	p,
+	h4,
 	ul {
 		line-height: var(--xl);
 		font-size: var(--m);

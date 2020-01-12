@@ -6,11 +6,18 @@ import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 import DateString from "./DateString"
-// import truncateString from "../utils/truncateString"
 
 const LinkElement = styled(Link)`
   text-decoration: none;
   grid-column: span 2;
+
+  &:hover picture {
+    opacity: 0.9;
+  }
+
+  &:active picture {
+    opacity: 0.7;
+  }
 `;
 
 const Ul = styled.ul`
@@ -20,14 +27,15 @@ const Ul = styled.ul`
   margin: 0;
   flex-wrap: wrap;
   overflow: hidden;
-  font-size: var(--s);
-  line-height: var(--m);
+
 
   li {
-    line-height: 16px;
+    font-size: var(--s);
+    line-height: var(--l);
     display: flex;
     align-items: flex-start;
-    margin-right: var(--s);
+    margin-right: var(--xs);
+    margin-bottom: 0;
     flex-shrink: 0;
 
     span {
@@ -38,35 +46,28 @@ const Ul = styled.ul`
     svg{
       flex-shrink: 0;
       flex-grow: 0;
-      width: 16px;
-      height: 16px;
+      width: var(--m);
+      height: var(--m);
     }
   }
 
   svg {
-    margin-right: var(--xxs);
-    margin-top: -2px;
+    margin-right: 4px;
   }
 `;
 
-const H3 = styled.h3`
-  margin-top: var(--m);
-  margin-bottom: var(--xxs);
+const H4 = styled.h4`
+  margin-top: var(--3xs);
+  margin-bottom: var(--5xs);
 `;
 
-const SpeakerLine = styled.p`
-  margin-bottom: var(--xs);
-  font-size: var(--s);
-  line-height: var(--m);
-`;
-
-const EventCard = ({ path, poster, title, speakers, date, location }) => {
+const EventCard = ({ path, poster, posterGravity = "west", title, speakers, date, location }) => {
   return (
     <LinkElement to={path}>
-      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill`} />
-      <H3>{title}</H3>
-      {speakers && (
-        <SpeakerLine>
+      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill,g_${posterGravity}`} />
+      <H4>{title}</H4>
+      {/* {speakers && (
+        <small>
           with&nbsp;
           {speakers.map((speaker, index) => {
             if (index === 0) {
@@ -77,8 +78,8 @@ const EventCard = ({ path, poster, title, speakers, date, location }) => {
               return <em key={index}>, {speaker.name}</em>
             }
           })}
-        </SpeakerLine>
-      )}
+        </small>
+      )} */}
       <Ul>
         {date && (
           <li key="date">
