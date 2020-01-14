@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react"
-import { Link } from "gatsby"
 import styled, { css } from "styled-components"
 import media from "../utils/media"
 import Audio from './Audio'

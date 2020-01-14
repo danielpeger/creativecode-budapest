@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 import Section from "../components/Section"
 import Hero, { Intro } from "../components/Hero"
-import EventCard from "../components/EventCard"
+import PastEvents from "../components/PastEvents"
 import EventHeader from "../components/EventHeader"
 import PodcastEpisode from "../components/PodcastEpisode"
 import OpenCall from "../components/OpenCall"
@@ -71,23 +71,7 @@ export default function FrontPage({ data }) {
           />
         )
       })}
-      <Section>
-        <h2 css="margin-bottom: var(--3xs) !important">Past events</h2>
-        {pastEvents.map(({ node }, index) => {
-          const { poster, title, date, location, speakers } = node.frontmatter
-          return (
-            <EventCard
-              key={node.parent.id}
-              path={`/${node.parent.name}`}
-              poster={poster}
-              title={title}
-              date={date}
-              location={location}
-              speakers={speakers}
-            />
-          )
-        })}
-      </Section>
+      <PastEvents events={pastEvents}></PastEvents>
       <Section
         heading="Podcast" 
         css="grid-auto-rows: min-content;"

@@ -41,15 +41,12 @@ const SectionElement = styled.section`
     margin-bottom: 0;
   }
 `
-
-const Section = ({ className, heading, subheading, noseparator, children }) => {
-  return (
-    <SectionElement noseparator={noseparator} className={className}>
-      {heading && <h2>{heading}</h2>}
-      {subheading && <p>{subheading}</p>}
-      {children}
-    </SectionElement>
-  )
-}
+const Section = React.forwardRef(({ className, heading, subheading, noseparator, children }, ref) => (
+  <SectionElement noseparator={noseparator} className={className}   ref={ref}>
+    {heading && <h2>{heading}</h2>}
+    {subheading && <p>{subheading}</p>}
+    {children}
+  </SectionElement>
+));
 
 export default Section

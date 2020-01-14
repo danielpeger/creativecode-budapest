@@ -83,7 +83,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	h2 {
-		line-height: var(--4xl);
+		line-height: var(--3xl);
 		font-size: var(--xxl);
 	}
 

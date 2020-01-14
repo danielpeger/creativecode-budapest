@@ -1,22 +1,39 @@
 import React from "react"
 import styled from "styled-components"
-import media from "../utils/media"
 import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
 import { Link } from "gatsby"
 import DateString from "./DateString"
 
-const LinkElement = styled(Link)`
+export const LinkElement = styled(Link)`
   text-decoration: none;
-  grid-column: span 2;
+  padding: var(--xs);
+  border: 2px solid var(--white);
+  box-sizing: content-box;
 
-  &:hover picture {
-    opacity: 0.9;
+  &:visited {
+    background: var(--gray);
+    border-color: var(--gray);
   }
 
-  &:active picture {
-    opacity: 0.7;
+  &:hover {
+    background: var(--lightgray);
+    border-color: var(--lightgray);
+    color: var(--black);
+
+    picture {
+      filter: grayscale() contrast(170%);
+    }
+  }
+
+  &:active {
+    background: var(--gray);
+    border-color: var(--gray);
+    color: var(--black);
+    picture {
+      filter: grayscale();
+    }
   }
 `;
 
@@ -58,44 +75,42 @@ const Ul = styled.ul`
 
 const H4 = styled.h4`
   margin-top: var(--3xs);
-  margin-bottom: var(--5xs);
+  margin-bottom: var(--10xs);
 `;
 
-const EventCard = ({ path, poster, posterGravity = "west", title, speakers, date, location }) => {
-  return (
-    <LinkElement to={path}>
-      <Image src={poster} width={340} aspectRatio={2/3} customTransformations={`c_fill,g_${posterGravity}`} />
-      <H4>{title}</H4>
-      {/* {speakers && (
-        <small>
-          with&nbsp;
-          {speakers.map((speaker, index) => {
-            if (index === 0) {
-              return <em key={index}>{speaker.name}</em>
-            } else if (index === speakers.length - 1) {
-              return <React.Fragment key={index}> and <em>{speaker.name}</em></React.Fragment>
-            } else {
-              return <em key={index}>, {speaker.name}</em>
-            }
-          })}
-        </small>
-      )} */}
-      <Ul>
-        {date && (
-          <li key="date">
-            <ClockIcon />
-            <DateString date={date} format={"short"} />
-          </li>
-        )}
-        {location && (
-          <li key="location">
-            <PinIcon />
-            <span>{location}</span>
-          </li>
-        )}
-      </Ul>
-    </LinkElement>
-  )
-}
+const EventCard = React.forwardRef(({ path, poster, posterGravity = "west", title, speakers, date, location, className }, ref) => (
+  <LinkElement to={path} className={className} ref={ref}>
+    <Image src={poster} width={340} aspectRatio={1} customTransformations={`c_fill,g_${posterGravity}`} />
+    <H4>{title}</H4>
+    {/* {speakers && (
+      <small>
+        with&nbsp;
+        {speakers.map((speaker, index) => {
+          if (index === 0) {
+            return <em key={index}>{speaker.name}</em>
+          } else if (index === speakers.length - 1) {
+            return <React.Fragment key={index}> and <em>{speaker.name}</em></React.Fragment>
+          } else {
+            return <em key={index}>, {speaker.name}</em>
+          }
+        })}
+      </small>
+    )} */}
+    <Ul>
+      {date && (
+        <li key="date">
+          <ClockIcon />
+          <DateString date={date} format={"short"} />
+        </li>
+      )}
+      {location && (
+        <li key="location">
+          <PinIcon />
+          <span>{location}</span>
+        </li>
+      )}
+    </Ul>
+  </LinkElement>
+));
 
 export default EventCard
