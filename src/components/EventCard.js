@@ -74,8 +74,9 @@ const Ul = styled.ul`
 `;
 
 const H4 = styled.h4`
-  margin-top: var(--3xs);
-  margin-bottom: var(--10xs);
+  margin-top: var(--xxs);
+  margin-bottom: var(--5xs);
+  line-height: var(--l);
 `;
 
 const EventCard = React.forwardRef(({ path, poster, posterGravity = "west", title, speakers, date, location, className }, ref) => (
