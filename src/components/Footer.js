@@ -22,7 +22,7 @@ const FooterElement = styled(Section)`
     `}
     ${media.smallDown`
       grid-column: span 6;
-      margin-bottom: calc(var(--5xl) - var(--m));
+      margin-bottom: calc(var(--8xl) - var(--m));
 		`}
   }
 `

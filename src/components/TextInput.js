@@ -12,12 +12,8 @@ const TextInputElement = styled.input`
   border-style: solid;
   border-color: var(--white);
   height: var(--3xl);
-  padding: 3px var(--m) 0 var(--m);
+  padding: var(--3xs) var(--m) var(--5xs) var(--m);
   color: var(--white);
-
-  ${media.mediumDown`
-    padding-top: 2px;
-  `}
 
   &::placeholder {
     color: var(--gray);

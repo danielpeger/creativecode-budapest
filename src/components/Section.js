@@ -6,19 +6,19 @@ const SectionElement = styled.section`
   display: grid;
   place-items: start;
   grid-gap: var(--m);
+  
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
   `}
-  ${media.smallDown`
-    margin: 0 var(--l) var(--5xl) var(--l);
+  ${media.mediumDown`
+    margin: 0 var(--l) var(--8xl) var(--l);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
-    margin: 0 var(--l) var(--8xl) var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);

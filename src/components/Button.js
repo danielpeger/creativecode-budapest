@@ -12,16 +12,11 @@ const ButtonElement = styled.button`
   border-width: 2px;
   border-style: solid;
   border-color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
-  height: var(--3xl);
-  padding: 3px var(--m) 0 var(--m);
+  padding: var(--3xs) var(--m) var(--5xs) var(--m);
   color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
   ${props => props.disabled && css`
     -webkit-text-fill-color: var(--darkgray);
-  `}
-
-  ${media.mediumDown`
-    padding: 2px var(--s) 0 var(--s);
   `}
 
   ${props => !props.disabled && css`
