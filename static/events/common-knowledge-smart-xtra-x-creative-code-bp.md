@@ -1,5 +1,5 @@
 ---
-title: Common knowledge // smART! XTRA x Creative Code BP
+title: Common knowledge // smART! XTRA x CCBP
 date: 2019-04-17T17:30:00.000Z
 location: Trafó
 googleMapsLink: >-

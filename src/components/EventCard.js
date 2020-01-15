@@ -23,7 +23,7 @@ export const LinkElement = styled(Link)`
     color: var(--black);
 
     picture {
-      filter: grayscale() contrast(170%);
+      filter: grayscale(50%);
     }
   }
 
