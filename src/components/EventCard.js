@@ -9,34 +9,15 @@ import DateString from "./DateString"
 
 export const LinkElement = styled(Link)`
   text-decoration: none;
-  ${media.mediumDown`
-    padding: var(--3xs);
-  `};
-  ${media.largeUp`
-    padding: var(--xs);
-  `};
-  border: 2px solid var(--white);
   box-sizing: content-box;
 
-  &:visited {
-    background: var(--gray);
-    border-color: var(--gray);
-  }
-
   &:hover {
-    background: var(--lightgray);
-    border-color: var(--lightgray);
-    color: var(--black);
-
     picture {
       filter: grayscale(50%);
     }
   }
 
   &:active {
-    background: var(--gray);
-    border-color: var(--gray);
-    color: var(--black);
     picture {
       filter: grayscale();
     }
