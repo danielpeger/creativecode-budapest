@@ -8,7 +8,7 @@ import DateString from "./DateString"
 
 export const LinkElement = styled(Link)`
   text-decoration: none;
-  padding: var(--xs);
+  padding: var(--3xs);
   border: 2px solid var(--white);
   box-sizing: content-box;
 
