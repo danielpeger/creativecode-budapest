@@ -6,10 +6,12 @@ const SectionElement = styled.section`
   display: grid;
   place-items: start;
   grid-gap: var(--m);
-  
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
+  `}
+  ${media.smallDown`
+    margin: 0 var(--l) var(--7xl) var(--l);
   `}
   ${media.mediumDown`
     margin: 0 var(--l) var(--8xl) var(--l);

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import media from "../utils/media"
 import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"
@@ -8,7 +9,12 @@ import DateString from "./DateString"
 
 export const LinkElement = styled(Link)`
   text-decoration: none;
-  padding: var(--3xs);
+  ${media.mediumDown`
+    padding: var(--3xs);
+  `};
+  ${media.largeUp`
+    padding: var(--xs);
+  `};
   border: 2px solid var(--white);
   box-sizing: content-box;
 

@@ -32,6 +32,7 @@ export const Root = styled.main`
 	--xxl: calc(var(--m) * ${Math.pow(scale, 3)});
 	--3xl: calc(var(--m) * ${Math.pow(scale, 4)});
 	--5xl: calc(var(--m) * ${Math.pow(scale, 6)});
+	--7xl: calc(var(--m) * ${Math.pow(scale, 8)});
 	--8xl: calc(var(--m) * ${Math.pow(scale, 9)});
 `
 
