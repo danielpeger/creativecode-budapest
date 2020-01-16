@@ -13,13 +13,13 @@ export const LinkElement = styled(Link)`
 
   &:hover {
     picture {
-      filter: grayscale(50%);
+      filter: brightness(300%);
     }
   }
 
   &:active {
     picture {
-      filter: grayscale();
+      filter: brightness(200%) grayscale();
     }
   }
 `;
