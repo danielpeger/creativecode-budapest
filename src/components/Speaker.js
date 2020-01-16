@@ -16,7 +16,7 @@ const SpeakerElement = styled.div`
     grid-column: 1 / 2;
     
     ${media.xSmallOnly`
-      width: calc((4 * var(--l)) - var(--m));
+      width: calc(var(--xl) + var(--5xs) + var(--l) + var(--l) + var(--l) + var(--l) - var(--m) - 3px);
       float: left;
       margin: 0 var(--m) var(--m) 0 !important;
     `}
@@ -26,13 +26,14 @@ const SpeakerElement = styled.div`
     grid-column: 2 / -1;
   }
 
-  h3, p {
-    margin-bottom: var(--xxs);
+  h4, p {
+    margin-bottom: var(--5xs);
   }
-`
 
-const NameElement = styled.h3`
-  
+  p, a, li {
+    line-height: var(--l);
+    font-size: var(--s);
+  }
 `
 
 const Speaker = ({ speaker }) => {
@@ -46,7 +47,7 @@ const Speaker = ({ speaker }) => {
         customTransformations="g_face,c_thumb,z_0.7"
       />
       <div>
-        <NameElement>{speaker.name}</NameElement>
+        <h4>{speaker.name}</h4>
         <div
           dangerouslySetInnerHTML={{ __html: MarkdownToHtml(speaker.bio) }}
         ></div>

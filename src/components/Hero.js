@@ -10,12 +10,10 @@ const HeroElement = styled.div`
   height: 85vh;
 	display: grid;
   place-items: center left;
+  grid-gap: var(--m);
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
-  `}
-  ${media.smallDown`
-    grid-gap: var(--m);
   `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
@@ -25,9 +23,6 @@ const HeroElement = styled.div`
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
-  `}
-  ${media.mediumUp`
-    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);

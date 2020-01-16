@@ -8,7 +8,7 @@ const Grid = styled.section`
   display: grid;
   place-items: center;
   grid-auto-flow: row dense;
-  grid-gap: var(--l);
+  grid-gap: var(--m);
 
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);

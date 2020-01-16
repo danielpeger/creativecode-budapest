@@ -9,10 +9,10 @@ import GlobalStyle, { Root } from "../components/GlobalStyle"
 const EventPageHeader = styled(EventHeader)`
   border: none;
   padding-top: 0;
-  margin-top: var(--3xl);
+  margin-top: var(--8xl);
   ${media.mediumDown`
-    margin-top: var(--xl);
-    margin-bottom: var(--xl);
+    margin-top: var(--5xl);
+    margin-bottom: var(--5xl);
   `}
 `;
 

@@ -5,7 +5,7 @@ import ObjectSansHeavy from "../../static/font/ObjectSans-Heavy.otf"
 import ObjectSansSlanted from "../../static/font/ObjectSans-Slanted.otf"
 import ObjectSansHeavySlanted from "../../static/font/ObjectSans-HeavySlanted.otf"
 
-const scale = 1.2
+const scale = 1.17
 
 export const Root = styled.main`
 	--black: #000;
@@ -110,7 +110,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	li:not(:last-child) {
-		margin-bottom: var(--xxs);
+		margin-bottom: var(--3xs);
 	}
 
 	p, li {

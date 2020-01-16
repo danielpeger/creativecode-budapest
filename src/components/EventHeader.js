@@ -11,22 +11,26 @@ import PinIcon from "../components/icons/pin.svg"
 import ClockIcon from "../components/icons/clock.svg"
 
 const EventHeaderSection = styled(Section)`
-  padding-top: var(--l);
-  ${media.smallDown`grid-row-gap: var(--xl);`}
+  padding-top: var(--xxl);
+  ${media.smallDown`grid-row-gap: var(--3xl);`}
+
+  h2, ${Label} {
+    margin-bottom: var(--m);
+  }
 `;
 
 const EventInfo = styled.aside`
   width: 100%;
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallOnly`grid-column: span 6;`}
-  ${media.mediumOnly`grid-column: span 3;`}
+  ${media.mediumOnly`grid-column: span 4;`}
   ${media.largeUp`grid-column: span 5;`}
 `
 
 const InfoList = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin-bottom: var(--l);
+  margin-bottom: var(--xxl);
 
   li {
     display: flex;
@@ -34,12 +38,12 @@ const InfoList = styled.ul`
     align-items: flex-start;
 
     &:not(:last-child) {
-      margin-bottom: var(--xxs);
+      margin-bottom: var(--3xs);
     }
   }
 
   svg {
-      margin-right: var(--xxs);
+      margin-right: var(--5xs);
       flex-shrink: 0;
       flex-grow: 0;
       margin-top: -1px;
@@ -54,10 +58,18 @@ const StyledMeetupIcon = styled(MeetupIcon)`
   && { margin-top: 1px; }
 `;
 
+const Description = styled.div`
+  /* p, a, li {
+    line-height: var(--l);
+    font-size: var(--s);
+  } */
+`;
+
 const SpeakerList = styled.aside`
   display: grid;
   place-items: start;
   width: 100%;
+  grid-gap: var(--m);
 
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallOnly`grid-column: span 6;`}
@@ -67,17 +79,11 @@ const SpeakerList = styled.aside`
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
   `}
-  ${media.smallDown`
-    grid-gap: var(--m);
-  `}
   ${media.smallOnly`
     grid-template-columns: repeat(5, 1fr);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(4, 1fr);
-  `}
-  ${media.mediumUp`
-    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(6, 1fr);
@@ -121,7 +127,7 @@ const EventHeader = ({
             <a href={facebookEventLink}>Facebook</a>
           </li>
         </InfoList>
-        <div dangerouslySetInnerHTML={{ __html: description }}></div>
+        <Description dangerouslySetInnerHTML={{ __html: description }}></Description>
       </EventInfo>
       <SpeakerList>
         {speakers &&

@@ -95,6 +95,7 @@ const SpeakerList = styled.aside`
   display: grid;
   place-items: start;
   width: 100%;
+  grid-gap: var(--m);
 
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallOnly`grid-column: span 5;`}
@@ -104,17 +105,11 @@ const SpeakerList = styled.aside`
   ${media.xSmallOnly`
     grid-template-columns: repeat(4, 1fr);
   `}
-  ${media.smallDown`
-    grid-gap: var(--m);
-  `}
   ${media.smallOnly`
     grid-template-columns: repeat(5, 1fr);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(4, 1fr);
-  `}
-  ${media.mediumUp`
-    grid-gap: var(--l);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(6, 1fr);

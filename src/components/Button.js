@@ -12,7 +12,7 @@ const ButtonElement = styled.button`
   border-width: 2px;
   border-style: solid;
   border-color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
-  padding: var(--3xs) var(--m) var(--5xs) var(--m);
+  padding: var(--xxs) var(--m) var(--3xs) var(--m);
   color: ${props => props.disabled ? `var(--darkgray)` : `var(--white)`};
   cursor: ${props => props.disabled ? `not-allowed` : `pointer`};
   ${props => props.disabled && css`

@@ -33,7 +33,7 @@ const EpisodeImage = styled.img`
   object-fit: cover;
   
   ${media.xSmallOnly`
-    width: calc(var(--l) + var(--xs) + var(--xxl) + var(--xs) + var(--l) + var(--l) - var(--m) - 2px);
+    width: calc(var(--l) + var(--xs) + var(--xxl) + var(--xs) + var(--l) + var(--l) - var(--m) - 3px);
     float: left;
     margin: 0 var(--m) var(--m) 0 !important;
   `}

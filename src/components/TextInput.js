@@ -11,8 +11,7 @@ const TextInputElement = styled.input`
   border-width: 2px;
   border-style: solid;
   border-color: var(--white);
-  height: var(--3xl);
-  padding: var(--3xs) var(--m) var(--5xs) var(--m);
+  padding: var(--xxs) var(--m) var(--3xs) var(--m);
   color: var(--white);
 
   &::placeholder {
