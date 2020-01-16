@@ -30,7 +30,7 @@ const EventInfo = styled.aside`
 const InfoList = styled.ul`
   list-style-type: none;
   padding: 0;
-  margin-bottom: var(--xxl);
+  margin-bottom: var(--l);
 
   li {
     display: flex;

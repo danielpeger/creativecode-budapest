@@ -3,7 +3,15 @@ import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
 
 export const Intro = styled.div`
-  grid-column: span 7;
+  ${media.largeUp`
+    grid-column: span 7;
+  `}
+  ${media.mediumOnly`
+    grid-column: span 5;
+  `}
+  ${media.smallDown`
+    grid-column: span 6;
+  `}
 `
 
 const HeroElement = styled.div`

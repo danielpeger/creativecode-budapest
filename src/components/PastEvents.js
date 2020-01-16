@@ -5,9 +5,6 @@ import EventCard, {LinkElement} from "./EventCard"
 import Section from "../components/Section"
 
 const PastEventsSection = styled(Section)`
-  grid-auto-rows: 1fr;
-  place-items: stretch;
-
   ${LinkElement} {
     grid-column: span 2;
   }
@@ -22,6 +19,7 @@ const PastEventsSection = styled(Section)`
   `}
 
   ${media.smallDown`
+    place-items: stretch;
     overflow-x: scroll;
     margin-left: - var(--l);
     margin-right: - var(--l);
@@ -34,10 +32,12 @@ const PastEventsSection = styled(Section)`
   `}
 
   ${media.smallOnly`
+    margin-bottom: var(--7xl);
     grid-template-columns: calc(var(--l) - var(--m)) repeat(${props => props.cards * 2}, calc((100vw - ((var(--l) * 2) + (var(--m) * 5))) / 6)) calc(var(--l) - var(--m));
   `}
 
   ${media.xSmallOnly`
+    margin-bottom: var(--xxl);
     grid-template-columns: calc(var(--l) - var(--m)) repeat(${props => props.cards * 2}, calc((100vw - ((var(--l) * 2) + (var(--m) * 5))) / 4)) calc(var(--l) - var(--m));
   `}
 `;

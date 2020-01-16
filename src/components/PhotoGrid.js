@@ -17,14 +17,14 @@ const Grid = styled.section`
     grid-template-columns: repeat(6, 1fr);
   `}
   ${media.mediumDown`
-    margin: 0 var(--l) var(--xl) var(--l);
+    margin: 0 var(--l) var(--8xl) var(--l);
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 auto var(--xl) auto;
+    margin: 0 auto var(--8xl) auto;
   `}
   ${media.largeOnly`
     max-width: calc(${breakpoints.largeMin}px - (2 * var(--l)));
