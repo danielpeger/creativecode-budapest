@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
+import P5Wrapper from "react-p5-wrapper"
+import sketch from "./HeroSketch.js"
 
 export const Intro = styled.div`
   ${media.largeUp`
@@ -55,7 +57,7 @@ const Hero = ({ children }) => {
 
   return (
 		<HeroElement ref={HeroRef}>
-			{children}
+      <P5Wrapper sketch={sketch} />
 		</HeroElement>
   )
 }

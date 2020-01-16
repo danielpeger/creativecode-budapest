@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import media from "../utils/media"
 import Image from "./Image"
 import ClockIcon from "./icons/clock.svg"
 import PinIcon from "./icons/pin.svg"

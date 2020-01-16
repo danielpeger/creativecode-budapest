@@ -21,9 +21,7 @@ export default function FrontPage({ data }) {
   return (
     <Root>
       <GlobalStyle />
-      <Hero>
-        <h1>Creative Code Budapest</h1>
-      </Hero>
+      <Hero/>
       <Section noseparator>
         <Intro>
           <p>Hey!</p>
