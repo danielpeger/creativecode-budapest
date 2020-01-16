@@ -45,7 +45,7 @@ const PastEventsSection = styled(Section)`
 const PastEvents = ({events}) => {
   return (
 			<>
-        <Section heading="Past events" css="margin-bottom: var(--m);"></Section>
+        <Section heading="Past events" css="margin-bottom: var(--l);"></Section>
         <PastEventsSection noseparator cards={events.length}>
           {events.map(({ node }, index) => {
             const { poster, title, date, location, speakers } = node.frontmatter
