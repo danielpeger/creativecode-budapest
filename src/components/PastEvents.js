@@ -24,6 +24,11 @@ const PastEventsSection = styled(Section)`
     margin-left: - var(--l);
     margin-right: - var(--l);
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   
     &::before,
     &::after {

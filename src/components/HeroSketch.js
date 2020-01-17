@@ -1,5 +1,5 @@
 export default function sketch (p) {
-  let rotation = 0;
+  let rotation = 90;
 
   p.setup = function () {
     p.createCanvas(600, 400, p.WEBGL);
