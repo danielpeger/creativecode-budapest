@@ -1,4 +1,4 @@
-export default function sketch (p) {
+export default function HeroSketch (p) {
   let rotation = 90;
 
   p.setup = function () {

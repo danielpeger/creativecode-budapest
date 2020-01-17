@@ -1,5 +1,20 @@
 const path = require(`path`)
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /p5/,
+            use: loaders.null()
+          }
+        ]
+      }
+    })
+  }
+}
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
