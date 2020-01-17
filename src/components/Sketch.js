@@ -1,29 +1,16 @@
-import React, { Component } from 'react'
+import React, { useEffect, useRef } from 'react'
 import p5 from 'p5'
 
-class Sketch extends Component {
-  constructor (props) {
-    super(props)
-    this.sketchRef = React.createRef()
-    this.canvas = null
-  }
-
-  componentDidMount () {
-    this.canvas = new p5(this.props.sketch, this.sketchRef.current)
-  }
-
-  componentDidUpdate () {
-    this.canvas.remove()
-    this.canvas = new p5(this.props.sketch, this.sketchRef.current)
-  }
-
-  componentWillUnmount () {
-    this.canvas.remove()
-  }
-
-  render () {
-    return <div ref={this.sketchRef} />
-  }
-}
+const Sketch = ({ sketch, className, id }) => {
+  let canvas = null;
+  const sketchRef = useRef(null);
+  useEffect(() => {
+    canvas = new p5(sketch, sketchRef.current);
+    return () => {
+      canvas.remove();
+    }
+  }, [canvas, sketch, sketchRef]);
+  return <section ref={sketchRef} className={className} id={id}/>
+};
 
 export default Sketch

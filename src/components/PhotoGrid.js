@@ -123,7 +123,6 @@ const GridImage = ({ src, wide, fullWidth, className }) => {
       fullWidth={fullWidth}
       className={className}
     />
-    
   )
 }
 

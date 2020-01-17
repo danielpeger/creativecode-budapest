@@ -44,7 +44,7 @@ const SectionElement = styled.section`
   }
 `
 const Section = React.forwardRef(({ className, heading, subheading, noseparator, children }, ref) => (
-  <SectionElement noseparator={noseparator} className={className}   ref={ref}>
+  <SectionElement noseparator={noseparator} className={className} ref={ref}>
     {heading && <h2>{heading}</h2>}
     {subheading && <p>{subheading}</p>}
     {children}
