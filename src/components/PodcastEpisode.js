@@ -80,17 +80,9 @@ const ButtonRow = styled.div`
   width: 100%;
   margin-top: var(--xs);
   display: flex;
-  justify-content: space-between;
 
-  ${media.smallDown`
-    display: none;
-  `}
-
-  > div {
-    display: flex;
-    a:not(:last-child) {
-      margin-right: var(--xxs);
-    }
+  > a:not(:last-child) {
+    margin-right: var(--xxs);
   }
 `;
 
@@ -136,36 +128,29 @@ const PodcastEpisode = ({ date, frontpage, title, shownotes, imgSrc, src }) => {
       
       {frontpage &&
         <ButtonRow>
-          <div>
-            <Button
-              as="a"
-              name="Apple Podcasts"
-              href="https://podcasts.apple.com/hu/podcast/creative-code-budapest-podcast/id1488132632"
-            >
-              <Apple/>
-              <span>Apple Podcasts</span>
-            </Button>
-            <Button
-              as="a"
-              name="Spotify"
-              href="https://open.spotify.com/show/6HBMsjsO8Z9AeAx8LuVoUq?si=wYEGTMxGRn-YT8702Ur3pA"
-            >
-              <Spotify/>
-              <span>Spotify</span>
-            </Button>
-            <Button
-              as="a" 
-              name="Google Podcasts"
-              href="https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Ikihhcvleyrvpo3nsz5qnck4k34?t%3DCreative_Code_Budapest_Podcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16"
-            >
-              <Google/>
-              <span>Google Podcasts</span>
-            </Button>
-          </div>
-          <Button disabled>
-            {/* <Link to="/podcast"> */}
-              All episodes <ArrowIcon />
-            {/* </Link> */}
+          <Button
+            as="a"
+            name="Apple Podcasts"
+            href="https://podcasts.apple.com/hu/podcast/creative-code-budapest-podcast/id1488132632"
+          >
+            <Apple/>
+            <span>Apple Podcasts</span>
+          </Button>
+          <Button
+            as="a"
+            name="Spotify"
+            href="https://open.spotify.com/show/6HBMsjsO8Z9AeAx8LuVoUq?si=wYEGTMxGRn-YT8702Ur3pA"
+          >
+            <Spotify/>
+            <span>Spotify</span>
+          </Button>
+          <Button
+            as="a" 
+            name="Google Podcasts"
+            href="https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Ikihhcvleyrvpo3nsz5qnck4k34?t%3DCreative_Code_Budapest_Podcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16"
+          >
+            <Google/>
+            <span>Google Podcasts</span>
           </Button>
         </ButtonRow>
       }

@@ -22,9 +22,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
     }
     type Frontmatter {
-      photos: [String]
-      widePhotos: [String]
-      fullWidthPhotos: [String]
+      photos: String
+      widePhotos: String
+      fullWidthPhotos: String
     }
   `
   createTypes(typeDefs)

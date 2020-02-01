@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import media, { breakpoints } from "../utils/media"
 import Sketch from "./Sketch"
@@ -21,11 +21,19 @@ const HeroElement = styled(Sketch)`
   height: 80vh;
 `;
 
-const Hero = ({ children }) => {
+const Hero = ({ backgroundImage }) => {
+  const [dpr, setDpr] = useState(1)
+  useEffect(() => {
+    setDpr(Math.floor(window.devicePixelRatio))
+  }, [setDpr])
+  const backgroundImageWithDpr = backgroundImage.replace(
+    `upload/t_breakthumbnails/`,
+    `upload/f_auto,w_1000,dpr_${dpr}.0/`
+  )
   return (
     <HeroElement
       id="HeroSketchContainer"
-      sketch={HeroSketch}
+      sketch={HeroSketch(backgroundImageWithDpr)}
     />
   )
 }

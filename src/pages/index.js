@@ -18,10 +18,11 @@ export default function FrontPage({ data }) {
   const pastEvents = events.filter(
     ({ node }) => new Date(node.frontmatter.date) < new Date()
   )
+  console.log(events[0].node.frontmatter.poster);
   return (
     <Root>
       <GlobalStyle />
-      <Hero/>
+      <Hero backgroundImage={events[0].node.frontmatter.poster}/>
       <Section noseparator>
         <Intro>
           <p>Hey!</p>
