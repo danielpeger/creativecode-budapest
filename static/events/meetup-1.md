@@ -26,8 +26,6 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574806409/cc1/rita_ftjy8y.jpg
     name: Rita Eperjesi
-photos: >-
-  https://res.cloudinary.com/creativecodebudapest/raw/upload/t_breakthumbnails/v1579385712/cc1/YWyPLkQvOpSII755Bo_cawssg
 ---
 Hey!
 
