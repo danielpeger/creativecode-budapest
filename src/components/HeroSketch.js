@@ -4,10 +4,7 @@ export default function HeroSketch(backgroundImage){
     let message = 'Creative Code Budapest';
     let hoverCode = true;
     let displayFrontImage = true;
-    let useRandomImages = false;
     let imagePath = backgroundImage;
-    let images;
-    let pg; // offscreen pGraphics, to export in a size independent of p5canvas
     let displayHUD = false; // [H] toggles display debug hud
     let messageCodes = []; // array to hold codes for message lines and characters
     let rows; // words im the message
@@ -19,8 +16,6 @@ export default function HeroSketch(backgroundImage){
     let imgLoaded = false;
     let aspectWidth;
     let aspectHeight;
-    let b1; // draft coded button class, complicated
-    let button; // html button styled with css, simple
     let startingRotationX = 0;
     let startingRotationZ = 0;
 
@@ -36,7 +31,7 @@ export default function HeroSketch(backgroundImage){
         );
       img = p.loadImage(imagePath, imgLoadSuccess);
 
-      if (p.getURLParams().message != undefined) message = p.getURLParams().message;
+      if (p.getURLParams().message !== undefined) message = p.getURLParams().message;
 
       encodeMessage();
     };
@@ -62,7 +57,7 @@ export default function HeroSketch(backgroundImage){
       let longestWord = 0;
       message = message.toUpperCase();
 
-      let lines = p.split(message, p.getURLParams().message != undefined ? '-' : ' ');
+      let lines = p.split(message, p.getURLParams().message !== undefined ? '-' : ' ');
       for (let i = 0; i < lines.length; i++) {
         if (lines[i].length > longestWord) longestWord = lines[i].length;
         messageCodes[i] = [];
@@ -107,7 +102,7 @@ export default function HeroSketch(backgroundImage){
     }
 
     p.keyTyped = function (key) {
-      if (key == 'h') {
+      if (key === 'h') {
         displayHUD = !displayHUD;
       }
       return false; // To prevent any default browser behavior
@@ -138,7 +133,7 @@ export default function HeroSketch(backgroundImage){
             p.fill(255, 0, 0); // is a not valid character
           }
           // rect(j*uW,i*uH,uW,uH);
-          if (c != 0) stripesRect(c, j * uW, i * uH, uW, uH);
+          if (c !== 0) stripesRect(c, j * uW, i * uH, uW, uH);
         }
       }
       p.pop();
@@ -149,7 +144,7 @@ export default function HeroSketch(backgroundImage){
         let c = messageCodes[_i][_j];
         p.fill(255);
         p.noStroke();
-        if (c != 0) stripesRect(c, _j * uW, _i * uH, uW, uH);
+        if (c !== 0) stripesRect(c, _j * uW, _i * uH, uW, uH);
       }
     }
 
@@ -224,7 +219,7 @@ export default function HeroSketch(backgroundImage){
           getAspectFitImage(img, p.width * 0.9, p.height * 0.9);
           tx = (p.mouseX - p.width / 2) * 0.01 + nx;
           ty = (p.mouseY - p.height / 2) * 0.01 + ny;
-          if (state == 1) ty = p.height;
+          if (state === 1) ty = p.height;
           mox += (tx - mox) * 0.1;
           moy += (ty - moy) * 0.1;
           mos += (ts - mos) * 0.1;
@@ -254,47 +249,5 @@ export default function HeroSketch(backgroundImage){
 
       if (hoverCode) drawOneCode(p.floor(p.mouseY / (p.height / rows)), p.floor(p.mouseX / (p.width / columns)));
     };
-
-    let loadFrameCount = 0;
-    let hudTextX;
-    let hudTextY;
-    let hudTextLineHeight;
-    function HUD() {
-      if (p.frameCount == 1) p.textFont('monospace', 12);
-      if (displayHUD) {
-        hudTextX = 10;
-        hudTextY = 10;
-        hudTextLineHeight = 15; // lineheight
-
-        p.push();
-        p.noStroke();
-        p.fill(0, 128);
-        p.rect(0, 0, p.width / 3, p.height / 3);
-
-        p.fill(255);
-        newLine('FPS: ' + p.round(p.frameRate()));
-        newLine('displayDensity: ' + p.displayDensity());
-        newLine('Screen: ' + p.width + ' x ' + p.height + ' px');
-        newLine('imgLoaded: ' + imgLoaded + ' (' + loadFrameCount + ' frames)');
-        newLine('getURL: ' + p.getURL());
-        newLine('getURLParams?message: ' + p.getURLParams().message);
-        if (imgLoaded && loadFrameCount == 0) loadFrameCount = p.frameCount;
-        newLine('message: ' + message + ' (' + messageCodes.length + ' lines)');
-        newLine('grid: ' + columns + ' x ' + rows + '   cell: ' + uW + ' x ' + uH);
-        if (p.rotationX != null) {
-          newLine('device rotation');
-          newLine('x:' + startingRotationX.toFixed(2) + ' z:' + startingRotationZ.toFixed(2));
-          newLine('x:' + p.rotationX.toFixed(2) + ' z:' + p.rotationZ.toFixed(2));
-        }
-        // for (let i = 0; i<messageCodes.length; i++) text(i+". "+messageCodes[i]+" ("+messageCodes[i].length+") "+messageCodes[i], x, y+=l);
-
-        // text(b1.y, x, y+=l);
-        p.pop();
-      }
-    }
-
-    function newLine(_txt) {
-      p.text(_txt, hudTextX, (hudTextY += hudTextLineHeight));
-    }
   };
 }

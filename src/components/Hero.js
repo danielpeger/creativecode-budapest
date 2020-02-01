@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import media, { breakpoints } from "../utils/media"
+import media from "../utils/media"
 import Sketch from "./Sketch"
 import HeroSketch from "./HeroSketch.js"
 

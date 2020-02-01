@@ -8,7 +8,6 @@ import truncateString from "../utils/truncateString"
 import Autolinker from 'autolinker'
 import { Label } from "./GlobalStyle"
 import Button from "./Button"
-import ArrowIcon from "./icons/arrow.svg"
 import Apple from "./icons/apple.svg"
 import Google from "./icons/google.svg"
 import Spotify from "./icons/spotify.svg"
