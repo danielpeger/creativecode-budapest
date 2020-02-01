@@ -81,6 +81,16 @@ const ButtonRow = styled.div`
   margin-top: var(--xs);
   display: flex;
 
+  ${media.smallDown`
+    flex-wrap: wrap;
+  `}
+
+  > a {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: var(--xxs);
+  }
+
   > a:not(:last-child) {
     margin-right: var(--xxs);
   }

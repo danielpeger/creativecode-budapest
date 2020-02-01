@@ -19,6 +19,7 @@ export const Intro = styled.div`
 const HeroElement = styled(Sketch)`
   width: 100%;
   height: 80vh;
+  margin-bottom: var(--5xl);
 `;
 
 const Hero = ({ backgroundImage }) => {
