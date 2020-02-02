@@ -143,4 +143,19 @@ export const Label = styled.h4`
 	font-size: var(--s);
 `
 
+export const TextColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	place-items: start;
+  ${media.largeUp`
+    grid-column: span 7;
+  `}
+  ${media.mediumOnly`
+    grid-column: span 5;
+  `}
+  ${media.smallDown`
+    grid-column: span 6;
+  `}
+`
+
 export default GlobalStyle

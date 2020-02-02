@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import GlobalStyle, { Root } from "../components/GlobalStyle"
+import GlobalStyle, { Root, TextColumn } from "../components/GlobalStyle"
 import Section from "../components/Section"
-import Hero, { Intro } from "../components/Hero"
+import Hero from "../components/Hero"
 import PastEvents from "../components/PastEvents"
 import EventHeader from "../components/EventHeader"
 import PodcastEpisode from "../components/PodcastEpisode"
@@ -24,7 +24,7 @@ export default function FrontPage({ data }) {
       <GlobalStyle />
       <Hero backgroundImage={events[0].node.frontmatter.poster}/>
       <Section noseparator>
-        <Intro>
+        <TextColumn>
           <p>Hey!</p>
           <p>
             Creative Code Budapest is a community meetup for new media artists,
@@ -43,7 +43,7 @@ export default function FrontPage({ data }) {
             safe environment. <em>Beginners and first-timers should feel especially
             welcome!</em>
           </p>
-        </Intro>
+        </TextColumn>
       </Section>
       {upcomingEvents.map(({ node }) => {
         const {
