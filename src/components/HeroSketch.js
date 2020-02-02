@@ -4,7 +4,6 @@ export default function HeroSketch(backgroundImage){
     let message = 'Creative Code Budapest';
     let hoverCode = true;
     let displayFrontImage = true;
-    let imagePath = backgroundImage;
     let displayHUD = false; // [H] toggles display debug hud
     let messageCodes = []; // array to hold codes for message lines and characters
     let rows; // words im the message
@@ -20,6 +19,10 @@ export default function HeroSketch(backgroundImage){
     let startingRotationZ = 0;
 
     p.setup = function () {
+      let imagePath = backgroundImage.replace(
+        `upload/t_breakthumbnails/`,
+        `upload/f_auto,w_1000,dpr_${Math.floor(window.devicePixelRatio)}.0/`
+      )
       let htmlContainer = document.getElementById('HeroSketchContainer');
       p.createCanvas(htmlContainer.offsetWidth, htmlContainer.offsetHeight);
       // p.createCanvas(canvasWidth, canvasHeight, p.WEBGL);
