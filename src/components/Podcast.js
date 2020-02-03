@@ -103,6 +103,10 @@ const Buttons = styled.aside`
     }
   `}
 
+  ${media.xSmallOnly`
+    margin-top: var(--xs);
+  `}
+
   > a {
     margin-bottom: var(--xxs);
   }
