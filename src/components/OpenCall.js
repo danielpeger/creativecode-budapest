@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Button from "./Button"
 import Section from "./Section"
-import media from "../utils/media"
 import { TextColumn } from "../components/GlobalStyle"
 import MailIcon from "../components/icons/mail.svg"
 

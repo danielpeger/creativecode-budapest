@@ -5,7 +5,7 @@ import Section from "../components/Section"
 import Hero from "../components/Hero"
 import PastEvents from "../components/PastEvents"
 import EventHeader from "../components/EventHeader"
-import PodcastEpisode from "../components/PodcastEpisode"
+import Podcast from "../components/Podcast"
 import OpenCall from "../components/OpenCall"
 import Footer from "../components/Footer"
 
@@ -71,25 +71,13 @@ export default function FrontPage({ data }) {
         )
       })}
       <PastEvents events={pastEvents}></PastEvents>
-      <Section
-        heading="Podcast" 
-        css="grid-auto-rows: min-content;"
-      >
-        <TextColumn>
-          <p>
-            In the CCBP Podcast we invite some of our most inspiring meetup speakers to have a long-form conversation about their work and background. 
-            Our host is the amazing <a href="http://declanhannigan.com/">Declan Hannigan</a> and the show is produced by <a href="https://www.jeromelithiaote.com/">Jérôme Li-Thiao-Té</a> at Watcha Studios.
-          </p>
-        </TextColumn>
-        <PodcastEpisode
-          title={podcast.title}
-          shownotes={podcast.content}
-          date={podcast.isoDate}
-          frontpage
-          imgSrc={podcast.itunes.image.attrs.href}
-          src={podcast.enclosure.url} 
-        />
-      </Section>
+      <Podcast
+        title={podcast.title}
+        shownotes={podcast.content}
+        date={podcast.isoDate}
+        imgSrc={podcast.itunes.image.attrs.href}
+        src={podcast.enclosure.url} 
+      />
       <OpenCall></OpenCall>
       <Footer></Footer>
     </Root>

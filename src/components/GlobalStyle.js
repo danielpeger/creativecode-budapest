@@ -15,9 +15,9 @@ export const Root = styled.main`
 	--white: #fff;
 	--highlight: #1e00c2;
 
-	${media.xSmallOnly`--m: 16px;`}
+	${media.xSmallOnly`--m: 17px;`}
 	${media.smallOnly`--m: 17px;`}
-	${media.mediumOnly`--m: 17px;`}
+	${media.mediumOnly`--m: 18px;`}
 	${media.largeOnly`--m: 20px;`}
 	${media.xLargeOnly`--m: 21px;`}
 	--10xs: calc(var(--m) / ${Math.pow(scale, 11)});
