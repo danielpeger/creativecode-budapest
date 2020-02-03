@@ -75,10 +75,12 @@ export default function FrontPage({ data }) {
         heading="Podcast" 
         css="grid-auto-rows: min-content;"
       >
-        <p>
-          In the CCBP Podcast we invite some of our most inspiring meetup speakers to have a long-form conversation about their work and background. 
-          Our host is the amazing <a href="http://declanhannigan.com/">Declan Hannigan</a> and the show is produced by <a href="https://www.jeromelithiaote.com/">Jérôme Li-Thiao-Té</a> at Watcha Studios.
-        </p>
+        <TextColumn>
+          <p>
+            In the CCBP Podcast we invite some of our most inspiring meetup speakers to have a long-form conversation about their work and background. 
+            Our host is the amazing <a href="http://declanhannigan.com/">Declan Hannigan</a> and the show is produced by <a href="https://www.jeromelithiaote.com/">Jérôme Li-Thiao-Té</a> at Watcha Studios.
+          </p>
+        </TextColumn>
         <PodcastEpisode
           title={podcast.title}
           shownotes={podcast.content}

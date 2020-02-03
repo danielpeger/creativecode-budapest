@@ -6,6 +6,15 @@ import media from "../utils/media"
 import { TextColumn } from "../components/GlobalStyle"
 import MailIcon from "../components/icons/mail.svg"
 
+const FlexLink = styled.a`
+	display: inline-flex;
+	vertical-align: bottom;
+
+	svg {
+		margin-right: var(--7xs);
+	}
+`;
+
 const OpenCall = () => {
   return (
 		<Section>
@@ -16,16 +25,8 @@ const OpenCall = () => {
 					The presentations are usually around 15-20 min long, held in English, and they should be related to art&tech.
 				</p>
 				<p css="margin-bottom: var(--m);">
-					If you are interested, please send us a short introduction about you and what you want to talk about to <a href="mailto:creativecodebudapest@gmail.com">creativecodebudapest@gmail.com</a>!
+					If you are interested, please send us a short introduction about you and what you want to talk about to <FlexLink href="mailto:creativecodebudapest@gmail.com"><MailIcon/><span>creativecodebudapest@gmail.com</span></FlexLink>!
 				</p>
-				<Button 
-					as="a"
-					name="mail"
-					href="mailto:creativecodebudapest@gmail.com"
-				>
-					<MailIcon />
-					<span>Drop us a line</span>
-				</Button>
 			</TextColumn>
 		</Section>
   )

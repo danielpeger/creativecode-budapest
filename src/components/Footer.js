@@ -93,7 +93,7 @@ const Footer = () => {
       </JoinAside>
       <NewsletterAside>
         <h2>Newsletter</h2>
-        <p>Sign up to get event info</p>
+        <p>Sign up to get a <em>★hand-crafted mail fom Rita★</em> about once a month. Mostly event info, no spam.</p>
         <NewsletterForm action="https://tinyletter.com/creativecodebudapest" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/creativecodebudapest', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
           <TextInput placeholder="Your email" name="email" id="tlemail" />
           <input type="hidden" value="1" name="embed"/>
