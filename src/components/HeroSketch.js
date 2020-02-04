@@ -39,6 +39,11 @@ export default function HeroSketch(backgroundImage){
       encodeMessage();
     };
 
+    p.windowResized = function() {
+      let htmlContainer = document.getElementById('HeroSketchContainer');
+      p.resizeCanvas(htmlContainer.offsetWidth, htmlContainer.offsetHeight);
+    }
+
     function logoLoadSuccess() {
       logoLoaded = true;
     }
