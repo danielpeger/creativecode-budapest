@@ -29,7 +29,7 @@ export default function HeroSketch(backgroundImage){
 
       if (displayLogo)
         logo = p.loadImage(
-          'https://images.pexels.com/photos/458766/pexels-photo-458766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          'logo/logo-white.png',
           logoLoadSuccess
         );
       img = p.loadImage(imagePath, imgLoadSuccess);
