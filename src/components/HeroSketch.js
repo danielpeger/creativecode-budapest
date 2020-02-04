@@ -24,7 +24,7 @@ export default function HeroSketch(backgroundImage){
         `upload/f_auto,w_1000,dpr_${Math.floor(window.devicePixelRatio)}.0/`
       )
       let htmlContainer = document.getElementById('HeroSketchContainer');
-      p.createCanvas(htmlContainer.offsetWidth, htmlContainer.offsetHeight);
+      p.createCanvas(htmlContainer.offsetWidth, window.innerHeight * 0.80);
       // p.createCanvas(canvasWidth, canvasHeight, p.WEBGL);
 
       if (displayLogo)
