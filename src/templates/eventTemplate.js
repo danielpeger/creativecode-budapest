@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import SEO from '../components/SEO';
+import GlobalStyle, { Root } from "../components/GlobalStyle"
 import media from "../utils/media"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
-import GlobalStyle, { Root } from "../components/GlobalStyle"
 
 const EventPageHeader = styled(EventHeader)`
   border: none;
@@ -17,8 +18,9 @@ const EventPageHeader = styled(EventHeader)`
 `;
 
 export default function Template({ data }) {
-  const { frontmatter, html } = data.markdownRemark
+  const { frontmatter, html, parent } = data.markdownRemark
   const {
+    poster,
     title,
     date,
     location,
@@ -30,8 +32,15 @@ export default function Template({ data }) {
     widePhotos,
     fullWidthPhotos
   } = frontmatter
+  const realPosterPath = poster.replace('upload/t_breakthumbnails/','upload/f_auto,w_1600/')
   return (
     <Root>
+      <SEO
+        title={title}
+        description={`Creative Code Budapest Event - ${title}`}
+        image={realPosterPath}
+        pathname={parent.name}
+      />
       <GlobalStyle />
       <EventPageHeader
         title={title}
@@ -61,6 +70,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        poster
         title
         date
         location
@@ -75,6 +85,11 @@ export const pageQuery = graphql`
         photos,
         widePhotos,
         fullWidthPhotos
+      }
+      parent {
+        ... on File {
+          name
+        }
       }
     }
   }

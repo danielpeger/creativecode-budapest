@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import SEO from '../components/SEO';
 import GlobalStyle, { Root, TextColumn } from "../components/GlobalStyle"
 import Section from "../components/Section"
 import Hero from "../components/Hero"
@@ -21,6 +22,7 @@ export default function FrontPage({ data }) {
   console.log(events[0].node.frontmatter.poster);
   return (
     <Root>
+      <SEO/>
       <GlobalStyle />
       <Hero backgroundImage={events[0].node.frontmatter.poster}/>
       <Section noseparator>

@@ -1,4 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: "Creative Code Budapest",
+    description:
+      "A community meetup for new media artists, pixel tinkerers, arduino masters, nerds, habitants of virtual and augmented realities and curious people.",
+    url: "https://www.creativecodebudapest.com",
+    image: "/logo/logo-white.png"
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -16,6 +23,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
@@ -27,6 +35,19 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Creative Code Budapest",
+        short_name: "CCBP",
+        start_url: "/",
+        background_color: "#000",
+        theme_color: "#1e00c2",
+        display: "browser",
+        icon: "static/favicons/e.png",
+        crossOrigin: `use-credentials`,
+      },
     }
   ],
 }

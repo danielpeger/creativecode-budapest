@@ -26,19 +26,4 @@ const Hero = ({ backgroundImage }) => {
   return <HeroElement ref={sketchRef}  id="HeroSketchContainer"/>
 };
 
-// const Hero = ({ backgroundImage }) => {
-//   const HeroRef = useRef(null);
-//   useEffect(() => {
-//     console.log(HeroRef);
-//     // HeroRef.current.setAttribute("style", `height: ${window.innerHeight * 0.85}px`);
-//   }, [HeroRef])
-
-//   return (
-//     <HeroElement
-//       id="HeroSketchContainer"
-//       sketch={HeroSketch(backgroundImage)}
-//     />
-//   )
-// }
-
 export default Hero;
