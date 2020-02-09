@@ -96,6 +96,8 @@ photos:
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574809568/cc7/DSC03688_rpke1w.jpg
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574809547/cc7/DSC03676_rwcmx4.jpg
+widePhotos:
+  - '5'
 ---
 Hey!
 
