@@ -82,7 +82,12 @@ const Credits = styled(Section)`
   small {
     grid-column: 1 / -1;
     width: 100%;
-    text-align: right;
+    ${media.mediumDown`
+      text-align: left;
+    `}
+    ${media.largeUp`
+      text-align: right;
+    `}
   }
 `;
 

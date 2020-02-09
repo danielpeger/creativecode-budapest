@@ -154,7 +154,7 @@ export const TextColumn = styled.div`
     grid-column: span 5;
   `}
   ${media.smallDown`
-    grid-column: span 6;
+    grid-column: span 4;
   `}
 `
 
