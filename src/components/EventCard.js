@@ -68,22 +68,14 @@ const H4 = styled.h4`
 
 const EventCard = React.forwardRef(({ path, poster, posterGravity = "west", title, speakers, date, location, className }, ref) => (
   <LinkElement to={path} className={className} ref={ref}>
-    <Image src={poster} width={340} aspectRatio={1} customTransformations={`c_fill,g_${posterGravity}`} />
+    <Image 
+      src={poster}
+      width={340}
+      aspectRatio={1}
+      customTransformations={`c_fill,g_${posterGravity}`}
+      disableLazyLoading
+    />
     <H4>{title}</H4>
-    {/* {speakers && (
-      <small>
-        with&nbsp;
-        {speakers.map((speaker, index) => {
-          if (index === 0) {
-            return <em key={index}>{speaker.name}</em>
-          } else if (index === speakers.length - 1) {
-            return <React.Fragment key={index}> and <em>{speaker.name}</em></React.Fragment>
-          } else {
-            return <em key={index}>, {speaker.name}</em>
-          }
-        })}
-      </small>
-    )} */}
     <Ul>
       {date && (
         <li key="date">

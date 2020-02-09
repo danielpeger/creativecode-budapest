@@ -32,6 +32,7 @@ const Image = React.forwardRef(({
   mobileWidth,
   customTransformations,
   alt,
+  disableLazyLoading = false
 }, externalRef) => {
   const [dpr, setDpr] = useState(1)
   useEffect(() => {
@@ -76,7 +77,7 @@ const Image = React.forwardRef(({
           media={`(max-width: ${breakpoints.smallMax}px)`}
         />
       )}
-      {src && (inView || supportsLazyLoading) ? (
+      {src && (inView || supportsLazyLoading || disableLazyLoading) ? (
         <img
           alt={alt}
           src={defaultSrc}
