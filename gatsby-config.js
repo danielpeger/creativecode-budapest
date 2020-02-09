@@ -24,6 +24,7 @@ module.exports = {
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
