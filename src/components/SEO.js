@@ -2,6 +2,15 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import a from "../../static/favicons/a.ico";
+import b from "../../static/favicons/b.ico";
+import c from "../../static/favicons/c.ico";
+import d from "../../static/favicons/d.ico";
+import e from "../../static/favicons/e.ico";
+import i from "../../static/favicons/i.ico";
+import j from "../../static/favicons/j.ico";
+
+const favicons = [a, b, c, d, e, i, j];
 
 const SEO = ({ title, description, image, pathname }) => (
   <StaticQuery
@@ -25,7 +34,14 @@ const SEO = ({ title, description, image, pathname }) => (
 
       return (
         <>
-          <Helmet title={seo.title}>
+          <Helmet 
+            title={seo.title}
+            link={[{ 
+              rel: 'shortcut icon',
+              type: 'image/png',
+              href: `${favicons[Math.floor(Math.random() * favicons.length)]}`
+            }]}
+          >
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}

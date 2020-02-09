@@ -36,7 +36,7 @@ export default function Template({ data }) {
   return (
     <Root>
       <SEO
-        title={title}
+        title={`${title} • Creative Code Budapest`}
         description={`Creative Code Budapest Event - ${title}`}
         image={realPosterPath}
         pathname={parent.name}
@@ -59,7 +59,7 @@ export default function Template({ data }) {
           fullWidthPhotos={fullWidthPhotos} 
         />
         : 
-        <PhotoGrid placeholder />
+        <PhotoGrid nophotos />
       }
     </Root>
   )

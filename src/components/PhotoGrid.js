@@ -33,7 +33,7 @@ const Grid = styled.section`
     max-width: calc(1400px - (2 * var(--l)));
   `}
 
-  ${props => props.placeholder && css`
+  ${props => props.nophotos && css`
     position: relative;
     max-height: 300px;
     overflow: hidden;
@@ -126,10 +126,10 @@ const GridImage = ({ src, wide, fullWidth, className }) => {
   )
 }
 
-const PhotoGrid = ({ placeholder, photos, widePhotos, fullWidthPhotos }) => {
-  if (placeholder) {
+const PhotoGrid = ({ nophotos, photos, widePhotos, fullWidthPhotos }) => {
+  if (nophotos) {
     return (
-      <Grid placeholder>
+      <Grid nophotos>
         <p><span role="img" aria-label="Camera icon">📷</span> No photos of this event yet</p>
         <GridImage />
         <GridImage />

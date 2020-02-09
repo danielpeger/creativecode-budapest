@@ -241,7 +241,7 @@ export default function EventPagePreview({ entry, widgetsFor }) {
             fullWidthPhotos={entry.getIn(['data', 'fullWidthPhotos'])}
           />
         : 
-          <PhotoGrid placeholder/>
+          <PhotoGrid nophotos/>
         }
       </Root>
     </StylesheetInjector>
