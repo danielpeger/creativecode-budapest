@@ -18,7 +18,7 @@ export const LinkElement = styled(Link)`
 
   &:active {
     picture {
-      filter: brightness(150%) grayscale();
+      filter: brightness(70%) grayscale();
     }
   }
 `;
