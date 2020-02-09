@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import media from "../utils/media"
-import EventCard, {LinkElement} from "./EventCard"
+import EventCard, { LinkElement } from "./EventCard"
 import Section from "../components/Section"
 
 const PastEventsSection = styled(Section)`

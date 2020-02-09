@@ -12,7 +12,7 @@ export const LinkElement = styled(Link)`
 
   &:hover {
     picture {
-      filter: brightness(150%);
+      filter: grayscale();
     }
   }
 

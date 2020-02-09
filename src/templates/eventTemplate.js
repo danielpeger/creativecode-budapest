@@ -1,20 +1,35 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import SEO from '../components/SEO';
 import GlobalStyle, { Root } from "../components/GlobalStyle"
 import media from "../utils/media"
+import Section from "../components/Section"
+import Logo from "../../static/logo/logo-black.svg"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
 
+const Nav = styled.div`
+  margin-bottom:var(--3xl);
+  padding-top: var(--xxl);
+  padding-bottom: var(--l);
+  background-image: url(${props => props.poster});
+  background-size: cover;
+`;
+
 const EventPageHeader = styled(EventHeader)`
+  margin-bottom: var(--5xl);
+  padding: 0;
   border: none;
-  padding-top: 0;
-  margin-top: var(--8xl);
-  ${media.mediumDown`
-    margin-top: var(--5xl);
-    margin-bottom: var(--5xl);
-  `}
+`;
+
+const StyledLogo = styled(Logo)`
+  height: var(--7xl);
+  width: calc(var(--7xl) * 2.66);
+  &:hover{
+    filter: invert(1);
+  }
 `;
 
 export default function Template({ data }) {
@@ -32,7 +47,7 @@ export default function Template({ data }) {
     widePhotos,
     fullWidthPhotos
   } = frontmatter
-  const realPosterPath = poster.replace('upload/t_breakthumbnails/','upload/f_auto,w_1600/')
+  const realPosterPath = poster.replace('upload/t_breakthumbnails/','upload/f_auto/')
   return (
     <Root>
       <SEO
@@ -42,6 +57,13 @@ export default function Template({ data }) {
         pathname={parent.name}
       />
       <GlobalStyle />
+      <Nav poster={realPosterPath}>
+        <Section css="margin-bottom: 0;" noseparator>
+          <Link to="/" css="grid-column: 1 / -1;">
+            <StyledLogo/>
+          </Link>
+        </Section>
+      </Nav>
       <EventPageHeader
         title={title}
         date={date}
