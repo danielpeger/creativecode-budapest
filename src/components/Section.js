@@ -13,9 +13,6 @@ const SectionElement = styled.section`
   ${media.smallDown`
     margin: 0 var(--l) var(--7xl) var(--l);
   `}
-  ${media.mediumDown`
-    margin: 0 var(--l) var(--8xl) var(--l);
-  `}
   ${media.smallOnly`
     grid-template-columns: repeat(6, 1fr);
   `}

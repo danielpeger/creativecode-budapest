@@ -11,7 +11,7 @@ import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
 
 const Nav = styled.div`
-  margin-bottom:var(--3xl);
+  margin-bottom:var(--5xl);
   padding-top: var(--xxl);
   padding-bottom: var(--l);
   background-image: url(${props => props.poster});
