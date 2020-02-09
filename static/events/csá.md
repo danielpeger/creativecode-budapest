@@ -1,6 +1,6 @@
 ---
 title: csÁ
-date: 2020-02-09T16:27:15.381Z
+date: 2020-02-27T16:27:15.381Z
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1579439385/CCBP_FB_Group_Cover_8_jw2hl3.jpg
 photos:
