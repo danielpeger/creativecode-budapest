@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react"
 import styled from "styled-components"
-import media from "../utils/media"
 import HeroSketch from "./HeroSketch.js"
 import p5 from 'p5'
 

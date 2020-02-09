@@ -91,7 +91,7 @@ const Audio = ({ src, className }) => {
 	const [playing, setPlaying] = useState(false);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [duration, setDuration] = useState(0);
-	function setDurationOnce()  {
+	let setDurationOnce = function ()  {
 		setDuration(audio.current.duration);
 		setDurationOnce = function() {}; //Make sure this function only executes once
 	}

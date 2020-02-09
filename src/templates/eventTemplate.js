@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import SEO from '../components/SEO';
 import GlobalStyle, { Root } from "../components/GlobalStyle"
-import media from "../utils/media"
 import Section from "../components/Section"
 import Logo from "../../static/logo/logo-black.svg"
 import EventHeader from "../components/EventHeader"
