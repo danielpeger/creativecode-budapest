@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzg
 facebookEventLink: 'https://www.facebook.com/events/1274670436035262/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574806839/commonknowledge/creativecode_commonknowledge_hyclgc.jpg
+posterGravity: center
 speakers:
   - bio: >-
       Claire Fristot / A-li-ce / Alice FWonderland French-born visual artist

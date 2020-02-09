@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyxl
 facebookEventLink: 'https://www.facebook.com/events/772168893174174/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574806429/cc1/creativecode_1_alr623.jpg
+posterGravity: east
 speakers:
   - bio: "Rachel Uwa, the founder of [School of Machines, Making and Make-Believe](www.schoolofma.org) and of Creative Code Berlin, an artist, educator, and organiser whose background is in audio engineering and vfx compositing.\r\n\nShe will talk about the human need for creativity or whatever she wants to, she is brilliant."
     image: >-

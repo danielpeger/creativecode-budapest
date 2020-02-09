@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyxq
 facebookEventLink: 'https://www.facebook.com/events/344533412951672/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574805951/cc2/creativecodemeetup_2_kjxomv.jpg
+posterGravity: center
 speakers:
   - bio: "You can prepare for some golden rabbits and the story of the VR Lada by Olga Kocsi and Dávid Mórász!  Olga will talk about the art and rabbit part, Dávid about the programming.\r\n\nMore about Olga's work [here](<www.behance.net/nyulga //>) and [here](www.nyulga.com), and about Dávid's [here](www.mcro.de)."
     image: >-

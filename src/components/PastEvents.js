@@ -53,7 +53,7 @@ const PastEvents = ({events}) => {
         <Section heading="Past events" css="margin-bottom: var(--l);"></Section>
         <PastEventsSection noseparator cards={events.length}>
           {events.map(({ node }, index) => {
-            const { poster, title, date, location, speakers } = node.frontmatter
+            const { poster, title, date, location, speakers, posterGravity } = node.frontmatter
             return (
               <EventCard
                 key={node.parent.id}
@@ -63,6 +63,7 @@ const PastEvents = ({events}) => {
                 date={date}
                 location={location}
                 speakers={speakers}
+                posterGravity={posterGravity ? posterGravity : "west"}
               />
             )
           })}

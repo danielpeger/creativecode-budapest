@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzd
 facebookEventLink: 'https://www.facebook.com/events/297286164327793/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574805486/cc3/creativecode_3_jycjkd.jpg
+posterGravity: east
 speakers:
   - bio: "Zsófi is a fashion-tech designer and she will talk about her new interactive knitwear collection. She is pretty cool, she recently won the 2nd prize at Telekom Fashion Fusion, and with her graduation project she got the Best Hungarian Designer award at Gombold Újra a year ago and she is still a supernice human.\r\n\nMore about Zsófi [here](http://zsolevai.com)."
     image: >-

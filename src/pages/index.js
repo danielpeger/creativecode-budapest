@@ -101,6 +101,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             poster
+            posterGravity
             title
             date
             location

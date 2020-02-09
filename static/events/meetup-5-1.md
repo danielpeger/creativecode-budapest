@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzj
 facebookEventLink: 'https://www.facebook.com/events/331593607538547/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573807326/cc5/creativecode_6_utknbl.jpg
+posterGravity: east
 speakers:
   - bio: "In the age of internet paradigm-shift children’s toys and games are changing as well as the toolkit of education.\r\n\nAndrea has a rare condition, called synaesthesia. It means that the production of a sense impression is relating and stimulating another sense impression in her brain. Recognising it made her learning process much more effective. This phenomenon inspired her to transition from graphic designer to a media artist and to do research on the topic of multi-sensorial learning techniques.\r\n\nShe will talk about how to implement technology in education in a good manner and how digital interfaces are effecting our cognitive-system."
     image: >-

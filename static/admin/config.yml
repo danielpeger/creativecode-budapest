@@ -40,6 +40,10 @@ collections:
         label: Poster
         widget: image
         required: false
+      - name: posterGravity
+        label: Poster Crop Gravity
+        hint: 'Specifies where to crop the poster. Valid values: north_east, north, north_west, west, south_west, south, south_east, east, or center.'
+        required: false
       - name: body
         label: Description
         widget: markdown

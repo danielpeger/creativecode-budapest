@@ -8,6 +8,7 @@ meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzf
 facebookEventLink: 'https://www.facebook.com/events/2225595641040993/'
 poster: >-
   https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574804898/cc4/creativecode_4_kfila1.jpg
+posterGravity: west
 speakers:
   - bio: "EJTECH is a polydisciplinary studio working with unstable media, experimental interfaces, electronic textiles, and future materials, focusing their artistic research on the crossmodal synergy between the physical and digital, the process of sensory integration and further explorations on HCI (human-computer interaction) via interactive installations and dynamic art pieces.\r\n\nThey will talk about sound, space and textile technospiritualism. More [here](http://ejtech.cc)."
     image: >-
