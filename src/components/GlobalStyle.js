@@ -153,7 +153,10 @@ export const TextColumn = styled.div`
   ${media.mediumOnly`
     grid-column: span 5;
   `}
-  ${media.smallDown`
+  ${media.smallOnly`
+    grid-column: span 6;
+  `}
+	${media.xSmallOnly`
     grid-column: span 4;
   `}
 `

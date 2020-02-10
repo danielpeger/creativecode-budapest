@@ -18,6 +18,7 @@ const SectionElement = styled.section`
   `}
   ${media.mediumOnly`
     grid-template-columns: repeat(8, 1fr);
+    margin: 0 var(--xl) var(--7xl) var(--3xl);
   `}
   ${media.largeUp`
     grid-template-columns: repeat(12, 1fr);
