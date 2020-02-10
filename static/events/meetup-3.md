@@ -105,6 +105,11 @@ photos:
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808496/cc3/P1030021_fkfi9r.jpg
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808494/cc3/P1030062_yh57xx.jpg
+widePhotos:
+  - '1'
+  - '19'
+  - '28'
+  - '38'
 ---
 Hey!
 
