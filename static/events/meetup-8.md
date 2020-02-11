@@ -7,7 +7,7 @@ googleMapsLink: >-
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpybcdbjb/'
 facebookEventLink: 'https://www.facebook.com/events/219052672446193/'
 poster: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1579439385/CCBP_FB_Group_Cover_8_jw2hl3.jpg
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1581419334/CCBP_FB_Group_Cover_8_nologo_uontc8.png
 posterGravity: north_west
 speakers:
   - bio: >-
