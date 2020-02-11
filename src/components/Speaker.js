@@ -45,6 +45,7 @@ const Speaker = ({ speaker }) => {
         aspectRatio={1}
         alt={speaker.name}
         customTransformations="g_face,c_thumb,z_0.7"
+        disableLazyLoading
       />
       <div>
         <h4>{speaker.name}</h4>

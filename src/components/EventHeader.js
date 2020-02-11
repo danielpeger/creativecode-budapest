@@ -69,7 +69,7 @@ const SpeakerList = styled.aside`
   display: grid;
   place-items: start;
   width: 100%;
-  grid-gap: var(--m);
+  grid-gap: var(--l);
 
   ${media.xSmallOnly`grid-column: span 4;`}
   ${media.smallOnly`grid-column: span 6;`}

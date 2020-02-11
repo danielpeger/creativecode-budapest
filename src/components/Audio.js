@@ -75,13 +75,16 @@ const TimeLabel = styled.p`
     width: 125px;
   `}
 	${media.smallOnly`
-    width: 135px;
+    width: 130px;
   `}
 	${media.mediumOnly`
-    width: 135px;
+    width: 140px;
   `}
-	${media.largeUp`
-		width: 145px;
+	${media.largeOnly`
+		width: 150px;
+  `}
+	${media.xLargeOnly`
+		width: 165px;
   `}
 `;
 

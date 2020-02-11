@@ -15,6 +15,7 @@ const Nav = styled.div`
   padding-bottom: var(--l);
   background-image: url(${props => props.poster});
   background-size: cover;
+  filter: grayscale(1);
 `;
 
 const EventPageHeader = styled(EventHeader)`
