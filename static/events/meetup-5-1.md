@@ -32,8 +32,7 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574803375/cc5/szegedipeti_dxoxbs.jpg
     name: Péter Szegedi
-photos: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1570564190/cc5/P1080681_rt7lkf.jpg
+photos: ''
 ---
 Hey!
 
