@@ -7,7 +7,7 @@ googleMapsLink: >-
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyzpbkb/'
 facebookEventLink: 'https://www.facebook.com/events/521356381996601/'
 poster: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573759276/cc7/CCBP_FB_Group_Cover_8_shogcx.jpg
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1581419195/CCBP_FB_Group_Cover_7_nologo_gfapro.png
 speakers:
   - bio: "Samu Setényi from [XORXOR](xorxor.hu), works with new technology to make art and design works that continue the tradition of human expression and craftsmanship in a meaningful way. He will talk about how to find the balance between the artistic and the technological in a professional creative coding practice, maintaining the artistic and conceptual purpose while being knee-deep in C++ for weeks. Art vs Tech in Art & Tech projects.\r\n\nCheck his [website](samuelsetenyi.com)!"
     image: >-
