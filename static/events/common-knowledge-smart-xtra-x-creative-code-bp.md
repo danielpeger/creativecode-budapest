@@ -82,6 +82,8 @@ photos:
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574807587/commonknowledge/59387060_2314326802166757_4853021012473675776_o_qfnd0s.jpg
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574807585/commonknowledge/59357245_2314326588833445_2187630408122761216_o_ywt2c1.jpg
+widePhotos:
+  - '9'
 ---
 After Bánkitó Fesztivál and DataCamp x MOME Open event we continue discovering open creative labs and their knowledge sharing strategy. Rita Eperjesi, the founder of Creative Code Budapest will hold a presentation about the philosophy behind the common meetups and the relation of technology and self-awareness. Minkó Mihály puts us up to Databánya's data visualization projects and connections between different information bases. Claire Fristot / A-li-ce / Alice FWonderland French-born visual artist introduce VJ Open Lab Berlin’s activities. She also runs the Women VJ Program to bring more female artists into the visual performing field. Concerned by gender and ecology’s issues, she takes part to international symposiums. Interested in identities and memory issues, she uses different techniques such as drawing, animation and video in order to create her hybrid time collages in motion. 
 
