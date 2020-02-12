@@ -41,3 +41,11 @@ What to expect?
 The meetup will take place at Koncept Galéria, you can arrive from around 19.30, the first talk will start at 20.00.
 
 We are all looking forward to seeing you!
+
+
+
+Lovely GIFs about the event here: <!--StartFragment-->
+
+<https://giphy.com/channel/creativecodebudapest>
+
+<!--EndFragment-->
