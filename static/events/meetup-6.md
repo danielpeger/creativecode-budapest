@@ -7,7 +7,7 @@ googleMapsLink: >-
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyznbfb/'
 facebookEventLink: 'https://www.facebook.com/events/390056838350483/'
 poster: >-
-  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573761070/cc6/CCBP_FB_Group_Cover_7b_rfafp7.jpg
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1581419192/CCBP_FB_Group_Cover_6_ljif4q.png
 speakers:
   - bio: >-
       Matyi labels himself as ‘a creative industrial technologist and
