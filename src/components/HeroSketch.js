@@ -199,8 +199,8 @@ export default function HeroSketch(backgroundImage){
         startingRotationZ = p.rotationZ; // this always starts at 260???
       }
 
-      nx = ((noise(frameCount*.001)*2)-1)*40;
-      ny = ((noise((frameCount+100)*.001)*2)-1)*40;
+      nx = ((p.noise(p.frameCount*.001)*2)-1)*40;
+      ny = ((p.noise((p.frameCount+100)*.001)*2)-1)*40;
 
       // nx = startingRotationZ - p.rotationZ;
       // ny = startingRotationX - p.rotationX;
