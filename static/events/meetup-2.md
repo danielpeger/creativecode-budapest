@@ -75,7 +75,9 @@ photos:
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574808043/cc2/DSC03398_k13c4g.jpg
 widePhotos:
+  - '2'
   - '12'
+  - '17'
 ---
 Hey!
 
