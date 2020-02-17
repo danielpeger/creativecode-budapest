@@ -19,9 +19,10 @@ export default function FrontPage({ data }) {
   const pastEvents = events.filter(
     ({ node }) => new Date(node.frontmatter.date) < new Date()
   )
+  const realPosterPath = events[0].node.frontmatter.poster.replace('upload/t_breakthumbnails/','upload/f_auto/')
   return (
     <Root>
-      <SEO/>
+      <SEO image={realPosterPath}/>
       <GlobalStyle />
       <Hero backgroundImage={events[0].node.frontmatter.poster}/>
       <Section noseparator>
