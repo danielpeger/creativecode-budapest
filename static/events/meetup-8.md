@@ -61,7 +61,7 @@ speakers:
       functional practices to the final wearable garment design.
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1581418847/cc8/kormos_lcyp0u.jpg
-    name: Anna Zsófia Kormos
+    name: Anna Zsófia Kormos & Dóra Pelczer
 photos:
   - >-
     https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783498/cc8/P1090284_rlcofj.jpg
