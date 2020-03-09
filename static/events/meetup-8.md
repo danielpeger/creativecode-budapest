@@ -62,6 +62,73 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1581418847/cc8/kormos_lcyp0u.jpg
     name: Anna Zsófia Kormos
+photos:
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783498/cc8/P1090284_rlcofj.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783492/cc8/P1090281_ehcewe.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783491/cc8/P1090280_vq9iha.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783491/cc8/P1090275_x95lar.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783487/cc8/P1090285_okfccr.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783453/cc8/P1090278_mmksm2.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783453/cc8/P1090235_zigpov.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783463/cc8/P1090276_xwbemu.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783464/cc8/P1090272_fzzei6.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783479/cc8/P1090236_rmt1rd.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783436/cc8/P1090225_cqaq4w.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783436/cc8/P1090271_xamu2k.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783432/cc8/P1090274_o7nawp.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783379/cc8/P1090269_wwdpw8.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783377/cc8/P1090233_hhzhor.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783319/cc8/P1090215_cqu1qm.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783320/cc8/P1090222_sa6bt7.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783342/cc8/P1090268_ajzihg.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783352/cc8/P1090228_hozbqk.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783358/cc8/P1090223_ye4qtw.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783316/cc8/P1090214_fcdr1m.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783311/cc8/P1090266_oogrmk.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783309/cc8/P1090212_gimtfk.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783305/cc8/P1090261_kbaosf.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783295/cc8/P1090220_tbcps8.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783289/cc8/P1090258_mkqx1z.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783284/cc8/P1090206_z0jfbt.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783280/cc8/P1090211_pdwtjr.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783275/cc8/P1090202_h5aghx.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783272/cc8/P1090259_ocsmb2.jpg
+  - >-
+    https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1583783272/cc8/P1090254_yempat.jpg
+widePhotos:
+  - '4'
+  - '14'
+  - '17'
 ---
 Hey!\
 This will be our next community meetup!\
