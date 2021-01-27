@@ -24,7 +24,7 @@ speakers:
       Berlin.
 
 
-      More about him [here](www.vrsh.in).
+      More about him [here](http://www.vrsh.in).
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1574803373/cc5/vladstorm_hj52ac.jpg
     name: Vladimir Storm
