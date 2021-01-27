@@ -18,11 +18,11 @@ speakers:
       and think-tank called MeetLab, specializing in creative experiments with
       materials, prints and light.
 
-      Check his [website](meanwhile.hu)!
+      Check his [website](http://meanwhile.hu)!
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573761047/cc6/csiszarmatyi_ma6rnq.jpg
     name: Mátyás Csiszár
-  - bio: "Gyula Bodonyi will talk about the magical world of interactive particles. While he is experimenting with mimicing natural behaviors, he is generating other worldly visuals, that look very similar to naturally forming structures.\r\n\nWith some simple rules, and some initial chaos, Gyula can create very complex shapes, behaviors that constantly change and rearrange. He will present us some of these interactive particle systems and discover it with us.\r\n\nGyula in his job is creating interactive installations, for dance shows, he uses a node based developement platform called Touchdesigner and for him the most interesting thing in making interactive installations is that he can connect a digital world to our reality and interact with it in creative ways.\r\n\nCheck out what Gyula is doing [here](instagram.com/gyula.bodonyi/) or [here](https://vimeo.com/350798506)!"
+  - bio: "Gyula Bodonyi will talk about the magical world of interactive particles. While he is experimenting with mimicing natural behaviors, he is generating other worldly visuals, that look very similar to naturally forming structures.\r\n\nWith some simple rules, and some initial chaos, Gyula can create very complex shapes, behaviors that constantly change and rearrange. He will present us some of these interactive particle systems and discover it with us.\r\n\nGyula in his job is creating interactive installations, for dance shows, he uses a node based developement platform called Touchdesigner and for him the most interesting thing in making interactive installations is that he can connect a digital world to our reality and interact with it in creative ways.\r\n\nCheck out what Gyula is doing [here](http://instagram.com/gyula.bodonyi/) or [here](https://vimeo.com/350798506)!"
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573761041/cc6/bodonyigyula_tc6pdh.jpg
     name: Gyula Bodonyi
