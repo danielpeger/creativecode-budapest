@@ -139,7 +139,7 @@ const Footer = () => {
         <small>
           &#9874;
           This site was built by&nbsp;
-          <a href="https://danielpeger.github.io">Dani Peger</a>,&nbsp;
+          <a href="https://www.linkedin.com/in/danielpeger/">Dani Peger</a>,&nbsp;
           <a href="https://www.rita.cloud/">Rita Eperjesi</a> and&nbsp;
           <a href="https://www.instagram.com/INSgraphizm/">Zoli Szalay</a>.
         </small>
