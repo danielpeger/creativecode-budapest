@@ -23,7 +23,7 @@ speakers:
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573760343/cc7/setenyisamu_krhdg4.jpg
     name: Samu Setényi
-  - bio: "Dániel Szalkai from Perceptual Thinkers will introduce us to their latest experimental project, a capsule collection in collaboration with EJTECH.\r\n\nPerceptual Thinkers is an initiative, which goes beyond the specific design of product and is trying to bring people living with autism closer to the typical people.\r\n\nThe new collection has a flagship item: a special jacket with embroidery on it, which are connected to sensors. These sensors respond to touches that play pre-programmed harmonic and disharmonic sound patterns, which can be heard via headphones or any devices with a jack plug.\r\n\nCheck his [behance](behance.net/danszalkai)!"
+  - bio: "Dániel Szalkai from Perceptual Thinkers will introduce us to their latest experimental project, a capsule collection in collaboration with EJTECH.\r\n\nPerceptual Thinkers is an initiative, which goes beyond the specific design of product and is trying to bring people living with autism closer to the typical people.\r\n\nThe new collection has a flagship item: a special jacket with embroidery on it, which are connected to sensors. These sensors respond to touches that play pre-programmed harmonic and disharmonic sound patterns, which can be heard via headphones or any devices with a jack plug.\r\n\nCheck his [behance](http://behance.net/danszalkai)!"
     image: >-
       https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1573760345/cc7/szalkaidani_w8xpls.jpg
     name: Dániel Szalkai
