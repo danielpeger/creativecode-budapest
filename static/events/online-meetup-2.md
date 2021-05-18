@@ -3,6 +3,8 @@ title: 'Online Meetup #2'
 date: 2021-05-27T18:00:00.000Z
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/277738664'
 facebookEventLink: 'https://www.facebook.com/events/489838822236561'
+poster: >-
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621327747/CCBP_FB_Group_Cover_10_nologo_o9w07b.jpg
 speakers:
   - bio: >-
 
@@ -29,6 +31,8 @@ speakers:
 
       [https://www.instagram.com/samubence/](https://www.instagram.com/samubence/
       "https\://www.instagram.com/samubence/")
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621328290/online%202/bencesamu_cg9vjr.jpg
     name: Bence Samu
   - bio: >-
       Afterwards the collective Safe Space will present their project Remnants:
@@ -47,6 +51,8 @@ speakers:
 
       [https://www.instagram.com/safe.space.studio/](https://www.instagram.com/safe.space.studio/
       "https\://www.instagram.com/safe.space.studio/")
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621337721/online%202/safespace_ywa3qr.jpg
     name: 'Safe Space '
 ---
 
