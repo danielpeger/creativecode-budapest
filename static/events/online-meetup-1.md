@@ -4,6 +4,8 @@ date: 2021-03-25T19:00:00.000Z
 location: ''
 meetupEventLink: 'https://www.meetup.com/Creative-Code-Budapest/events/qnhgzpyccfbgb/'
 facebookEventLink: 'https://www.facebook.com/events/716936002305963/'
+poster: >-
+  https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621327744/CCBP_FB_Group_Cover_9_nologo_qbnr6h.jpg
 speakers:
   - bio: >-
 
@@ -21,6 +23,8 @@ speakers:
 
       [https://randomerror.studio/](https://randomerror.studio/
       "https\://randomerror.studio/")
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621328255/online%201/bakkagi_fwvitp.jpg
     name: Ágnes Karolina Bakk
   - bio: >-
       And the second presentation will be by Samu Setényi. He is from XORXOR,
@@ -32,6 +36,8 @@ speakers:
 
       [http://samuelsetenyi.com/](http://samuelsetenyi.com/
       "http\://samuelsetenyi.com/")
+    image: >-
+      https://res.cloudinary.com/creativecodebudapest/image/upload/t_breakthumbnails/v1621328255/online%201/setenyisamu_z0hrof.jpg
     name: Samu Setényi
 ---
 This time we will have two inspiring talks, and afterwards we can hang out in the online space if we feel like.
