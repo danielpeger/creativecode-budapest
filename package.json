@@ -25,7 +25,7 @@
     "gatsby-plugin-styled-components": "^3.1.11",
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-source-rss-feed": "^1.1.1",
-    "gatsby-transformer-remark": "^2.6.26",
+    "gatsby-transformer-remark": "^5.25.1",
     "install": "^0.13.0",
     "javascript-time-ago": "^2.0.2",
     "netlify-cms-app": "^2.9.7",
