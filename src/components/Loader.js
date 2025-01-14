@@ -11,7 +11,7 @@ import Loader8 from "../../static/loader/loader8.svg";
 
 
 const cycle = keyframes`
-    0%, 12.4% {
+    0%, 12.4999% {
       opacity: 1;
     }
     12.5%, 100% {
@@ -31,7 +31,9 @@ const LoaderElement = styled.div`
         width: 100%;
         height: 100%;
         opacity: 0;
-        animation: ${cycle} 8s infinite;
+        animation-name: ${cycle};
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
     }
 `;
 
@@ -67,9 +69,9 @@ const AnimatedLoader8 = styled(Loader8)`
     animation-delay: 7s;
 `;
 
-const Loader = () => {
+const Loader = ({ className }) => {
     return (
-        <LoaderElement>
+        <LoaderElement className={className}>
             <AnimatedLoader1/>
             <AnimatedLoader2/>
             <AnimatedLoader3/>
