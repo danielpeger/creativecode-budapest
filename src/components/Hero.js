@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react"
 import styled from "styled-components"
+import Loader from "./Loader.js"
 import HeroSketch from "./HeroSketch.js"
 import p5 from 'p5'
 
@@ -23,6 +24,7 @@ const Hero = ({ backgroundImage }) => {
   }, [sketchRef]);
 
   return <HeroElement ref={sketchRef}  id="HeroSketchContainer"/>
+  //return <Loader/>
 };
 
 export default Hero;
