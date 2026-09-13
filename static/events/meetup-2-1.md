@@ -40,7 +40,7 @@ speakers:
 ---
 Creative Code Budapest is a community meetup for new media artists, pixel tinkerers, arduino masters, nerds, habitants of virtual and augmented realities and curious people. 
 
-Our mission is to spread knowledge about computational art, build bridges with other disciplines, support each other's projects and, maybe, inspire you to start your own... ![🙂](https://static.xx.fbcdn.net/images/emoji.php/v9/teb/2/16/1f642.png)
+Our mission is to spread knowledge about computational art, build bridges with other disciplines, support each other's projects and, maybe, inspire you to start your own... 
 
 Our meetups are free and open to all, regardless of age, origin, gender or experience. They are an opportunity to meet likeminded people, share inspiration and get creative together in a relaxed and safe environment. Beginners and first-timers should feel especially welcome! 
 
