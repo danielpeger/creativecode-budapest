@@ -14,6 +14,7 @@ speakers:
       but critical thinking and personal growth, they are particularly
       interested in ways to bring playfulness into everyday
       life.\ [pastelsavage.itch.io](https://l.facebook.com/l.php?u=http%3A%2F%2Fpastelsavage.itch.io%2F%3Ffbclid%3DIwcGRvZgFleHRuA2FlbQIxMABicmlkETB0V0s1TzZGZllTMkhuY2FXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkUm-sep1vVPViG7YYyzwCd_FDJjpVrynqaQvukYMk6dqe4M23gsjdLHF6L-_aem_3wIQy5JPaAfqUMleazYO5Q&h=AUCM5IXOvWQdm72B7pxpiMZZy_yFc_Ek6gWUoRqTjJWzit7-c5lHc7vfppWh58UqnJsXNX_L97F5lBNtK7FJdtUFZ22go-j_U436rrMZXTDfPtodmLlV7C-nuEbAUS_xk1xiPUp2rxVG6ELHHa8ICRdsf_KO1fReJCs&__tn__=q&c%5B0%5D=AUAi40pC797okn4xDAi6lNPjnzNQaRCNBaR59aGdRy4SnT2EIHt582aoMvT_eMthQXwUM078YzB5xq_mi1ZMJ9rKremlJS5-Ww1I9Tigj_ulnzxMXtPc5SeGai6M7uCuNv4UfyiJuUFE5mmRm6vZ9zPhDX21Knh4ZEM)
+    image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1789299862/eszter_ktpwh4.png
   - name: Mario Guzman
     bio: >-
       Mario Guzman is a mexican researcher and new media artist merging language
@@ -25,6 +26,7 @@ speakers:
       He wants to bring code, storytelling, and culture together. From his perspective, writing is a performative process that creates meaningful scenarios in which humans and machines participate together in the creation and negotiation of meaning as an interactive experience. \
 
       [www.mario-guzman.com](https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.mario-guzman.com%2F%3Ffbclid%3DIwcGRvZgFleHRuA2FlbQIxMABicmlkETB0V0s1TzZGZllTMkhuY2FXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrXnnXeB6cKyAY9FvSJD8zMVw1dgOazg1m24771a0BfHXgQwluU4PnG4WdEb_aem_Q6AIN4xbBtsl3N1otdiilA&h=AUCLmfey-WgVnkA5VBxQXzxlzpKWAFsu2sJUFm0T5cobdKS3bNGG8KmoRxd3Wr3973uHYhMydOjGPGyggVAYZbiBraLnfeFbu9gGzk8cbWjVaGK2ST_ddSyaPNeQTFRtkroxwxvBP2CDDpbQu5dK-r7sIRju1iwazUo&__tn__=q&c[0]=AUAi40pC797okn4xDAi6lNPjnzNQaRCNBaR59aGdRy4SnT2EIHt582aoMvT_eMthQXwUM078YzB5xq_mi1ZMJ9rKremlJS5-Ww1I9Tigj_ulnzxMXtPc5SeGai6M7uCuNv4UfyiJuUFE5mmRm6vZ9zPhDX21Knh4ZEM)
+    image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1789299888/mario_pwf20z.png
   - name: Edwina Portocarrero
     bio: >-
       Edwina Portocarrero is a research-based designer working at the
