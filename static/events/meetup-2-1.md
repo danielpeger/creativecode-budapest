@@ -37,6 +37,7 @@ speakers:
       She is Director of Super Market, a studio making interactive museum installations that take learning seriously without taking themselves too seriously. The studio is currently working with Thinc Design on the Milwaukee Natural and Cultural History Museum.\
 
       [https://mome.hu/en/people/edwina-portocarrero](https://mome.hu/en/people/edwina-portocarrero?utm_id=97758_v0_s00_e0_tv4_a1demonfy9jngr&fbclid=IwcGRvZgFleHRuA2FlbQIxMABicmlkETB0V0s1TzZGZllTMkhuY2FXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkUm-sep1vVPViG7YYyzwCd_FDJjpVrynqaQvukYMk6dqe4M23gsjdLHF6L-_aem_3wIQy5JPaAfqUMleazYO5Q)
+    image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1790277274/edwina_iw0unw.png
 ---
 Creative Code Budapest is a community meetup for new media artists, pixel tinkerers, arduino masters, nerds, habitants of virtual and augmented realities and curious people. 
 
