@@ -1,6 +1,6 @@
 ---
 title: Meetup 2.1
-date: 2026-09-25T10:42:45.839Z
+date: 2026-09-25T17:00:45.839Z
 location: "Adaptér "
 googleMapsLink: https://maps.app.goo.gl/ZhRC4PSgwxRWdo3J6
 facebookEventLink: https://fb.me/e/8ZNufxEgt
