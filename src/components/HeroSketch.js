@@ -1,3 +1,5 @@
+import { withCloudinaryTransforms } from "../utils/cloudinary"
+
 export default function HeroSketch(backgroundImage){
   return function(p){
     let displayLogo = true;
@@ -19,9 +21,9 @@ export default function HeroSketch(backgroundImage){
     let startingRotationZ = 0;
 
     p.setup = function () {
-      let imagePath = backgroundImage.replace(
-        `upload/t_breakthumbnails/`,
-        `upload/f_auto,w_1000,dpr_${Math.floor(window.devicePixelRatio)}.0/`
+      let imagePath = withCloudinaryTransforms(
+        backgroundImage,
+        `f_auto,w_1000,dpr_${Math.floor(window.devicePixelRatio)}.0`
       )
       let htmlContainer = document.getElementById('HeroSketchContainer');
       p.createCanvas(htmlContainer.offsetWidth, window.innerHeight * 0.80);

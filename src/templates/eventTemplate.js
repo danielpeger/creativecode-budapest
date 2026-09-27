@@ -8,6 +8,7 @@ import Section from "../components/Section"
 import Logo from "../../static/logo/logo-black.svg"
 import EventHeader from "../components/EventHeader"
 import PhotoGrid from "../components/PhotoGrid"
+import { withCloudinaryTransforms } from "../utils/cloudinary"
 
 const Nav = styled.div`
   margin-bottom:var(--5xl);
@@ -46,7 +47,7 @@ export default function Template({ data }) {
     widePhotos,
     fullWidthPhotos
   } = frontmatter
-  const realPosterPath = poster.replace('upload/t_breakthumbnails/','upload/f_auto/')
+  const realPosterPath = withCloudinaryTransforms(poster, 'f_auto')
   return (
     <Root>
       <SEO

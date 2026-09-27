@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer"
 import { breakpoints } from "../utils/media"
 import styled from "styled-components"
 import composeRefs from '@seznam/compose-react-refs'
+import { withCloudinaryTransforms } from "../utils/cloudinary"
 
 const Picture = styled.picture`
   background: var(--white);
@@ -45,23 +46,18 @@ const Image = React.forwardRef(({
     rootMargin: "3000px 0px",
   })
 
-  let defaultSrc = '';
-  let mobileSrc = '';
-  if (src) {
-    defaultSrc = src.replace(
-      `upload/t_breakthumbnails/`,
-      `upload/f_auto,w_${width},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
-        customTransformations ? customTransformations : ""
-      }/`
-    )
-  
-    mobileSrc = src.replace(
-      `upload/t_breakthumbnails/`,
-      `upload/f_auto,w_${mobileWidth},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
-        customTransformations ? customTransformations : ""
-      }/`
-    );
-  }
+  const transformations = `f_auto,w_${width},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
+    customTransformations ? customTransformations : ""
+  }`
+  const defaultSrc = src ? withCloudinaryTransforms(src, transformations) : ""
+  const mobileSrc = src
+    ? withCloudinaryTransforms(
+        src,
+        `f_auto,w_${mobileWidth},dpr_${dpr}.0,${aspectRatio ? `ar_${aspectRatio},` : ''}${
+          customTransformations ? customTransformations : ""
+        }`
+      )
+    : ""
 
   const heightProp = aspectRatio ? width/aspectRatio : width;
 

@@ -9,6 +9,7 @@ import EventHeader from "../components/EventHeader"
 import Podcast from "../components/Podcast"
 import OpenCall from "../components/OpenCall"
 import Footer from "../components/Footer"
+import { withCloudinaryTransforms } from "../utils/cloudinary"
 
 export default function FrontPage({ data }) {
   const events = data.allMarkdownRemark.edges
@@ -19,7 +20,7 @@ export default function FrontPage({ data }) {
   const pastEvents = events.filter(
     ({ node }) => new Date(node.frontmatter.date) < new Date()
   )
-  const realPosterPath = events[0].node.frontmatter.poster.replace('upload/t_breakthumbnails/','upload/f_auto/')
+  const realPosterPath = withCloudinaryTransforms(events[0].node.frontmatter.poster, 'f_auto')
   return (
     <Root>
       <SEO image={realPosterPath}/>

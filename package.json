@@ -4,6 +4,12 @@
   "description": "The website of Creative Code Budapest.",
   "version": "1.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "16.x"
+  },
+  "overrides": {
+    "sharp": "0.32.6"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
