@@ -5,6 +5,7 @@ location: "Adaptér "
 googleMapsLink: https://maps.app.goo.gl/ZhRC4PSgwxRWdo3J6
 facebookEventLink: https://fb.me/e/8ZNufxEgt
 poster: https://res.cloudinary.com/creativecodebudapest/image/upload/v1789296352/CCBP_FB_Group_Cover_new_1_v2_p6es1e.png
+posterGravity: west
 speakers:
   - name: Eszter Várhidi
     bio: Eszter Várhidi is a playful adventurer in the realms of games and
@@ -38,6 +39,43 @@ speakers:
 
       [https://mome.hu/en/people/edwina-portocarrero](https://mome.hu/en/people/edwina-portocarrero?utm_id=97758_v0_s00_e0_tv4_a1demonfy9jngr&fbclid=IwcGRvZgFleHRuA2FlbQIxMABicmlkETB0V0s1TzZGZllTMkhuY2FXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkUm-sep1vVPViG7YYyzwCd_FDJjpVrynqaQvukYMk6dqe4M23gsjdLHF6L-_aem_3wIQy5JPaAfqUMleazYO5Q)
     image: https://res.cloudinary.com/creativecodebudapest/image/upload/v1790277274/edwina_iw0unw.png
+photos:
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541361/DSCF3741_qjayzb.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541360/DSCF3743_pr6lvn.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541359/DSCF3748_jj0e5y.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541359/DSCF3745_daiyr3.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541359/DSCF3752_mqjr5q.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541358/DSCF3754_tqcecf.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541358/DSCF3753_fqqblv.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541357/DSCF3757_lrqjnv.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541357/DSCF3756_fb0ref.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3765_ib1g6u.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3759_lix8xh.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3763_je2jev.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3762_xypzte.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3758_bbl3ye.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541356/DSCF3761_bpyyxg.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541354/DSCF3766_c20egn.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541354/DSCF3764_aoqu7h.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541354/DSCF3767_lsifse.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541354/DSCF3768_jczrxb.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541353/DSCF3773_d8cnxx.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541353/DSCF3769_jfagdk.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541353/DSCF3770_a7agxn.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541353/DSCF3775_p2wmcu.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541352/DSCF3776_kddbhd.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541352/DSCF3778_zijdri.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541352/DSCF3777_dmwup1.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541351/DSCF3780_rf1igz.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541351/DSCF3779_zvdsjn.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541351/DSCF3781_axhytq.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541351/DSCF3782_lsggpm.jpg
+  - https://res.cloudinary.com/creativecodebudapest/image/upload/v1790541350/DSCF3783_pheofb.jpg
+widePhotos:
+  - "4"
+  - "10"
+  - "18"
+  - "25"
 ---
 Creative Code Budapest is a community meetup for new media artists, pixel tinkerers, arduino masters, nerds, habitants of virtual and augmented realities and curious people. 
 
